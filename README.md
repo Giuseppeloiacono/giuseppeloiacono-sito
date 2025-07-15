@@ -1,134 +1,20 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Giuseppe Lo Iacono – Libri e Racconti</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #1e1e1e;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.6rem;
-      margin: 0;
-    }
-    header p {
-      font-style: italic;
-      color: #bbb;
-    }
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      color: #2c3e50;
-      font-size: 1.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .button {
-      background-color: #0077cc;
-      color: white;
-      padding: 0.8rem 1.4rem;
-      text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    img.book-cover {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-    footer {
-      text-align: center;
-      padding: 1.2rem;
-      background-color: #fafafa;
-      color: #777;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
 
-  <header>
-    <h1>Giuseppe Lo Iacono</h1>
-    <p>Il Tuttologo Narrante – Libri e racconti per menti libere</p>
-  </header>
-
-  <main>
-
-    <!-- BIO -->
-    <section>
-      <h2>Chi sono</h2>
-      <p>
-        Sono Giuseppe Lo Iacono, autore indipendente e narratore fuori dagli schemi.
-        Scrivo narrazioni distopiche e racconti vissuti per smascherare le finte verità costruite dal sistema.
-        Le mie parole sono strumenti di consapevolezza per chi ha il coraggio di pensare con la propria testa.
-        <br><br>
-        Esploro mondi diversi: dalla fisica quantistica spiegata ai bambini con immaginazione,
-        a una guida spirituale dedicata a chi cerca sé stesso in un mondo che confonde.
-        Il mio libro <em>Il Tuttologo Narrante</em> è nato durante la pandemia:
-        una testimonianza provocatoria, scritta per chi non si accontenta delle versioni ufficiali.
-        <br><br>
-        <strong>Il mio scopo è accendere consapevolezza, fornire chiavi di lettura alternative e risvegliare la coscienza in un’epoca che ci vuole addormentati.</strong>
-        Scrivo per chi vuole vedere con occhi nuovi.
-      </p>
-    </section>
-
-    <!-- LIBRO -->
-    <section>
-      <h2>📘 Il Tuttologo Narrante</h2>
-      <img src="copertina-tuttologo.jpg" alt="Copertina Il Tuttologo Narrante" class="book-cover" />
-      <p>
-        <em>Il Tuttologo Narrante</em> è una provocatoria esplorazione della disobbedienza civile, un viaggio attraverso le contraddizioni
-        e le ingiustizie di un sistema che spesso offre soluzioni fallaci e ipocrite.
-        Attraverso una narrazione incisiva e affilata, l’autore ci guida in un mondo dove le regole imposte dai governi
-        vengono messe in discussione da chi ha il coraggio di ribellarsi a un ordine sociale che non sempre serve il bene comune.
-        <br><br>
-        Il protagonista – un tuttologo che analizza con occhio critico le dinamiche politiche e sociali – offre spunti di riflessione
-        sulle scelte che condizionano il nostro vivere quotidiano, mettendo in luce le disfunzioni del potere
-        e le false promesse di chi dovrebbe proteggerci.
-        <br><br>
-        Quest’opera non teme di sfidare le convenzioni: è un invito a riflettere sul vero significato di libertà, giustizia e verità.
-        <strong>Il Tuttologo Narrante</strong> non è solo un libro, ma un manifesto di resistenza intellettuale.
-        Un’esortazione a guardare oltre la superficie e a interrogarci sul nostro ruolo in una società distante dai bisogni reali delle persone.
-      </p>
-      <a href="https://amzn.eu/d/9ujkmAk" class="button" target="_blank" rel="noopener">Acquista ora</a>
-    </section>
-
-    <!-- CONTATTI -->
-    <section>
-      <h2>📬 Contatti</h2>
-      <p>Per collaborazioni, domande o proposte editoriali, contattami liberamente.</p>
-      <a href="mailto:lgiuseppe38@yahoo.com" class="button">Contattami</a>
-    </section>
-
-  </main>
-
-  <footer>
-    © 2025 Giuseppe Lo Iacono – Tutti i diritti riservati
-  </footer>
-
-</body>
-</html>
+<section>
+  <h2>📘 Il Tuttologo Narrante</h2>
+  <img src="copertina-tuttologo.jpg" alt="Copertina Il Tuttologo Narrante" class="book-cover" />
+  <p>
+    <em>Il Tuttologo Narrante</em> è una provocatoria esplorazione della disobbedienza civile, un viaggio attraverso le contraddizioni
+    e le ingiustizie di un sistema che spesso offre soluzioni fallaci e ipocrite.
+    Attraverso una narrazione incisiva e affilata, l’autore ci guida in un mondo dove le regole imposte dai governi
+    vengono messe in discussione da chi ha il coraggio di ribellarsi a un ordine sociale che non sempre serve il bene comune.
+    <br><br>
+    Il protagonista – un tuttologo che analizza con occhio critico le dinamiche politiche e sociali – offre spunti di riflessione
+    sulle scelte che condizionano il nostro vivere quotidiano, mettendo in luce le disfunzioni del potere
+    e le false promesse di chi dovrebbe proteggerci.
+    <br><br>
+    Quest’opera non teme di sfidare le convenzioni: è un invito a riflettere sul vero significato di libertà, giustizia e verità.
+    <strong>Il Tuttologo Narrante</strong> non è solo un libro, ma un manifesto di resistenza intellettuale.
+    Un’esortazione a guardare oltre la superficie e a interrogarci sul nostro ruolo in una società distante dai bisogni reali delle persone.
+  </p>
+  <a href="https://amzn.eu/d/9ujkmAk" class="button" target="_blank" rel="noopener">Acquista ora</a>
+</section>
