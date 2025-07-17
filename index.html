@@ -13,8 +13,6 @@
       line-height: 1.6;
     }
     header {
-
-
       background: linear-gradient(to right, #000, #333);
       padding: 2rem;
       text-align: center;
@@ -66,20 +64,55 @@
       color: #777;
       background: #0a0a0a;
     }
+
+    /* Frase effetto fade-in */
+    .impact-phrase {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #f7df1e;
+      font-style: italic;
+      padding: 2rem 1rem;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Giuseppe Lo Iacono</h1>
     <p>Il Tuttologo Narrante – Libri e racconti per menti libere</p>
   </header>
 
   <main>
+
+    <!-- FRASE D’IMPATTO -->
+    <div class="impact-phrase">
+      “Risvegliarsi non è comodo. È necessario.”
+    </div>
+
+    <!-- DOMANDE SCOMODE -->
+    <section>
+      <h2>❓ Domande che il sistema non vuole tu ti faccia</h2>
+      <ul style="list-style:none; padding:0; font-size:1.1rem; line-height:1.6;">
+        <li>– Perché ci insegnano tutto… tranne chi siamo?</li>
+        <li>– E se la spiritualità fosse una chiave di libertà?</li>
+        <li>– Chi ha deciso che la verità ha un solo volto?</li>
+        <li>– Perché il silenzio fa così paura a chi ha perso sé stesso?</li>
+      </ul>
+    </section>
+
+    <!-- BIO -->
     <section>
       <h2>Chi sono</h2>
       <p>Sono Giuseppe Lo Iacono, autore indipendente e narratore fuori dagli schemi. Scrivo per scuotere coscienze, offrendo storie che vanno oltre l'apparenza e smascherano le verità nascoste. Dalla distopia al risveglio spirituale, dalla scienza quantistica alla denuncia del sistema, ogni mio libro è un seme piantato nella mente di chi vuole vedere davvero.</p>
     </section>
 
+    <!-- LIBRI -->
     <section>
       <h2>📘 I miei libri</h2>
 
@@ -112,12 +145,14 @@
       </div>
     </section>
 
+    <!-- CONTATTI -->
     <section>
       <h2>📧 Contatti</h2>
       <p>Scrivimi per collaborazioni, interviste o riflessioni personali.</p>
       <a href="mailto:lgiuseppe38@yahoo.com" class="button">Scrivimi</a>
     </section>
 
+    <!-- SOCIAL -->
     <section>
       <h2>📆 Seguimi sui social</h2>
       <a href="https://www.instagram.com/giuseppeloiacono48/profilecard/?igsh=MTZicDVrYJFpbnNnNg==" class="button" target="_blank">Instagram</a>
@@ -127,16 +162,18 @@
       <a href="https://t.me/lgiuseppe551" class="button" target="_blank">Telegram</a>
     </section>
 
+    <!-- BLOG -->
     <section>
       <h2>📄 Blog</h2>
       <p>Leggi le mie riflessioni, racconti brevi e articoli fuori dal pensiero comune.</p>
       <a href="blog.html" class="button">Vai al Blog</a>
     </section>
+
   </main>
 
   <footer>
     &copy; 2025 Giuseppe Lo Iacono – Tutti i diritti riservati
   </footer>
+
 </body>
 </html>
-
