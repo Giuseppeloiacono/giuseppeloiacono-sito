@@ -111,6 +111,46 @@
       <h2>Chi sono</h2>
       <p>Sono Giuseppe Lo Iacono, autore indipendente e narratore fuori dagli schemi. Scrivo per scuotere coscienze, offrendo storie che vanno oltre l'apparenza e smascherano le verità nascoste. Dalla distopia al risveglio spirituale, dalla scienza quantistica alla denuncia del sistema, ogni mio libro è un seme piantato nella mente di chi vuole vedere davvero.</p>
     </section>
+<section>
+  <h2>🔍 Non devi credere a me</h2>
+  <div style="background:#222; padding:1.5rem; border-left: 5px solid #f7df1e; border-radius:6px;">
+    <p id="typing" style="font-size: 1.1rem; font-style: italic; color: #ccc; min-height: 120px;"></p>
+    <p style="text-align: right; font-weight: bold; color: #f7df1e;">— Giuseppe Lo Iacono</p>
+  </div>
+</section>
+
+<script>
+  const text = [
+    "Non sono qui per insegnarti cosa pensare.",
+    "Ti basta leggere. Anche solo una frase.",
+    "Se qualcosa dentro di te inizia a muoversi…",
+    "allora il viaggio è già cominciato."
+  ];
+
+  let line = 0;
+  let char = 0;
+  let speed = 45;
+
+  function typeLine() {
+    if (line < text.length) {
+      const paragraph = document.getElementById("typing");
+      paragraph.innerHTML = text.slice(0, line).join("<br>") + "<br>" + text[line].slice(0, char) + "|";
+
+      if (char < text[line].length) {
+        char++;
+        setTimeout(typeLine, speed);
+      } else {
+        char = 0;
+        line++;
+        setTimeout(typeLine, 600); // pausa tra le righe
+      }
+    } else {
+      document.getElementById("typing").innerHTML = text.join("<br>");
+    }
+  }
+
+  window.addEventListener("load", typeLine);
+</script>
 
     <!-- LIBRI -->
     <section>
