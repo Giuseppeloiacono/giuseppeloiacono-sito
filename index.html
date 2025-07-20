@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giuseppe Lo Iacono – Libri e Verità Scomode</title>
+  <title>Giuseppe Lo Iacono – Il Tuttologo Narrante</title>
   <style>
     body {
       margin: 0;
@@ -64,20 +64,95 @@
       color: #777;
       background: #0a0a0a;
     }
+
+    /* Frase effetto fade-in */
+    .impact-phrase {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #f7df1e;
+      font-style: italic;
+      padding: 2rem 1rem;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Giuseppe Lo Iacono</h1>
     <p>Il Tuttologo Narrante – Libri e racconti per menti libere</p>
   </header>
 
   <main>
+
+    <!-- FRASE D’IMPATTO -->
+    <div class="impact-phrase">
+      “Risvegliarsi non è comodo. È necessario.”
+    </div>
+
+    <!-- DOMANDE SCOMODE -->
+    <section>
+      <h2>❓ Domande che il sistema non vuole tu ti faccia</h2>
+      <ul style="list-style:none; padding:0; font-size:1.1rem; line-height:1.6;">
+        <li>– Perché ci insegnano tutto… tranne chi siamo?</li>
+        <li>– E se la spiritualità fosse una chiave di libertà?</li>
+        <li>– Chi ha deciso che la verità ha un solo volto?</li>
+        <li>– Perché il silenzio fa così paura a chi ha perso sé stesso?</li>
+      </ul>
+    </section>
+
+    <!-- BIO -->
     <section>
       <h2>Chi sono</h2>
       <p>Sono Giuseppe Lo Iacono, autore indipendente e narratore fuori dagli schemi. Scrivo per scuotere coscienze, offrendo storie che vanno oltre l'apparenza e smascherano le verità nascoste. Dalla distopia al risveglio spirituale, dalla scienza quantistica alla denuncia del sistema, ogni mio libro è un seme piantato nella mente di chi vuole vedere davvero.</p>
     </section>
+<section>
+  <h2>🔍 Non devi credere a me</h2>
+  <div style="background:#222; padding:1.5rem; border-left: 5px solid #f7df1e; border-radius:6px;">
+    <p id="typing" style="font-size: 1.1rem; font-style: italic; color: #ccc; min-height: 120px;"></p>
+    <p style="text-align: right; font-weight: bold; color: #f7df1e;">— Giuseppe Lo Iacono</p>
+  </div>
+</section>
 
+<script>
+  const text = [
+    "Non sono qui per insegnarti cosa pensare.",
+    "Ti basta leggere. Anche solo una frase.",
+    "Se qualcosa dentro di te inizia a muoversi…",
+    "allora il viaggio è già cominciato."
+  ];
+
+  let line = 0;
+  let char = 0;
+  let speed = 45;
+
+  function typeLine() {
+    if (line < text.length) {
+      const paragraph = document.getElementById("typing");
+      paragraph.innerHTML = text.slice(0, line).join("<br>") + "<br>" + text[line].slice(0, char) + "|";
+
+      if (char < text[line].length) {
+        char++;
+        setTimeout(typeLine, speed);
+      } else {
+        char = 0;
+        line++;
+        setTimeout(typeLine, 600); // pausa tra le righe
+      }
+    } else {
+      document.getElementById("typing").innerHTML = text.join("<br>");
+    }
+  }
+
+  window.addEventListener("load", typeLine);
+</script>
+
+    <!-- LIBRI -->
     <section>
       <h2>📘 I miei libri</h2>
 
@@ -85,71 +160,86 @@
         <h3>Il Tuttologo Narrante</h3>
         <img src="copertina-tuttologo.jpg" alt="Copertina Tuttologo Narrante" class="book-cover">
         <p>Una provocatoria esplorazione della disobbedienza civile. Un libro-manifesto per chi non si accontenta delle verità ufficiali.</p>
-        <a href="https://amzn.to/3UjXlCS" class="button" target="_blank">Acquista ora</a>
+        <a href="https://amzn.eu/d/9ujkmAk" class="button" target="_blank">Acquista ora</a>
       </div>
 
       <div>
         <h3>La Liberazione dell’Anima</h3>
         <img src="liberazione-anima.jpg" alt="Copertina La Liberazione dell'Anima" class="book-cover">
         <p>Una guida profonda per ritrovare il tuo sé autentico. Guarigione, risveglio, e libertà interiore in un viaggio spirituale pratico.</p>
-        <a href="https://amzn.to/40pvyED" class="button" target="_blank">Acquista ora</a>
+        <a href="https://amzn.eu/d/bPFXQEu" class="button" target="_blank">Acquista ora</a>
       </div>
 
       <div>
         <h3>L'avventura delle particelle</h3>
         <img src="fisica-quantistica.jpg" alt="Copertina Avventura delle Particelle" class="book-cover">
         <p>Un libro per bambini (e adulti curiosi) che spiega la fisica quantistica in modo divertente, stimolante e avventuroso.</p>
-        <a href="https://amzn.to/453bCsH" class="button" target="_blank">Acquista ora</a>
+        <a href="https://amzn.eu/d/afKYwbg" class="button" target="_blank">Acquista ora</a>
       </div>
 
       <div>
         <h3>Il Regno dell'Oscurità Virtuale</h3>
         <img src="oscurita-virtuale.jpg" alt="Copertina Oscurità Virtuale" class="book-cover">
         <p>Una distopia tecnologica in cui il potere virtuale controlla la mente. Un romanzo potente sulla libertà e la ribellione digitale.</p>
-        <a href="https://amzn.to/4f39TIo" class="button" target="_blank">Acquista ora</a>
+        <a href="https://amzn.eu/d/5mYKQHo" class="button" target="_blank">Acquista ora</a>
       </div>
     </section>
+<section>
+  <h2>⭐ Cosa dicono i lettori</h2>
 
-    <section>
-      <h2>📢 Frasi d'impatto</h2>
-      <p>"Chi ha occhi per vedere e cuore per sentire, saprà che la realtà non è quella che ci viene raccontata."</p>
-      <p>"Non sei strano. Sei sveglio in un mondo che dorme."</p>
-    </section>
+  <div style="display: flex; gap: 1rem; flex-direction: column;">
 
-    <section>
-      <h2>❓ Domande scomode</h2>
-      <ul>
-        <li>Se quello che sappiamo fosse solo una parte della verità?</li>
-        <li>Perché certe idee vengono censurate?</li>
-        <li>Chi decide cosa è giusto pensare?</li>
-        <li>Cos'è la libertà, davvero?</li>
-      </ul>
-    </section>
+    <!-- RECENSIONE 1 -->
+    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
+      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
+      <div>
+        <div style="color: #f7df1e;">★★★★★</div>
+        <p style="font-style: italic;">“Ogni pagina mi ha fatto sentire meno solo. Finalmente qualcuno che dice quello che pensavo da anni ma non avevo mai avuto il coraggio di ammettere.”</p>
+        <p style="text-align: right; font-weight: bold; margin: 0;">— Matteo G.</p>
+      </div>
+    </div>
 
-    <section>
-      <h2>⭐ Recensioni</h2>
-      <p><strong>Il Tuttologo Narrante:</strong> "Un pugno nello stomaco al pensiero comune. Finalmente un libro che parla senza filtri."</p>
-      <p><strong>La Liberazione dell'Anima:</strong> "Un viaggio profondo dentro sé stessi. Ogni pagina è una carezza all’anima."</p>
-      <p><strong>L'avventura delle particelle:</strong> "Divertente, intelligente e illuminante. Anche i grandi imparano!"</p>
-      <p><strong>Il Regno dell'Oscurità Virtuale:</strong> "Visionario, disturbante, necessario. Un'avventura che ti sveglia."</p>
-    </section>
+    <!-- RECENSIONE 2 -->
+    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
+      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
+      <div>
+        <div style="color: #f7df1e;">★★★★★</div>
+        <p style="font-style: italic;">“Non è solo un libro spirituale. È una bussola. Mi ha aiutato a uscire da una crisi interiore che nessuno capiva.”</p>
+        <p style="text-align: right; font-weight: bold; margin: 0;">— Giulia R.</p>
+      </div>
+    </div>
 
+    <!-- RECENSIONE 3 -->
+    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
+      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
+      <div>
+        <div style="color: #f7df1e;">★★★★★</div>
+        <p style="font-style: italic;">“L’ho letto con mio figlio e mi sono emozionata più io. Spiegare la fisica quantistica con poesia? Solo Giuseppe poteva farlo.”</p>
+        <p style="text-align: right; font-weight: bold; margin: 0;">— Laura V.</p>
+      </div>
+    </div>
+
+    <!-- RECENSIONE 4 -->
+    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
+      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
+      <div>
+        <div style="color: #f7df1e;">★★★★★</div>
+        <p style="font-style: italic;">“Sembra fantascienza, ma è la realtà di oggi portata all’estremo. Questo libro mi ha fatto spegnere il telefono… e accendere la coscienza.”</p>
+        <p style="text-align: right; font-weight: bold; margin: 0;">— Francesco L.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- CONTATTI -->
     <section>
       <h2>📧 Contatti</h2>
       <p>Scrivimi per collaborazioni, interviste o riflessioni personali.</p>
       <a href="mailto:lgiuseppe38@yahoo.com" class="button">Scrivimi</a>
     </section>
 
-    <section>
-      <h2>📣 Iscriviti alla newsletter</h2>
-      <form action="https://buttondown.com/api/emails/embed-subscribe/Giuseppeloiacono" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/Giuseppeloiacono', 'popupwindow')" class="embeddable-buttondown-form">
-        <label for="bd-email">Inserisci la tua email:</label><br>
-        <input type="email" name="email" id="bd-email" required />
-        <input type="submit" value="Iscriviti" />
-        <p><a href="https://buttondown.com/refer/Giuseppeloiacono" target="_blank">Powered by Buttondown.</a></p>
-      </form>
-    </section>
-
+    <!-- SOCIAL -->
     <section>
       <h2>📆 Seguimi sui social</h2>
       <a href="https://www.instagram.com/giuseppeloiacono48/profilecard/?igsh=MTZicDVrYJFpbnNnNg==" class="button" target="_blank">Instagram</a>
@@ -158,17 +248,50 @@
       <a href="https://www.facebook.com/giuseppe.loiacono.585112" class="button" target="_blank">Facebook</a>
       <a href="https://t.me/lgiuseppe551" class="button" target="_blank">Telegram</a>
     </section>
+<section>
+  <h2>📬 Iscriviti alla newsletter</h2>
+  <p>Ricevi aggiornamenti, articoli inediti, domande scomode e anteprime dai miei libri.</p>
 
+  <form
+    action="https://buttondown.com/api/emails/embed-subscribe/Giuseppeloiacono"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/Giuseppeloiacono', 'popupwindow')"
+    style="margin-top: 1rem;"
+  >
+    <label for="bd-email" style="display:block; margin-bottom:0.5rem; color:#eee;">
+      Inserisci la tua email
+    </label>
+    <input
+      type="email"
+      name="email"
+      id="bd-email"
+      required
+      placeholder="la tua email"
+      style="padding: 0.6rem; width: 100%; max-width: 400px; border: none; border-radius: 5px; margin-bottom: 1rem;"
+    />
+    <br />
+    <input
+      type="submit"
+      value="Iscriviti"
+      style="background-color: #f7df1e; color: #000; padding: 0.6rem 1.2rem; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;"
+    />
+  </form>
+</section>
+
+    <!-- BLOG -->
     <section>
       <h2>📄 Blog</h2>
       <p>Leggi le mie riflessioni, racconti brevi e articoli fuori dal pensiero comune.</p>
       <a href="blog.html" class="button">Vai al Blog</a>
     </section>
+
   </main>
 
   <footer>
     &copy; 2025 Giuseppe Lo Iacono – Tutti i diritti riservati
   </footer>
+
 </body>
 </html>
 
