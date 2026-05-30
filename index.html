@@ -3,428 +3,396 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Giuseppe Lo Iacono | Libri e riflessioni</title>
+  <meta name="description" content="Sito ufficiale di Giuseppe Lo Iacono. Libri, racconti e riflessioni su libertà, coscienza, spiritualità, società e nuove prospettive.">
+
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #111;
-      color: #eee;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0b;
+      color: #eeeeee;
+      line-height: 1.7;
     }
+
+    a { text-decoration: none; color: inherit; }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
     header {
-      background: linear-gradient(to right, #000, #333);
-      padding: 2rem;
+      min-height: 85vh;
+      padding: 30px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.95)),
+        radial-gradient(circle at top, #333, #000);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      color: #d40000
+
+    nav {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(1100px, calc(100% - 40px));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
     }
-    header p {
-      font-style: italic;
-      color: #ccc;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    body{
-  background:#000;
-  color:#f2f2f2;
-}
-      box-shadow: 0 0 15px rgba(255,255,255,0.1);
-      border-radius: 10px;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      border-left: 5px solid #d40000
-      padding-left: 10px;
-      color: #d40000
-    }
-    .book-cover {
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      margin: 1rem 0;
-    }
-    .button {
-      display: inline-block;
-      background: #d40000
-      color: #000;
-      padding: 0.7rem 1.2rem;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 0.5rem;
+
+    .logo {
+      color: #d4af37;
+      font-size: 1.4rem;
       font-weight: bold;
     }
+
+    nav a {
+      margin-left: 18px;
+      font-weight: bold;
+      color: #eeeeee;
+    }
+
+    nav a:hover { color: #d4af37; }
+
+    .hero {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero .tag {
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 18px;
+      font-size: .85rem;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.05;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 32px;
+      color: #cccccc;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 999px;
+      background: #d4af37;
+      color: #000;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .btn.outline {
+      background: transparent;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+    }
+
+    main {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 70px 0;
+    }
+
+    section { margin-bottom: 90px; }
+
+    .section-title {
+      margin-bottom: 35px;
+    }
+
+    .section-title span {
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #ffffff;
+      line-height: 1.15;
+      margin-top: 8px;
+    }
+
+    .intro {
+      max-width: 850px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .intro p {
+      color: #cccccc;
+      font-size: 1.15rem;
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .book {
+      background: #171717;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212,175,55,.55);
+    }
+
+    .book img {
+      border-radius: 0;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      background: #222;
+    }
+
+    .book-content {
+      padding: 22px;
+    }
+
+    .book h3 {
+      color: #d4af37;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+
+    .book p {
+      color: #c8c8c8;
+      margin-bottom: 16px;
+    }
+
+    .book a {
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    .about,
+    .contact {
+      background: #151515;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 24px;
+      padding: 42px;
+    }
+
+    .about p,
+    .contact p {
+      color: #cccccc;
+      font-size: 1.1rem;
+      max-width: 850px;
+    }
+
+    .blog-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .blog-card {
+      background: #171717;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .blog-card h3 {
+      color: #d4af37;
+      margin-bottom: 12px;
+    }
+
+    .blog-card p {
+      color: #c8c8c8;
+      margin-bottom: 16px;
+    }
+
     footer {
       text-align: center;
-      padding: 2rem;
+      background: #000;
       color: #777;
-      background: #0a0a0a;
+      padding: 28px;
     }
 
-    /* Frase effetto fade-in */
-    .impact-phrase {
-      text-align: center;
-      font-size: 1.4rem;
-      color: #d40000
-      font-style: italic;
-      padding: 2rem 1rem;
-      animation: fadeIn 2.5s ease-out;
+    @media (max-width: 900px) {
+      .books { grid-template-columns: repeat(2, 1fr); }
+      .blog-box { grid-template-columns: 1fr; }
+      nav { position: static; transform: none; width: 100%; flex-direction: column; margin-bottom: 70px; }
+      nav a { margin: 0 8px; }
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    @media (max-width: 600px) {
+      .books { grid-template-columns: 1fr; }
+      .about, .contact { padding: 28px; }
     }
   </style>
 </head>
+
 <body>
 
-<header class="hero">
+  <header>
+    <nav>
+      <div class="logo">Giuseppe Lo Iacono</div>
+      <div>
+        <a href="#libri">Libri</a>
+        <a href="#autore">Autore</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contatti">Contatti</a>
+      </div>
+    </nav>
 
-  <h1>OLTRE IL SISTEMA</h1>
-
-  <p>
-    Sei libri. Sei viaggi.
-    Un'unica ricerca della verità.
-  </p>
-
-  <a href="#collana" class="button">
-    Esplora la collana
-  </a>
-.hero{
-    min-height:70vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:
-    linear-gradient(
-      rgba(0,0,0,.8),
-      rgba(0,0,0,.9)
-    );
-}
-
-.hero h1{
-    font-size:4rem;
-    letter-spacing:4px;
-    color:#fff;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:1.3rem;
-    max-width:700px;
-}
-</header>
+    <div class="hero">
+      <div class="tag">Autore indipendente</div>
+      <h1>Libri per chi vuole vedere oltre la superficie.</h1>
+      <p>
+        Narrativa, spiritualità, società, coscienza e nuove prospettive.
+        Un percorso tra storie, domande e riflessioni per menti indipendenti.
+      </p>
+      <a class="btn" href="#libri">Scopri i libri</a>
+      <a class="btn outline" href="blog.html">Leggi il blog</a>
+    </div>
+  </header>
 
   <main>
 
-    <!-- FRASE D’IMPATTO -->
-    <div class="impact-phrase">
-      “Risvegliarsi non è comodo. È necessario.”
-    </div>
-
-    <!-- DOMANDE SCOMODE -->
-    <section>
-      <h2>❓ Domande che il sistema non vuole tu ti faccia</h2>
-      <ul style="list-style:none; padding:0; font-size:1.1rem; line-height:1.6;">
-        <li>– Perché ci insegnano tutto… tranne chi siamo?</li>
-        <li>– E se la spiritualità fosse una chiave di libertà?</li>
-        <li>– Chi ha deciso che la verità ha un solo volto?</li>
-        <li>– Perché il silenzio fa così paura a chi ha perso sé stesso?</li>
-      </ul>
+    <section class="intro">
+      <div class="section-title">
+        <span>Visione</span>
+        <h2>Alcune domande meritano di essere poste.</h2>
+      </div>
+      <p>
+        I miei libri nascono dal desiderio di esplorare ciò che spesso resta ai margini:
+        libertà interiore, consapevolezza, trasformazione personale, tecnologia,
+        società e mistero dell’esistenza.
+      </p>
     </section>
 
-    <!-- BIO -->
-    <section>
-      <h2>Chi sono</h2>
-      <p>Sono Giuseppe Lo Iacono, autore indipendente e narratore fuori dagli schemi. Scrivo per scuotere coscienze, offrendo storie che vanno oltre l'apparenza e smascherano le verità nascoste. Dalla distopia al risveglio spirituale, dalla scienza quantistica alla denuncia del sistema, ogni mio libro è un seme piantato nella mente di chi vuole vedere davvero.</p>
-    </section>
-<section>
-  <h2>🔍 Non devi credere a me</h2>
-  <div style="background:#222; padding:1.5rem; border-left: 5px solid #f7df1e; border-radius:6px;">
-    <p id="typing" style="font-size: 1.1rem; font-style: italic; color: #ccc; min-height: 120px;"></p>
-    <p style="text-align: right; font-weight: bold; color: #f7df1e;">— Giuseppe Lo Iacono</p>
-  </div>
-</section>
-
-<script>
-  const text = [
-    "Non sono qui per insegnarti cosa pensare.",
-    "Ti basta leggere. Anche solo una frase.",
-    "Se qualcosa dentro di te inizia a muoversi…",
-    "allora il viaggio è già cominciato."
-  ];
-
-  let line = 0;
-  let char = 0;
-  let speed = 45;
-
-  function typeLine() {
-    if (line < text.length) {
-      const paragraph = document.getElementById("typing");
-      paragraph.innerHTML = text.slice(0, line).join("<br>") + "<br>" + text[line].slice(0, char) + "|";
-
-      if (char < text[line].length) {
-        char++;
-        setTimeout(typeLine, speed);
-      } else {
-        char = 0;
-        line++;
-        setTimeout(typeLine, 600); // pausa tra le righe
-      }
-    } else {
-      document.getElementById("typing").innerHTML = text.join("<br>");
-    }
-  }
-
-  window.addEventListener("load", typeLine);
-</script>
-
-    <!-- LIBRI -->
-  <section>
-  <h2>📘 I miei libri</h2>
-<section id="collana">
- <section id="collana">
-
-<h2>La Collana</h2>
-
-<div class="book-card">
-<img src="copertina-tuttologo.jpg">
-<div>
-<h3>Il Tuttologo Narrante</h3>
-<p>
-Un viaggio tra osservazione,
-conoscenza e libertà di pensiero.
-</p>
-<a href="LINK AMAZON" class="button">
-Scopri il libro
-</a>
-</div>
-</div>
-
-<div class="book-card reverse">
-<img src="sei-tu-la-cura.jpg">
-<div>
-<h3>Sei Tu la Cura</h3>
-<p>
-Il corpo umano, la salute
-e la consapevolezza.
-</p>
-<a href="LINK AMAZON" class="button">
-Scopri il libro
-</a>
-</div>
-</div>
-
-<div class="book-card">
-<img src="fisica-quantistica.jpg">
-<div>
-<h3>L'Avventura delle Particelle</h3>
-<p>
-La fisica raccontata come una storia.
-</p>
-<a href="LINK AMAZON" class="button">
-Scopri il libro
-</a>
-</div>
-</div>
-
-<div class="book-card reverse">
-<img src="oscurita-virtuale.jpg">
-<div>
-<h3>Il Regno dell'Oscurità Virtuale</h3>
-<p>
-Tecnologia, potere e controllo.
-</p>
-<a href="LINK AMAZON" class="button">
-Scopri il libro
-</a>
-</div>
-</div>
-
-<div class="book-card">
-<img src="liberazione-anima.jpg">
-<div>
-<h3>La Liberazione dell'Anima</h3>
-<p>
-Un percorso verso il risveglio interiore.
-</p>
-<a href="LINK AMAZON" class="button">
-Scopri il libro
-</a>
-</div>
-</div>
-
-<div class="book-card reverse">
-<img src="teoria-desiderio.jpg">
-<div>
-<h3>La Teoria del Desiderio</h3>
-<p>
-Comprendere ciò che guida le scelte umane.
-</p>
-<a href="LINK AMAZON" class="button">
-Scopri il libro
-</a>
-</div>
-</div>
-
-</section>
-  </div>
-</section>
-.book-card{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    margin:80px 0;
-}
-
-.book-card img{
-    width:280px;
-    border-radius:8px;
-}
-
-.book-card.reverse{
-    flex-direction:row-reverse;
-}
-
-.book-card div{
-    flex:1;
-}
-
-.book-card h3{
-    color:#fff;
-    font-size:2rem;
-}
-
-@media(max-width:768px){
-
-.book-card,
-.book-card.reverse{
-    flex-direction:column;
-}
-
-.book-card img{
-    width:100%;
-    max-width:320px;
-}
-}
-<section>
-  <h2>⭐ Cosa dicono i lettori</h2>
-
-  <div style="display: flex; gap: 1rem; flex-direction: column;">
-
-    <!-- RECENSIONE 1 -->
-    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
-      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
-      <div>
-        <div style="color: #f7df1e;">★★★★★</div>
-        <p style="font-style: italic;">“Ogni pagina mi ha fatto sentire meno solo. Finalmente qualcuno che dice quello che pensavo da anni ma non avevo mai avuto il coraggio di ammettere.”</p>
-        <p style="text-align: right; font-weight: bold; margin: 0;">— Matteo G.</p>
+    <section id="libri">
+      <div class="section-title">
+        <span>Biblioteca</span>
+        <h2>I miei libri</h2>
       </div>
-    </div>
 
-    <!-- RECENSIONE 2 -->
-    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
-      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
-      <div>
-        <div style="color: #f7df1e;">★★★★★</div>
-        <p style="font-style: italic;">“Non è solo un libro spirituale. È una bussola. Mi ha aiutato a uscire da una crisi interiore che nessuno capiva.”</p>
-        <p style="text-align: right; font-weight: bold; margin: 0;">— Giulia R.</p>
+      <div class="books">
+
+        <article class="book">
+          <img src="copertina-tuttologo.jpg" alt="Copertina libro di Giuseppe Lo Iacono">
+          <div class="book-content">
+            <h3>Il Tuttologo Narrante</h3>
+            <p>Un viaggio tra pensiero critico, osservazione e libertà di coscienza.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <img src="liberazione-anima.jpg" alt="Copertina La Liberazione dell'Anima">
+          <div class="book-content">
+            <h3>La Liberazione dell’Anima</h3>
+            <p>Un percorso verso consapevolezza, guarigione interiore e risveglio personale.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <img src="copertina_quantistica.jpg" alt="Copertina L'avventura delle particelle">
+          <div class="book-content">
+            <h3>L’avventura delle particelle</h3>
+            <p>La fisica raccontata in modo semplice, narrativo e accessibile.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
+
+        <article class="book">
+          <img src="isola_virtuale.jpg" alt="Copertina Il Regno dell'Oscurità Virtuale">
+          <div class="book-content">
+            <h3>Il Regno dell’Oscurità Virtuale</h3>
+            <p>Una distopia tecnologica sul controllo, la libertà e l’identità digitale.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
+
       </div>
-    </div>
-
-    <!-- RECENSIONE 3 -->
-    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
-      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
-      <div>
-        <div style="color: #f7df1e;">★★★★★</div>
-        <p style="font-style: italic;">“L’ho letto con mio figlio e mi sono emozionata più io. Spiegare la fisica quantistica con poesia? Solo Giuseppe poteva farlo.”</p>
-        <p style="text-align: right; font-weight: bold; margin: 0;">— Laura V.</p>
-      </div>
-    </div>
-
-    <!-- RECENSIONE 4 -->
-    <div style="background:#222; padding:1.5rem; display:flex; gap:1rem; border-left: 5px solid #f7df1e; border-radius: 6px;">
-      <div style="min-width:60px; height:60px; border-radius:50%; background:#555; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:#f7df1e;">👤</div>
-      <div>
-        <div style="color: #f7df1e;">★★★★★</div>
-        <p style="font-style: italic;">“Sembra fantascienza, ma è la realtà di oggi portata all’estremo. Questo libro mi ha fatto spegnere il telefono… e accendere la coscienza.”</p>
-        <p style="text-align: right; font-weight: bold; margin: 0;">— Francesco L.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <!-- CONTATTI -->
-    <section>
-      <h2>📧 Contatti</h2>
-      <p>Scrivimi per collaborazioni, interviste o riflessioni personali.</p>
-      <a href="mailto:lgiuseppe38@yahoo.com" class="button">Scrivimi</a>
     </section>
 
-    <!-- SOCIAL -->
-    <section>
-      <h2>📆 Seguimi sui social</h2>
-      <a href="https://www.instagram.com/giuseppeloiacono48/profilecard/?igsh=MTZicDVrYJFpbnNnNg==" class="button" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@iltuttologonarrante" class="button" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@ilviandante1" class="button" target="_blank">TikTok</a>
-      <a href="https://www.facebook.com/giuseppe.loiacono.585112" class="button" target="_blank">Facebook</a>
-      <a href="https://t.me/lgiuseppe551" class="button" target="_blank">Telegram</a>
+    <section id="autore" class="about">
+      <div class="section-title">
+        <span>Autore</span>
+        <h2>Giuseppe Lo Iacono</h2>
+      </div>
+      <p>
+        Sono un autore indipendente. Scrivo libri e riflessioni che uniscono narrativa,
+        spiritualità, società e nuove prospettive. Il mio obiettivo non è offrire risposte
+        definitive, ma aprire spazi di domanda, immaginazione e consapevolezza.
+      </p>
     </section>
-<section>
-  <h2>📬 Iscriviti alla newsletter</h2>
-  <p>Ricevi aggiornamenti, articoli inediti, domande scomode e anteprime dai miei libri.</p>
 
-  <form
-    action="https://buttondown.com/api/emails/embed-subscribe/Giuseppeloiacono"
-    method="post"
-    target="popupwindow"
-    onsubmit="window.open('https://buttondown.com/Giuseppeloiacono', 'popupwindow')"
-    style="margin-top: 1rem;"
-  >
-    <label for="bd-email" style="display:block; margin-bottom:0.5rem; color:#eee;">
-      Inserisci la tua email
-    </label>
-    <input
-      type="email"
-      name="email"
-      id="bd-email"
-      required
-      placeholder="la tua email"
-      style="padding: 0.6rem; width: 100%; max-width: 400px; border: none; border-radius: 5px; margin-bottom: 1rem;"
-    />
-    <br />
-    <input
-      type="submit"
-      value="Iscriviti"
-      style="background-color: #f7df1e; color: #000; padding: 0.6rem 1.2rem; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;"
-    />
-  </form>
-</section>
-
-    <!-- BLOG -->
     <section>
-      <h2>📄 Blog</h2>
-      <p>Leggi le mie riflessioni, racconti brevi e articoli fuori dal pensiero comune.</p>
-      <a href="blog.html" class="button">Vai al Blog</a>
+      <div class="section-title">
+        <span>Blog</span>
+        <h2>Riflessioni recenti</h2>
+      </div>
+
+      <div class="blog-box">
+        <article class="blog-card">
+          <h3>Cos’è il risveglio spirituale?</h3>
+          <p>Una riflessione semplice su coscienza, cambiamento e libertà interiore.</p>
+          <a href="blog.html">Leggi il blog</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>Tecnologia e libertà mentale</h3>
+          <p>Quanto spazio lasciamo davvero alla nostra attenzione?</p>
+          <a href="blog.html">Leggi il blog</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>Fisica, mistero e realtà</h3>
+          <p>Quando la scienza diventa anche una domanda filosofica.</p>
+          <a href="blog.html">Leggi il blog</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contatti" class="contact">
+      <div class="section-title">
+        <span>Contatti</span>
+        <h2>Contattami</h2>
+      </div>
+      <p>
+        Per collaborazioni, recensioni, interviste o informazioni sui libri puoi scrivermi via email.
+      </p>
+      <br>
+      <a class="btn" href="mailto:inserisci-la-tua-email@example.com">Scrivimi</a>
     </section>
 
   </main>
 
   <footer>
-    &copy; 2025 Giuseppe Lo Iacono – Tutti i diritti riservati
+    <p>© 2026 Giuseppe Lo Iacono – Tutti i diritti riservati</p>
   </footer>
 
 </body>
 </html>
-
