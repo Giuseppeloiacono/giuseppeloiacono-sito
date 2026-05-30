@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Giuseppe Lo Iacono | Libri e riflessioni</title>
-  <meta name="description" content="Sito ufficiale di Giuseppe Lo Iacono. Libri, racconti e riflessioni su libertà, coscienza, spiritualità, società e nuove prospettive.">
+  <meta name="description" content="Sito ufficiale di Giuseppe Lo Iacono. Libri e riflessioni su coscienza, libertà, desiderio, tecnologia e trasformazione.">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #0b0b0b;
+      background: #050505;
       color: #eeeeee;
       line-height: 1.7;
     }
@@ -22,19 +22,19 @@
     img {
       width: 100%;
       display: block;
-      border-radius: 12px;
     }
 
     header {
       min-height: 85vh;
       padding: 30px 20px;
       background:
-        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.95)),
-        radial-gradient(circle at top, #333, #000);
+        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.96)),
+        radial-gradient(circle at top, #2a0004, #000);
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      position: relative;
     }
 
     nav {
@@ -50,9 +50,10 @@
     }
 
     .logo {
-      color: #d4af37;
+      color: #ffffff;
       font-size: 1.4rem;
       font-weight: bold;
+      letter-spacing: 1px;
     }
 
     nav a {
@@ -61,15 +62,15 @@
       color: #eeeeee;
     }
 
-    nav a:hover { color: #d4af37; }
+    nav a:hover { color: #c1121f; }
 
     .hero {
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
     }
 
-    .hero .tag {
-      color: #d4af37;
+    .tag {
+      color: #c1121f;
       text-transform: uppercase;
       letter-spacing: 3px;
       margin-bottom: 18px;
@@ -85,7 +86,7 @@
     }
 
     .hero p {
-      max-width: 720px;
+      max-width: 740px;
       margin: 0 auto 32px;
       color: #cccccc;
       font-size: 1.2rem;
@@ -95,20 +96,20 @@
       display: inline-block;
       padding: 13px 24px;
       border-radius: 999px;
-      background: #d4af37;
-      color: #000;
+      background: #c1121f;
+      color: #fff;
       font-weight: bold;
       margin: 6px;
     }
 
     .btn.outline {
       background: transparent;
-      border: 1px solid #d4af37;
-      color: #d4af37;
+      border: 1px solid #c1121f;
+      color: #ffffff;
     }
 
     main {
-      width: min(1100px, calc(100% - 40px));
+      width: min(1120px, calc(100% - 40px));
       margin: 0 auto;
       padding: 70px 0;
     }
@@ -120,7 +121,7 @@
     }
 
     .section-title span {
-      color: #d4af37;
+      color: #c1121f;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: .8rem;
@@ -148,12 +149,12 @@
 
     .books {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
     }
 
     .book {
-      background: #171717;
+      background: #141414;
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 18px;
       overflow: hidden;
@@ -162,11 +163,10 @@
 
     .book:hover {
       transform: translateY(-6px);
-      border-color: rgba(212,175,55,.55);
+      border-color: rgba(193,18,31,.65);
     }
 
     .book img {
-      border-radius: 0;
       aspect-ratio: 2 / 3;
       object-fit: cover;
       background: #222;
@@ -177,7 +177,7 @@
     }
 
     .book h3 {
-      color: #d4af37;
+      color: #ffffff;
       margin-bottom: 10px;
       font-size: 1.25rem;
     }
@@ -188,13 +188,13 @@
     }
 
     .book a {
-      color: #d4af37;
+      color: #c1121f;
       font-weight: bold;
     }
 
     .about,
     .contact {
-      background: #151515;
+      background: #111111;
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 24px;
       padding: 42px;
@@ -214,20 +214,25 @@
     }
 
     .blog-card {
-      background: #171717;
+      background: #141414;
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 18px;
       padding: 28px;
     }
 
     .blog-card h3 {
-      color: #d4af37;
+      color: #ffffff;
       margin-bottom: 12px;
     }
 
     .blog-card p {
       color: #c8c8c8;
       margin-bottom: 16px;
+    }
+
+    .blog-card a {
+      color: #c1121f;
+      font-weight: bold;
     }
 
     footer {
@@ -240,7 +245,15 @@
     @media (max-width: 900px) {
       .books { grid-template-columns: repeat(2, 1fr); }
       .blog-box { grid-template-columns: 1fr; }
-      nav { position: static; transform: none; width: 100%; flex-direction: column; margin-bottom: 70px; }
+
+      nav {
+        position: static;
+        transform: none;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 70px;
+      }
+
       nav a { margin: 0 8px; }
     }
 
@@ -265,11 +278,11 @@
     </nav>
 
     <div class="hero">
-      <div class="tag">Autore indipendente</div>
-      <h1>Libri per chi vuole vedere oltre la superficie.</h1>
+      <div class="tag">Oltre il Sistema</div>
+      <h1>Esplorare ciò che si trova oltre la superficie.</h1>
       <p>
-        Narrativa, spiritualità, società, coscienza e nuove prospettive.
-        Un percorso tra storie, domande e riflessioni per menti indipendenti.
+        Libri che attraversano coscienza, libertà, desiderio, tecnologia e trasformazione.
+        Storie e riflessioni per chi non si accontenta delle risposte facili.
       </p>
       <a class="btn" href="#libri">Scopri i libri</a>
       <a class="btn outline" href="blog.html">Leggi il blog</a>
@@ -280,79 +293,87 @@
 
     <section class="intro">
       <div class="section-title">
-        <span>Visione</span>
-        <h2>Alcune domande meritano di essere poste.</h2>
+        <span>Perché scrivo</span>
+        <h2>Alcune domande cambiano il modo in cui guardiamo il mondo.</h2>
       </div>
       <p>
-        I miei libri nascono dal desiderio di esplorare ciò che spesso resta ai margini:
-        libertà interiore, consapevolezza, trasformazione personale, tecnologia,
-        società e mistero dell’esistenza.
+        Scrivo per chi sente che la realtà è più complessa di come viene raccontata.
+        I miei libri esplorano coscienza, libertà, desiderio, tecnologia e trasformazione interiore.
       </p>
     </section>
 
     <section id="libri">
       <div class="section-title">
-        <span>Biblioteca</span>
-        <h2>I miei libri</h2>
+        <span>Collana</span>
+        <h2>Oltre il Sistema</h2>
       </div>
 
-    <div class="books">
+      <div class="books">
 
-  <article class="book">
-    <img src="copertina il tuttologo narrante ufficiale .png" alt="Copertina Il Tuttologo Narrante">
-    <div class="book-content">
-      <h3>Il Tuttologo Narrante</h3>
-      <p>Un viaggio oltre il sistema, tra potere, coscienza e libertà di pensiero.</p>
-      <a href="#">Scopri il libro</a>
-    </div>
-  </article>
+        <article class="book">
+          <img src="copertina il tuttologo narrante ufficiale .png" alt="Copertina Il Tuttologo Narrante">
+          <div class="book-content">
+            <h3>Il Tuttologo Narrante</h3>
+            <p>Un viaggio oltre il sistema, tra potere, coscienza e libertà di pensiero.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
 
-  <article class="book">
-    <img src="copertina la liberazione dellanima versione ufficiale .png" alt="Copertina La Liberazione dell'Anima">
-    <div class="book-content">
-      <h3>La Liberazione dell’Anima</h3>
-      <p>Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.</p>
-      <a href="#">Scopri il libro</a>
-    </div>
-  </article>
+        <article class="book">
+          <img src="copertina la liberazione dellanima versione ufficiale .png" alt="Copertina La Liberazione dell'Anima">
+          <div class="book-content">
+            <h3>La Liberazione dell’Anima</h3>
+            <p>Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
 
-  <article class="book">
-    <img src="copertina ufficiale sei tu la cura .png" alt="Copertina Sei Tu la Cura">
-    <div class="book-content">
-      <h3>Sei Tu la Cura</h3>
-      <p>Un invito a ritrovare dentro di sé la forza per guarire, cambiare e rinascere.</p>
-      <a href="#">Scopri il libro</a>
-    </div>
-  </article>
+        <article class="book">
+          <img src="copertina ufficiale sei tu la cura .png" alt="Copertina Sei Tu la Cura">
+          <div class="book-content">
+            <h3>Sei Tu la Cura</h3>
+            <p>Un invito a ritrovare dentro di sé la forza per guarire, cambiare e rinascere.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
 
-  <article class="book">
-    <img src="copertina ufficiale la realtà virtuale.png" alt="Copertina Il Regno dell'Oscurità Virtuale">
-    <div class="book-content">
-      <h3>Il Regno dell’Oscurità Virtuale</h3>
-      <p>Una storia distopica sul controllo digitale, la libertà mentale e l’identità.</p>
-      <a href="#">Scopri il libro</a>
-    </div>
-  </article>
+        <article class="book">
+          <img src="copertina ufficiale la realtà virtuale.png" alt="Copertina Il Regno dell'Oscurità Virtuale">
+          <div class="book-content">
+            <h3>Il Regno dell’Oscurità Virtuale</h3>
+            <p>Una storia distopica sul controllo digitale, la libertà mentale e l’identità.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
 
-  <article class="book">
-    <img src="copertina lavventura delle particelle ufficiale .png" alt="Copertina L'Avventura delle Particelle">
-    <div class="book-content">
-      <h3>L’Avventura delle Particelle</h3>
-      <p>Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.</p>
-      <a href="#">Scopri il libro</a>
-    </div>
-  </article>
+        <article class="book">
+          <img src="copertina lavventura delle particelle ufficiale .png" alt="Copertina L'Avventura delle Particelle">
+          <div class="book-content">
+            <h3>L’Avventura delle Particelle</h3>
+            <p>Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
 
-  <article class="book">
-    <img src="copertina ufficiale libro.jpg" alt="Copertina La Teoria del Desiderio">
-    <div class="book-content">
-      <h3>La Teoria del Desiderio</h3>
-      <p>Una storia intensa tra desiderio, scelte, emozioni e verità nascoste.</p>
-      <a href="#">Scopri il libro</a>
-    </div>
-  </article>
+      </div>
+    </section>
 
-</div>
+    <section>
+      <div class="section-title">
+        <span>Narrativa</span>
+        <h2>La Teoria del Desiderio</h2>
+      </div>
+
+      <div class="books">
+        <article class="book">
+          <img src="copertina ufficiale libro.jpg" alt="Copertina La Teoria del Desiderio">
+          <div class="book-content">
+            <h3>La Teoria del Desiderio</h3>
+            <p>Una storia intensa tra desiderio, scelte, emozioni e verità nascoste.</p>
+            <a href="#">Scopri il libro</a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="autore" class="about">
@@ -361,9 +382,10 @@
         <h2>Giuseppe Lo Iacono</h2>
       </div>
       <p>
-        Sono un autore indipendente. Scrivo libri e riflessioni che uniscono narrativa,
-        spiritualità, società e nuove prospettive. Il mio obiettivo non è offrire risposte
-        definitive, ma aprire spazi di domanda, immaginazione e consapevolezza.
+        Giuseppe Lo Iacono esplora attraverso la narrativa e la riflessione temi legati
+        alla coscienza, alla libertà individuale, al desiderio e al rapporto tra individuo
+        e sistema. I suoi libri nascono dall’incontro tra osservazione della società,
+        ricerca interiore e immaginazione.
       </p>
     </section>
 
@@ -375,8 +397,8 @@
 
       <div class="blog-box">
         <article class="blog-card">
-          <h3>Cos’è il risveglio spirituale?</h3>
-          <p>Una riflessione semplice su coscienza, cambiamento e libertà interiore.</p>
+          <h3>Cos’è il risveglio interiore?</h3>
+          <p>Una riflessione semplice su coscienza, cambiamento e libertà personale.</p>
           <a href="blog.html">Leggi il blog</a>
         </article>
 
