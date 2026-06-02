@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community | Giuseppe Lo Iacono</title>
+<meta name="description" content="Entra in contatto con Giuseppe Lo Iacono: iscriviti agli aggiornamenti, fai una domanda e partecipa al progetto.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#eee;line-height:1.7}
+a{text-decoration:none;color:inherit}
+
+header{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.96)),radial-gradient(circle at top,#3b0008,#000);
+}
+
+header h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.05;margin-bottom:20px}
+header p{max-width:850px;margin:auto;color:#ccc;font-size:1.15rem}
+
+.container{max-width:1050px;margin:auto;padding:55px 20px}
+.back{display:inline-block;margin-bottom:35px;color:#c1121f;font-weight:bold}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-bottom:70px}
+
+.card{
+background:#111;
+border:1px solid rgba(255,255,255,.08);
+border-radius:24px;
+padding:32px;
+transition:.25s;
+}
+
+.card:hover{transform:translateY(-5px);border-color:rgba(193,18,31,.55)}
+
+.card h2{color:#fff;font-size:1.6rem;margin-bottom:15px}
+.card p{color:#ccc;margin-bottom:20px}
+
+.button{
+display:inline-block;
+background:#c1121f;
+color:white;
+padding:13px 22px;
+border-radius:30px;
+font-weight:bold;
+}
+
+.section{
+background:#111;
+border:1px solid rgba(255,255,255,.08);
+border-radius:26px;
+padding:38px;
+margin-bottom:45px;
+}
+
+.section h2{font-size:2rem;margin-bottom:15px}
+.section p{color:#ccc;font-size:1.08rem;margin-bottom:18px}
+
+.fake-form{
+display:grid;
+gap:15px;
+margin-top:20px;
+}
+
+.fake-form input,
+.fake-form textarea{
+width:100%;
+padding:14px;
+border-radius:12px;
+border:1px solid rgba(255,255,255,.15);
+background:#050505;
+color:#eee;
+font-size:1rem;
+}
+
+.fake-form textarea{min-height:140px}
+
+.notice{
+margin-top:18px;
+color:#aaa;
+font-size:.95rem;
+}
+
+.social a{color:#c1121f;font-weight:bold}
+
+footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px}
+
+@media(max-width:850px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Partecipa al progetto</h1>
+  <p>
+    Iscriviti agli aggiornamenti, invia una domanda o condividi una riflessione.
+    Questo spazio nasce per trasformare il sito in un luogo di dialogo, non solo in una vetrina.
+  </p>
+</header>
+
+<main class="container">
+
+<a class="back" href="index.html">← Torna al sito</a>
+
+<div class="grid">
+
+  <div class="card">
+    <h2>📚 Aggiornamenti</h2>
+    <p>Ricevi novità sui libri, nuovi articoli del blog e riflessioni in anteprima.</p>
+    <a class="button" href="#iscrizione">Iscriviti</a>
+  </div>
+
+  <div class="card">
+    <h2>❓ Domande</h2>
+    <p>Hai una domanda su un libro, un tema o un articolo? Puoi inviarla direttamente.</p>
+    <a class="button" href="#domande">Fai una domanda</a>
+  </div>
+
+  <div class="card">
+    <h2>💬 Riflessioni</h2>
+    <p>Condividi un pensiero, una critica o un’esperienza collegata ai temi del sito.</p>
+    <a class="button" href="#contatti">Partecipa</a>
+  </div>
+
+</div>
+
+<section id="iscrizione" class="section">
+  <h2>Iscriviti agli aggiornamenti</h2>
+  <p>
+    Lascia il tuo nome e la tua email per ricevere aggiornamenti sui nuovi articoli,
+    sui libri e sulle prossime iniziative.
+  </p>
+
+  <div class="fake-form">
+    <input type="text" placeholder="Il tuo nome">
+    <input type="email" placeholder="La tua email">
+    <a class="button" href="mailto:lgiuseppe38@yahoo.com?subject=Iscrizione%20agli%20aggiornamenti">Invia iscrizione</a>
+  </div>
+
+  <p class="notice">
+    Nota: per ora l’iscrizione avviene tramite email. In futuro potrà essere collegata a un servizio newsletter automatico.
+  </p>
+</section>
+
+<section id="domande" class="section">
+  <h2>Fai una domanda</h2>
+  <p>
+    Puoi inviare una domanda sui libri, sugli articoli del blog o sui temi trattati:
+    libertà, società, coscienza, tecnologia, desiderio, salute e trasformazione.
+  </p>
+
+  <div class="fake-form">
+    <input type="text" placeholder="Il tuo nome">
+    <textarea placeholder="Scrivi qui la tua domanda"></textarea>
+    <a class="button" href="mailto:lgiuseppe38@yahoo.com?subject=Domanda%20dal%20sito">Invia domanda</a>
+  </div>
+</section>
+
+<section id="contatti" class="section social">
+  <h2>Seguimi anche sui social</h2>
+  <p>
+    Puoi seguire il progetto anche attraverso i social:
+  </p>
+
+  <p>
+    📘 <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank">Facebook</a><br>
+    🎵 <a href="https://tiktok.com/@ilviandante1" target="_blank">TikTok</a><br>
+    📷 <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank">Instagram</a>
+  </p>
+</section>
+
+</main>
+
+<footer>
+© 2026 Giuseppe Lo Iacono
+</footer>
+
+</body>
+</html>
