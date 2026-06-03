@@ -94,6 +94,51 @@ nav a:hover {
     footer { text-align: center; background: #000; color: #777; padding: 28px; }
     @media (max-width: 900px) { .books { grid-template-columns: repeat(2, 1fr); } .blog-box { grid-template-columns: 1fr; } nav { position: static; transform: none; width: 100%; flex-direction: column; margin-bottom: 70px; } nav a { margin: 0 8px; } }
     @media (max-width: 600px) { .books { grid-template-columns: 1fr; } .about, .contact { padding: 28px; } }
+    @media (max-width: 600px) {
+  .books { grid-template-columns: 1fr; }
+  .about, .contact { padding: 28px; }
+}
+
+.stats-section {
+  padding: 20px 0 60px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #111;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 2.5rem;
+  color: #c1121f;
+  margin-bottom: 10px;
+}
+
+.stat-card span {
+  color: #cccccc;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 <body>
