@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -59,25 +60,6 @@ margin-bottom:45px;
 .section h2{font-size:2rem;margin-bottom:15px}
 .section p{color:#ccc;font-size:1.08rem;margin-bottom:18px}
 
-.fake-form{
-display:grid;
-gap:15px;
-margin-top:20px;
-}
-
-.fake-form input,
-.fake-form textarea{
-width:100%;
-padding:14px;
-border-radius:12px;
-border:1px solid rgba(255,255,255,.15);
-background:#050505;
-color:#eee;
-font-size:1rem;
-}
-
-.fake-form textarea{min-height:140px}
-
 .notice{
 margin-top:18px;
 color:#aaa;
@@ -90,6 +72,7 @@ footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px
 
 @media(max-width:850px){.grid{grid-template-columns:1fr}}
 </style>
+
 </head>
 
 <body>
@@ -111,57 +94,48 @@ footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px
   <div class="card">
     <h2>📚 Aggiornamenti</h2>
     <p>Ricevi novità sui libri, nuovi articoli del blog e riflessioni in anteprima.</p>
-    <a class="button" href="#iscrizione">Iscriviti</a>
+    <a class="button" href="#modulo">Iscriviti</a>
   </div>
 
   <div class="card">
     <h2>❓ Domande</h2>
     <p>Hai una domanda su un libro, un tema o un articolo? Puoi inviarla direttamente.</p>
-    <a class="button" href="#domande">Fai una domanda</a>
+    <a class="button" href="#modulo">Fai una domanda</a>
   </div>
 
   <div class="card">
     <h2>💬 Riflessioni</h2>
     <p>Condividi un pensiero, una critica o un’esperienza collegata ai temi del sito.</p>
-    <a class="button" href="#contatti">Partecipa</a>
+    <a class="button" href="#modulo">Partecipa</a>
   </div>
 
 </div>
 
-<section id="iscrizione" class="section">
-  <h2>Iscriviti agli aggiornamenti</h2>
+<section id="modulo" class="section">
+  <h2>Iscriviti, fai una domanda o condividi una riflessione</h2>
+
   <p>
-    Lascia il tuo nome e la tua email per ricevere aggiornamenti sui nuovi articoli,
-    sui libri e sulle prossime iniziative.
+    Usa il modulo ufficiale per lasciare il tuo nome, la tua email, una domanda
+    o una riflessione collegata ai libri, agli articoli e ai temi del sito.
   </p>
 
-  <div class="fake-form">
-    <input type="text" placeholder="Il tuo nome">
-    <input type="email" placeholder="La tua email">
-   <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfjzLlgm7_tK4iwpUonGpSG2zm8_zcwlbLWzkRR8UMyAZQvMw/viewform" target="_blank">Apri il modulo</a>
-  </div>
-
-<p class="notice">
-  Il modulo si apre in una nuova scheda e permette di inviare iscrizioni, domande o riflessioni.
-</p>
-</section>
-
-<section id="domande" class="section">
-<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfjzLlgm7_tK4iwpUonGpSG2zm8_zcwlbLWzkRR8UMyAZQvMw/viewform" target="_blank">Apri il modulo</a>
   <p>
-    Puoi inviare una domanda sui libri, sugli articoli del blog o sui temi trattati:
-    libertà, società, coscienza, tecnologia, desiderio, salute e trasformazione.
+    Puoi scrivere su libertà, società, coscienza, tecnologia, desiderio,
+    trasformazione personale, ECHO o sugli altri libri di Giuseppe Lo Iacono.
   </p>
 
-  <div class="fake-form">
-    <input type="text" placeholder="Il tuo nome">
-    <textarea placeholder="Scrivi qui la tua domanda"></textarea>
-    <a class="button" href="mailto:lgiuseppe38@yahoo.com?subject=Domanda%20dal%20sito">Invia domanda</a>
-  </div>
+  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfjzLlgm7_tK4iwpUonGpSG2zm8_zcwlbLWzkRR8UMyAZQvMw/viewform" target="_blank">
+    Apri il modulo ufficiale
+  </a>
+
+  <p class="notice">
+    Il modulo si apre in una nuova scheda. Dopo l'invio, la risposta verrà registrata direttamente.
+  </p>
 </section>
 
-<section id="contatti" class="section social">
+<section class="section social">
   <h2>Seguimi anche sui social</h2>
+
   <p>
     Puoi seguire il progetto anche attraverso i social:
   </p>
