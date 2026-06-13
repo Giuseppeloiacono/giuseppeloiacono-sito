@@ -153,48 +153,95 @@ nav a:hover {
   </style>
 </head>
 <body>
- <header>
-  <nav>
-    <div class="logo">Giuseppe Lo Iacono</div>
-    <div>
+ <header style="min-height:90vh;padding:35px 20px 80px;">
+
+  <nav style="
+    width:min(1150px, calc(100% - 40px));
+    margin:0 auto 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:30px;
+  ">
+    <div style="
+      font-size:1.6rem;
+      font-weight:bold;
+      letter-spacing:1px;
+      color:#fff;
+      line-height:1.1;
+    ">
+      Giuseppe<br>Lo Iacono
+    </div>
+
+    <div style="
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      font-size:.95rem;
+      font-weight:bold;
+    ">
       <a href="blog.html">Riflessioni</a>
       <a href="#libri">Libri</a>
       <a href="echo.html">ECHO</a>
       <a href="chi-sono.html">Chi sono</a>
       <a href="community.html">Community</a>
-      <a href="#contatti">Contatti</a>
     </div>
   </nav>
 
-  <div class="hero" style="
-    max-width:980px;
+  <div style="
+    width:min(1150px, calc(100% - 40px));
     margin:0 auto;
-    text-align:center;
-    padding:40px 20px 10px;
+    display:grid;
+    grid-template-columns:1fr 420px;
+    gap:70px;
+    align-items:center;
   ">
 
-    <div class="tag">Autore indipendente</div>
-
-    <h1>
-      Storie. Domande. Esseri umani.
-    </h1>
-
-    <p style="max-width:760px;margin:0 auto 18px;">
-      Scrivo libri e riflessioni sulla natura umana, sulla libertà,
-      sul desiderio, sulla tecnologia e su ciò che spesso rimane invisibile.
-    </p>
-
-    <p style="max-width:680px;margin:0 auto 34px;color:#ffffff;font-style:italic;">
-      "Non cerco risposte facili. Cerco domande che continuano a lavorare dentro."
-    </p>
-
     <div>
-      <a class="btn" href="blog.html">Leggi le riflessioni</a>
-      <a class="btn outline" href="#libri">Esplora i libri</a>
-      <a class="btn outline" href="community.html">Partecipa</a>
+      <div class="tag">Autore indipendente</div>
+
+      <h1 style="
+        font-size:clamp(3.4rem,8vw,7rem);
+        line-height:.95;
+        margin-bottom:35px;
+        letter-spacing:-2px;
+      ">
+        Storie.<br>
+        Domande.<br>
+        Esseri umani.
+      </h1>
+
+      <p style="
+        max-width:650px;
+        font-size:1.25rem;
+        color:#ccc;
+        margin-bottom:34px;
+      ">
+        Libri, riflessioni e romanzi sulla natura umana, sulla libertà,
+        sul desiderio, sulla tecnologia e su ciò che spesso rimane invisibile.
+      </p>
+
+      <div>
+        <a class="btn" href="blog.html">Entra nelle riflessioni</a>
+        <a class="btn outline" href="echo.html">Scopri ECHO</a>
+      </div>
+    </div>
+
+    <div style="text-align:right;">
+      <img src="io.jpg"
+           alt="Giuseppe Lo Iacono"
+           style="
+           max-width:420px;
+           width:100%;
+           border-radius:8px;
+           box-shadow:0 0 55px rgba(193,18,31,.35);
+           border:1px solid rgba(255,255,255,.12);
+           ">
     </div>
 
   </div>
+
 </header>
   <main>
     <section class="stats-section">
