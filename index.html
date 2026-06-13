@@ -2,745 +2,691 @@
 <html lang="it">
 <head>
   <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZWXQ4MQWM"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZWXQ4MQWM"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QZWXQ4MQWM');
+  </script>
 
-gtag('config', 'G-QZWXQ4MQWM');
-</script>
   <meta name="google-site-verification" content="asLTefzTvt8wuUHEjfitOZeD4Xc5Qb8f6eYe8JS1WxM" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Giuseppe Lo Iacono | Libri e riflessioni</title>
   <meta name="description" content="Sito ufficiale di Giuseppe Lo Iacono. Libri e riflessioni su coscienza, libertà, desiderio, tecnologia e trasformazione.">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
-<meta property="og:description" content="Libri, riflessioni e domande sulla natura umana, la società, la libertà e la tecnologia.">
-<meta property="og:url" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/">
-<meta property="og:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
-<meta name="twitter:description" content="Libri, riflessioni e domande sulla natura umana, la società, la libertà e la tecnologia.">
-<meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
+  <meta property="og:description" content="Libri, riflessioni e domande sulla natura umana, la società, la libertà e la tecnologia.">
+  <meta property="og:url" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/">
+  <meta property="og:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
+  <meta name="twitter:description" content="Libri, riflessioni e domande sulla natura umana, la società, la libertà e la tecnologia.">
+  <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: Arial, Helvetica, sans-serif; background: #050505; color: #eeeeee; line-height: 1.7; }
-    a { text-decoration: none; color: inherit; }
-    img { width: 100%; display: block; }
-  header {
-  min-height: 85vh;
-  padding: 30px 20px 70px;
-  background: linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.96)), radial-gradient(circle at top, #2a0004, #000);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-nav {
-  width: min(1100px, calc(100% - 40px));
-  margin: 0 auto 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  text-align: center;
-}
-
-.logo {
-  color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-nav a {
-  margin: 0 7px;
-  font-weight: bold;
-  color: #eeeeee;
-  font-size: 0.92rem;
-  white-space: nowrap;
-}
-
-nav a:hover {
-  color: #c1121f;
-}
-    .hero { max-width: 920px; margin: 0 auto; }
-    .tag { color: #c1121f; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 18px; font-size: .85rem; font-weight: bold; }
-    .hero h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.05; color: #ffffff; margin-bottom: 24px; }
-    .hero p { max-width: 740px; margin: 0 auto 32px; color: #cccccc; font-size: 1.2rem; }
-    .btn { display: inline-block; padding: 13px 24px; border-radius: 999px; background: #c1121f; color: #fff; font-weight: bold; margin: 6px; transition: transform .25s ease, background .25s ease; }
-    .btn:hover { transform: translateY(-2px); background: #e01b2b; }
-    .btn.outline { background: transparent; border: 1px solid #c1121f; color: #ffffff; }
-    main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 70px 0; }
-    section { margin-bottom: 90px; }
-    .section-title { margin-bottom: 35px; }
-    .section-title span { color: #c1121f; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; font-weight: bold; }
-    h2 { font-size: clamp(2rem, 4vw, 3rem); color: #ffffff; line-height: 1.15; margin-top: 8px; }
-    .intro { max-width: 850px; text-align: center; margin-left: auto; margin-right: auto; }
-    .intro p { color: #cccccc; font-size: 1.15rem; }
-    .books { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-    .book { background: #141414; border: 1px solid rgba(255,255,255,.08); border-radius: 18px; overflow: hidden; transition: transform .25s ease, border-color .25s ease; }
-    .book:hover { transform: translateY(-6px); border-color: rgba(193,18,31,.65); }
-    .book img { aspect-ratio: 2 / 3; object-fit: cover; background: #222; }
-    .book-content { padding: 22px; }
-    .book h3 { color: #ffffff; margin-bottom: 10px; font-size: 1.25rem; }
-    .book p { color: #c8c8c8; margin-bottom: 16px; }
-    .book a { color: #c1121f; font-weight: bold; }
-    .about, .contact { background: #111111; border: 1px solid rgba(255,255,255,.08); border-radius: 24px; padding: 42px; }
-    .about p, .contact p { color: #cccccc; font-size: 1.1rem; max-width: 850px; }
-    .blog-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .blog-card { background: #141414; border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 28px; }
-    .blog-card h3 { color: #ffffff; margin-bottom: 12px; }
-    .blog-card p { color: #c8c8c8; margin-bottom: 16px; }
-    .blog-card a { color: #c1121f; font-weight: bold; }
-    .social-links a { color: #ffffff; font-weight: bold; }
-    .social-links a:hover { color: #c1121f; }
-    footer { text-align: center; background: #000; color: #777; padding: 28px; }
-    @media (max-width: 900px) { .books { grid-template-columns: repeat(2, 1fr); } .blog-box { grid-template-columns: 1fr; } nav { position: static; transform: none; width: 100%; flex-direction: column; margin-bottom: 70px; } nav a { margin: 0 8px; } }
-    @media (max-width: 600px) { .books { grid-template-columns: 1fr; } .about, .contact { padding: 28px; } }
-    @media (max-width: 600px) {
-  .books { grid-template-columns: 1fr; }
-  .about, .contact { padding: 28px; }
-}
-
-.stats-section {
-  padding: 20px 0 60px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.stat-card {
-  background: #111;
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius: 20px;
-  padding: 30px;
-  text-align: center;
-}
-
-.stat-card strong {
-  display: block;
-  font-size: 2.5rem;
-  color: #c1121f;
-  margin-bottom: 10px;
-}
-
-.stat-card span {
-  color: #cccccc;
-}
-
-@media (max-width: 900px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-}
-  </style>
-</head>
-<body>
-<header style="min-height:90vh;padding:35px 20px 90px;">
-
-  <nav style="
-    width:min(1180px, calc(100% - 40px));
-    margin:0 auto 80px;
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:40px;
-  ">
-    <div style="
-      font-size:2rem;
-      font-weight:800;
-      letter-spacing:-1px;
-      line-height:.95;
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#f6f3ed;
       color:#222;
-    ">
-      Giuseppe<br>Lo Iacono
-    </div>
+      line-height:1.75;
+    }
+    a{text-decoration:none;color:inherit}
+    img{width:100%;display:block}
 
-    <div style="
+    :root{
+      --bg:#f6f3ed;
+      --paper:#fffaf3;
+      --white:#ffffff;
+      --text:#222222;
+      --muted:#5d5a55;
+      --line:rgba(0,0,0,.10);
+      --red:#8b1e24;
+      --red-dark:#6f171c;
+    }
+
+    header{
+      min-height:88vh;
+      padding:34px 22px 80px;
+      background:
+        linear-gradient(90deg, rgba(246,243,237,.98), rgba(246,243,237,.88)),
+        radial-gradient(circle at top right, rgba(139,30,36,.12), transparent 38%);
+    }
+
+    nav{
+      width:min(1180px, calc(100% - 40px));
+      margin:0 auto 75px;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:34px;
+    }
+
+    .logo{
+      color:var(--text);
+      font-size:clamp(1.8rem,4vw,3.1rem);
+      font-weight:800;
+      line-height:.92;
+      letter-spacing:-1.5px;
+    }
+
+    .nav-links{
       display:flex;
       gap:22px;
       flex-wrap:wrap;
       justify-content:flex-end;
-      font-size:.98rem;
+      padding-top:8px;
+    }
+
+    nav a{
+      color:var(--text);
+      font-weight:700;
+      font-size:.96rem;
+      white-space:nowrap;
+    }
+
+    nav a:hover{color:var(--red)}
+
+    .hero{
+      width:min(1180px, calc(100% - 40px));
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:80px;
+      align-items:center;
+    }
+
+    .tag{
+      color:var(--red);
+      text-transform:uppercase;
+      letter-spacing:3px;
+      margin-bottom:18px;
+      font-size:.82rem;
+      font-weight:800;
+    }
+
+    .hero h1{
+      font-size:clamp(3.2rem,8vw,7.4rem);
+      line-height:.9;
+      letter-spacing:-4px;
+      color:var(--text);
+      margin-bottom:34px;
+    }
+
+    .hero p{
+      max-width:650px;
+      color:var(--muted);
+      font-size:1.25rem;
+      margin-bottom:34px;
+    }
+
+    .hero-photo img{
+      max-width:450px;
+      margin-left:auto;
+      border-radius:6px;
+      box-shadow:0 22px 60px rgba(0,0,0,.16);
+      border:1px solid var(--line);
+      background:var(--white);
+    }
+
+    .btn{
+      display:inline-block;
+      padding:13px 24px;
+      border-radius:999px;
+      background:var(--red);
+      color:#fff;
       font-weight:bold;
-      padding-top:4px;
-    ">
+      margin:6px 8px 6px 0;
+      transition:transform .25s ease,background .25s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      background:var(--red-dark);
+    }
+
+    .btn.outline{
+      background:transparent;
+      border:1px solid var(--red);
+      color:var(--red);
+    }
+
+    main{
+      width:min(1120px, calc(100% - 40px));
+      margin:0 auto;
+      padding:70px 0;
+    }
+
+    section{margin-bottom:90px}
+
+    .section-title{margin-bottom:30px}
+    .section-title span{
+      color:var(--red);
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:.8rem;
+      font-weight:800;
+    }
+    h2{
+      font-size:clamp(2rem,4vw,3.2rem);
+      color:var(--text);
+      line-height:1.12;
+      margin-top:8px;
+    }
+
+    h3{color:var(--text)}
+    p{color:var(--muted)}
+
+    .panel{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:42px;
+    }
+
+    .featured{
+      display:grid;
+      grid-template-columns:300px 1fr;
+      gap:42px;
+      align-items:center;
+    }
+
+    .featured img{
+      border-radius:8px;
+      border:1px solid var(--line);
+      box-shadow:0 18px 45px rgba(0,0,0,.14);
+    }
+
+    .featured p{font-size:1.08rem;margin-bottom:16px}
+    .featured .quote{
+      font-style:italic;
+      color:var(--text);
+      border-left:3px solid var(--red);
+      padding-left:18px;
+      margin:22px 0;
+    }
+
+    .books,
+    .blog-box{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:26px;
+    }
+
+    .book,
+    .blog-card{
+      background:var(--white);
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+    }
+
+    .book:hover,
+    .blog-card:hover{
+      transform:translateY(-5px);
+      border-color:rgba(139,30,36,.35);
+      box-shadow:0 18px 35px rgba(0,0,0,.08);
+    }
+
+    .book img{
+      aspect-ratio:2/3;
+      object-fit:cover;
+      background:#eee6dc;
+    }
+
+    .book-content,
+    .blog-card{
+      padding:24px;
+    }
+
+    .book h3,
+    .blog-card h3{
+      font-size:1.25rem;
+      margin-bottom:12px;
+    }
+
+    .book p,
+    .blog-card p{
+      margin-bottom:15px;
+      color:var(--muted);
+    }
+
+    .book a,
+    .blog-card a,
+    .social-links a{
+      color:var(--red);
+      font-weight:bold;
+    }
+
+    .intro{
+      max-width:850px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+    }
+
+    .intro p{
+      font-size:1.15rem;
+    }
+
+    .author-grid{
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:36px;
+      align-items:center;
+    }
+
+    .author-grid img{
+      border-radius:10px;
+      border:1px solid var(--line);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+    }
+
+    .contact{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:42px;
+    }
+
+    .amazon-box{
+      margin-top:30px;
+      padding:25px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:14px;
+    }
+
+    footer{
+      text-align:center;
+      background:#eee6dc;
+      color:#555;
+      padding:30px;
+    }
+
+    footer p{color:#555}
+
+    @media(max-width:900px){
+      nav{
+        flex-direction:column;
+        align-items:flex-start;
+        margin-bottom:50px;
+      }
+      .nav-links{
+        justify-content:flex-start;
+        gap:16px;
+      }
+      .hero,
+      .featured,
+      .author-grid{
+        grid-template-columns:1fr;
+        gap:34px;
+      }
+      .hero-photo img{
+        margin:0;
+        max-width:360px;
+      }
+      .books,
+      .blog-box{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:600px){
+      header{padding:26px 18px 60px}
+      main{width:min(100% - 28px,1120px);padding:52px 0}
+      .hero h1{letter-spacing:-2px}
+      .hero p{font-size:1.08rem}
+      .books,
+      .blog-box{
+        grid-template-columns:1fr;
+      }
+      .panel,
+      .contact{
+        padding:28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Giuseppe<br>Lo Iacono</div>
+
+    <div class="nav-links">
       <a href="blog.html">Riflessioni</a>
       <a href="#libri">Libri</a>
       <a href="echo.html">ECHO</a>
       <a href="chi-sono.html">Chi sono</a>
       <a href="community.html">Community</a>
+      <a href="#contatti">Contatti</a>
     </div>
   </nav>
 
-  <div style="
-    width:min(1180px, calc(100% - 40px));
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:80px;
-    align-items:center;
-  ">
-
+  <div class="hero">
     <div>
       <div class="tag">Libri, riflessioni e domande</div>
 
-      <h1 style="
-        font-size:clamp(3.4rem,8vw,7rem);
-        line-height:.95;
-        margin-bottom:34px;
-        letter-spacing:-3px;
-        color:#222;
-      ">
-        Chi siamo<br>
-        quando le certezze<br>
-        non bastano più?
+      <h1>
+        Osservo<br>
+        gli esseri<br>
+        umani.
       </h1>
 
-      <p style="
-        max-width:680px;
-        font-size:1.25rem;
-        color:#444;
-        margin-bottom:36px;
-      ">
-        Uno spazio dedicato alla natura umana, alla libertà,
-        al desiderio, alla tecnologia e a ciò che spesso rimane invisibile.
+      <p>
+        Scrivo libri e riflessioni sulla natura umana, sulla libertà,
+        sul desiderio, sulla tecnologia e su ciò che spesso rimane invisibile.
       </p>
 
-      <a class="btn" href="blog.html">Inizia da qui</a>
+      <a class="btn" href="blog.html">Leggi le riflessioni</a>
+      <a class="btn outline" href="#libri">Esplora i libri</a>
     </div>
 
-    <div style="text-align:right;">
-      <img src="io.jpg"
-           alt="Giuseppe Lo Iacono"
-           style="
-           max-width:430px;
-           width:100%;
-           border-radius:4px;
-           box-shadow:0 20px 60px rgba(0,0,0,.18);
-           border:1px solid rgba(0,0,0,.08);
-           ">
+    <div class="hero-photo">
+      <img src="io.jpg" alt="Giuseppe Lo Iacono">
     </div>
-
   </div>
-
 </header>
-  <main>
-    <section class="stats-section">
-  <div class="stats-grid">
 
-    <div class="stat-card">
-      <strong>25+</strong>
-      <span>Anni di volontariato</span>
+<main>
+
+  <section class="panel">
+    <div class="section-title">
+      <span>In evidenza</span>
+      <h2>Gli esseri umani</h2>
     </div>
 
-    <div class="stat-card">
-      <strong>7</strong>
-      <span>Libri pubblicati</span>
-    </div>
-
-    <div class="stat-card">
-      <strong>100+</strong>
-      <span>Esperienze sul territorio</span>
-    </div>
-
-    <div class="stat-card">
-      <strong>1</strong>
-      <span>Community in crescita</span>
-    </div>
-
-  </div>
-</section>
-    <section class="intro">
-      <div class="section-title">
-        <span>Perché scrivo</span>
-        <h2>Alcune domande cambiano il modo in cui guardiamo il mondo.</h2>
+    <div class="featured">
+      <div>
+        <img src="copertina-gli-esseri-umani.png" alt="Copertina Gli esseri umani - Ciò che rimane">
       </div>
-      <p>Scrivo per chi sente che la realtà è più complessa di come viene raccontata. I miei libri esplorano coscienza, libertà, desiderio, tecnologia e trasformazione interiore.</p>
-    </section>
-    <section class="about">
 
-  <div class="section-title">
-    <span>Community</span>
-    <h2>Partecipa al progetto</h2>
-  </div>
-
-  <p>
-    Questo sito non è soltanto una raccolta di libri.
-    È uno spazio aperto a chi desidera condividere riflessioni,
-    fare domande e partecipare a un dialogo sui temi trattati negli articoli e nei libri.
-  </p>
-
-  <p>
-    Puoi entrare nella Community e inviare direttamente i tuoi messaggi attraverso il modulo dedicato.
-  </p>
-
-  <a class="btn" href="community.html">
-    Entra nella Community
-  </a>
-
-</section>
-    <section style="
-background:#111;
-border:1px solid rgba(255,255,255,.08);
-border-radius:25px;
-padding:40px;
-margin-bottom:80px;
-">
-
-  <div class="section-title">
-    <span>Libro in evidenza</span>
-    <h2>Da dove iniziare?</h2>
-  </div>
-
-  <div style="
-  display:grid;
-  grid-template-columns:280px 1fr;
-  gap:35px;
-  align-items:center;
-  ">
-
-    <div>
-      <img src="copertina ufficiale libro.jpg"
-      alt="La Teoria del Desiderio"
-      style="
-      width:100%;
-      border-radius:18px;
-      box-shadow:0 0 25px rgba(0,0,0,.4);
-      ">
-    </div>
-
-    <div>
-
-    <h3 style="font-size:2rem;margin-bottom:15px;">
-     Il libro consigliato per iniziare
-     </h3>
-
-      <p style="font-size:1.1rem;">
-      Se stai scoprendo per la prima volta i miei libri,
-      questo è probabilmente il punto di partenza migliore.
-      </p>
-
-      <p>
-      Un thriller psicologico intenso dove attrazione,
-      controllo e desiderio si trasformano in una dinamica
-      capace di cambiare tutto.
-      </p>
-
-      <p style="
-      font-style:italic;
-      border-left:3px solid #c1121f;
-      padding-left:15px;
-      margin:25px 0;
-      ">
-      ★★★★★
-      <br>
-      “Bellissimo, letto tutto d’un fiato.
-      Rimarrà impresso nella memoria.”
-      <br>
-      — Luca C.
-      </p>
-
-      <a class="btn" href="teoria-del-desiderio.html">
-      Scopri il libro
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-    <section class="about">
-  <div class="section-title">
-    <span>Orientamento</span>
-    <h2>Da dove iniziare?</h2>
-  </div>
-
-  <p>
-    Se arrivi qui dopo una riflessione, un video o una domanda rimasta aperta,
-    puoi scegliere il percorso più vicino a ciò che stai cercando.
-  </p>
-
-  <div class="books">
-
-    <article class="book">
-      <div class="book-content">
-        <h3>Società, controllo e tecnologia</h3>
-        <p>
-          Per chi vuole esplorare il rapporto tra libertà individuale,
-          sistemi digitali e manipolazione della realtà.
+      <div>
+        <p style="color:#8b1e24;font-weight:bold;text-transform:uppercase;letter-spacing:1px;">
+          Progetto in lavorazione
         </p>
-        <a href="oscurita-virtuale.html">Inizia da Il Regno dell’Oscurità Virtuale</a>
-      </div>
-    </article>
 
-    <article class="book">
-      <div class="book-content">
-        <h3>Natura umana e domande scomode</h3>
-        <p>
-          Per chi cerca riflessioni su coscienza, società, convinzioni,
-          potere e libertà di pensiero.
+        <h3 style="font-size:2rem;margin-bottom:10px;">Gli esseri umani</h3>
+        <p><strong>Ciò che rimane</strong></p>
+
+        <p class="quote">
+          "Il 2021 è stato solo lo specchio."
         </p>
-        <a href="tuttologo-narrante.html">Inizia da Il Tuttologo Narrante</a>
-      </div>
-    </article>
 
-    <article class="book">
-      <div class="book-content">
-        <h3>Desiderio, attrazione e psicologia</h3>
         <p>
-          Per chi ama una narrativa più intensa, emotiva e psicologica,
-          dove il desiderio diventa una forza capace di cambiare tutto.
+          Un libro sulla natura umana, sulle paure, sulle convinzioni,
+          sull'appartenenza e sul bisogno di avere ragione.
         </p>
-        <a href="teoria-del-desiderio.html">Inizia da La Teoria del Desiderio</a>
-      </div>
-    </article>
 
-    <article class="book">
-      <div class="book-content">
-        <h3>Risveglio e trasformazione interiore</h3>
         <p>
-          Per chi sente il bisogno di fermarsi, guardarsi dentro
-          e ritrovare un rapporto più autentico con sé stesso.
+          <strong>Chi siamo davvero quando nessuna delle nostre certezze ci protegge più?</strong>
         </p>
-        <a href="liberazione-anima.html">Inizia da La Liberazione dell’Anima</a>
+
+        <a class="btn" href="community.html">Voglio ricevere aggiornamenti</a>
       </div>
-    </article>
+    </div>
+  </section>
 
-  </div>
-</section>
-    <section class="about">
-
-  <div class="section-title">
-    <span>Prossimamente</span>
-    <h2>Gli esseri umani</h2>
-  </div>
-
-  <div class="books">
-<article class="book">
-
-  <img src="copertina-gli-esseri-umani.png" alt="Gli esseri umani - Ciò che rimane">
-
-  <div class="book-content">
-
-    <p style="color:#c1121f;font-weight:bold;">
-      PROGETTO IN LAVORAZIONE
-    </p>
-
-    <h3>Gli esseri umani</h3>
-
-    <p><strong>Ciò che rimane</strong></p>
-
-    <p style="font-style:italic;">
-      "Il 2021 è stato solo lo specchio."
-    </p>
-
+  <section class="intro">
+    <div class="section-title">
+      <span>Perché scrivo</span>
+      <h2>Alcune domande cambiano il modo in cui guardiamo il mondo.</h2>
+    </div>
     <p>
-      Un nuovo libro di Giuseppe Lo Iacono.
+      Scrivo per chi sente che la realtà è più complessa di come viene raccontata.
+      I miei libri esplorano coscienza, libertà, desiderio, tecnologia e trasformazione interiore.
     </p>
+  </section>
 
-    <p>
-      Non parla di politica.
-    </p>
+  <section>
+    <div class="section-title">
+      <span>Blog</span>
+      <h2>Ultime riflessioni</h2>
+    </div>
 
-    <p>
-      Non parla di schieramenti.
-    </p>
+    <div class="blog-box">
+      <article class="blog-card">
+        <h3>La paura di essere invisibili</h3>
+        <p>Una riflessione sul bisogno di essere visti, riconosciuti e ricordati.</p>
+        <a href="la-paura-di-essere-invisibili.html">Leggi l'articolo</a>
+      </article>
 
-    <p>
-      Non parla di chi aveva ragione e di chi aveva torto.
-    </p>
+      <article class="blog-card">
+        <h3>Perché le persone difendono idee che non comprendono?</h3>
+        <p>Una riflessione sulla natura umana, l'identità e il bisogno di avere ragione.</p>
+        <a href="perche-le-persone-difendono-idee-che-non-comprendono.html">Leggi l'articolo</a>
+      </article>
 
-    <p>
-      Parla degli esseri umani.
-    </p>
+      <article class="blog-card">
+        <h3>Tecnologia e libertà mentale</h3>
+        <p>Una riflessione su attenzione, algoritmi, dipendenza digitale e libertà interiore.</p>
+        <a href="tecnologia-liberta-mentale.html">Leggi l'articolo</a>
+      </article>
+    </div>
 
-    <p>
-      Delle loro paure.
-    </p>
+    <div style="text-align:center;margin-top:35px;">
+      <a class="btn" href="blog.html">Vai al Blog</a>
+    </div>
+  </section>
 
-    <p>
-      Delle loro convinzioni.
-    </p>
+  <section class="panel">
+    <div class="section-title">
+      <span>Progetto narrativo</span>
+      <h2>Il Cuore di ECHO</h2>
+    </div>
 
-    <p>
-      Del bisogno di appartenere.
-    </p>
-
-    <p>
-      Del bisogno di avere ragione.
-    </p>
-
-    <p>
-      Della straordinaria capacità di amare.
-    </p>
-
-    <p>
-      E della loro altrettanto straordinaria capacità di dividersi.
-    </p>
-
-    <p>
-      Questo libro nasce da una domanda semplice e inquieta:
-    </p>
-
-    <p>
-      <strong>
-      Chi siamo davvero quando nessuna delle nostre certezze ci protegge più?
-      </strong>
-    </p>
-
-    <p style="font-style:italic;color:#ffffff;">
-      "Non so se ho trovato delle risposte, ma ci sono domande che non riesco più a ignorare."
-    </p>
-
-    <p style="color:#cccccc;">
-    </p>
-
-    <p style="color:#c1121f;font-weight:bold;">
-      Stato del progetto: in costruzione
-    </p>
-
-    <a href="community.html">
-      Voglio ricevere aggiornamenti
-    </a>
-
-  </div>
-
-</article>
-
-
-  </div>
-
-</section>
-
-    <section id="libri">
-      <div class="section-title"><span>Collana</span><h2>Oltre il Sistema</h2></div>
-      <div class="books">
-  <article class="book">
-  <img src="copertina ufficiale libro distopico .png" alt="Copertina Il Cuore di ECHO">
-
-  <div class="book-content">
-
-    <p style="color:#ff4d4d;font-weight:bold;letter-spacing:1px;margin-bottom:10px;">
-      PROSSIMAMENTE
-    </p>
-
-    <h3>Il Cuore di ECHO</h3>
-
-    <p>
-      Nora Vassalli lavora per ECHO, il sistema che osserva il mondo e ne guida ogni scelta.
-      Un giorno però nessuno sembra più vederla.
-    </p>
-
-    <p>
-      Cancellata dalla percezione degli altri, scoprirà una verità che il sistema
-      ha sempre nascosto.
-    </p>
-
-    <p style="font-style:italic;color:#ddd;">
-      "Quando il mondo smette di vederti,
-      la domanda non è chi sei.
-      La domanda è: chi ha deciso che non devi più esistere?"
-    </p>
-
-    <a href="echo.html">Leggi la presentazione</a>
-
-  </div>
-</article>
-        <article class="book"><img src="copertina il tuttologo narrante ufficiale .png" alt="Copertina Il Tuttologo Narrante"><div class="book-content"><h3>Il Tuttologo Narrante</h3><p>Un viaggio oltre il sistema, tra potere, coscienza e libertà di pensiero.</p><a href="tuttologo-narrante.html">Scopri il libro</a></div></article>
-        <article class="book"><img src="copertina la liberazione dellanima versione ufficiale .png" alt="Copertina La Liberazione dell'Anima"><div class="book-content"><h3>La Liberazione dell’Anima</h3><p>Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.</p><a href="liberazione-anima.html">Scopri il libro</a></div></article>
-        <article class="book"><img src="copertina ufficiale sei tu la cura .png" alt="Copertina Sei Tu la Cura"><div class="book-content"><h3>Sei Tu la Cura</h3><p>Un invito a ritrovare dentro di sé la forza per guarire, cambiare e rinascere.</p><a href="sei-tu-la-cura.html">Scopri il libro</a></div></article>
-        <article class="book"><img src="copertina ufficiale la realtà virtuale.png" alt="Copertina Il Regno dell'Oscurità Virtuale"><div class="book-content"><h3>Il Regno dell’Oscurità Virtuale</h3><p>Una storia distopica sul controllo digitale, la libertà mentale e l’identità.</p><a href="oscurita-virtuale.html">Scopri il libro</a></div></article>
-        <article class="book"><img src="copertina lavventura delle particelle ufficiale .png" alt="Copertina L'Avventura delle Particelle"><div class="book-content"><h3>L’Avventura delle Particelle</h3><p>Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.</p><a href="avventura-particelle.html">Scopri il libro</a></div>
-</article>
+    <div class="featured">
+      <div>
+        <img src="copertina ufficiale libro distopico .png" alt="Copertina Il Cuore di ECHO">
       </div>
-    </section>
-    <section>
-      <div class="section-title"><span>Narrativa</span><h2>La Teoria del Desiderio</h2></div>
-      <div class="books">
-        <article class="book"><img src="copertina ufficiale libro.jpg" alt="Copertina La Teoria del Desiderio"><div class="book-content"><h3>La Teoria del Desiderio</h3><p>Una storia intensa tra desiderio, scelte, emozioni e verità nascoste.</p><a href="teoria-del-desiderio.html">Scopri il libro</a></div></article>
+
+      <div>
+        <p style="color:#8b1e24;font-weight:bold;text-transform:uppercase;letter-spacing:1px;">
+          Prossimamente
+        </p>
+
+        <p>
+          Nora Vassalli lavora per ECHO, il sistema che osserva il mondo e ne guida ogni scelta.
+          Un giorno però nessuno sembra più vederla.
+        </p>
+
+        <p class="quote">
+          "Quando il mondo smette di vederti, la domanda non è chi sei.
+          La domanda è: chi ha deciso che non devi più esistere?"
+        </p>
+
+        <a class="btn" href="echo.html">Leggi la presentazione</a>
+        <a class="btn outline" href="https://www.wattpad.com/story/412308189-il-cuore-di-echo" target="_blank">Leggi su Wattpad</a>
       </div>
-    </section>
- <section id="autore" class="about">
- <section class="about">
-  <div class="section-title">
-    <span>Community</span>
-    <h2>Partecipa al progetto</h2>
-  </div>
+    </div>
+  </section>
 
-  <p>
-    Questo sito non è solo una vetrina di libri. È uno spazio aperto a chi vuole
-    leggere, riflettere, fare domande e condividere il proprio punto di vista.
-  </p>
+  <section id="libri">
+    <div class="section-title">
+      <span>Libri</span>
+      <h2>Oltre il Sistema</h2>
+    </div>
 
-  <p>
-    Puoi iscriverti agli aggiornamenti, inviare una domanda, seguire i nuovi articoli
-    del blog e partecipare a un percorso fatto di libri, esperienze reali e riflessioni.
-  </p>
+    <div class="books">
+      <article class="book">
+        <img src="copertina il tuttologo narrante ufficiale .png" alt="Copertina Il Tuttologo Narrante">
+        <div class="book-content">
+          <h3>Il Tuttologo Narrante</h3>
+          <p>Un viaggio oltre il sistema, tra potere, coscienza e libertà di pensiero.</p>
+          <a href="tuttologo-narrante.html">Scopri il libro</a>
+        </div>
+      </article>
 
-  <a class="btn" href="community.html">
-    Entra nella Community
-  </a>
-</section>
+      <article class="book">
+        <img src="copertina la liberazione dellanima versione ufficiale .png" alt="Copertina La Liberazione dell'Anima">
+        <div class="book-content">
+          <h3>La Liberazione dell’Anima</h3>
+          <p>Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.</p>
+          <a href="liberazione-anima.html">Scopri il libro</a>
+        </div>
+      </article>
 
-  <center>
+      <article class="book">
+        <img src="copertina ufficiale sei tu la cura .png" alt="Copertina Sei Tu la Cura">
+        <div class="book-content">
+          <h3>Sei Tu la Cura</h3>
+          <p>Un invito a ritrovare dentro di sé la forza per guarire, cambiare e rinascere.</p>
+          <a href="sei-tu-la-cura.html">Scopri il libro</a>
+        </div>
+      </article>
 
-  <img src="io.jpg"
-     alt="Giuseppe Lo Iacono"
-     style="
-     max-width:300px;
-     width:100%;
-     border-radius:20px;
-     margin-bottom:25px;
-     box-shadow:0 0 25px rgba(0,0,0,.4);
-     ">
+      <article class="book">
+        <img src="copertina ufficiale la realtà virtuale.png" alt="Copertina Il Regno dell'Oscurità Virtuale">
+        <div class="book-content">
+          <h3>Il Regno dell’Oscurità Virtuale</h3>
+          <p>Una storia distopica sul controllo digitale, la libertà mentale e l’identità.</p>
+          <a href="oscurita-virtuale.html">Scopri il libro</a>
+        </div>
+      </article>
 
-  </center>
+      <article class="book">
+        <img src="copertina lavventura delle particelle ufficiale .png" alt="Copertina L'Avventura delle Particelle">
+        <div class="book-content">
+          <h3>L’Avventura delle Particelle</h3>
+          <p>Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.</p>
+          <a href="avventura-particelle.html">Scopri il libro</a>
+        </div>
+      </article>
 
-  <div class="section-title">
-    <span>Autore</span>
-    <h2>Giuseppe Lo Iacono</h2>
-  </div>
-<p>
-Giuseppe Lo Iacono è un autore indipendente che attraverso la narrativa e la riflessione esplora le grandi domande dell'esistenza umana.
-</p>
+      <article class="book">
+        <img src="copertina ufficiale libro.jpg" alt="Copertina La Teoria del Desiderio">
+        <div class="book-content">
+          <h3>La Teoria del Desiderio</h3>
+          <p>Una storia intensa tra desiderio, scelte, emozioni e verità nascoste.</p>
+          <a href="teoria-del-desiderio.html">Scopri il libro</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-<p>
-Nei suoi libri convivono mondi apparentemente lontani: coscienza e tecnologia, desiderio e libertà, spiritualità e società, scienza e immaginazione. Ogni storia nasce dal desiderio di guardare oltre le apparenze e di interrogare ciò che spesso viene dato per scontato.
-</p>
+  <section class="panel">
+    <div class="section-title">
+      <span>Community</span>
+      <h2>Partecipa al progetto</h2>
+    </div>
 
-<p>
-Più che offrire risposte definitive, i suoi libri invitano il lettore a sviluppare uno sguardo critico, a coltivare la curiosità e a intraprendere un percorso personale di scoperta.
-</p>
+    <p>
+      Questo sito è uno spazio aperto a chi desidera leggere, riflettere,
+      fare domande e condividere il proprio punto di vista.
+    </p>
 
-<p>
-Dalla narrativa psicologica alla divulgazione scientifica, dai temi della trasformazione interiore alle riflessioni sul rapporto tra individuo e sistema, il suo lavoro è guidato da una convinzione semplice:
-<strong>ogni cambiamento autentico nasce da una domanda sincera.</strong>
-</p>
- 
-</section>
-    <section>
-     <section>
-  <div class="section-title">
-    <span>Blog</span>
-    <h2>Riflessioni nate dall’esperienza</h2>
-  </div>
+    <p>
+      Puoi iscriverti agli aggiornamenti, inviare una domanda e seguire i nuovi articoli del blog.
+    </p>
 
-  <div class="blog-box">
+    <a class="btn" href="community.html">Entra nella Community</a>
+  </section>
 
-    <article class="blog-card">
-      <h3>Le cose che ho visto in 25 anni di volontariato</h3>
-      <p>
-        Un articolo personale sulle esperienze, gli incontri e le realtà sociali che non si dimenticano.
+  <section id="autore" class="panel">
+    <div class="author-grid">
+      <div>
+        <img src="io.jpg" alt="Giuseppe Lo Iacono">
+      </div>
+
+      <div>
+        <div class="section-title">
+          <span>Autore</span>
+          <h2>Giuseppe Lo Iacono</h2>
+        </div>
+
+        <p>
+          Giuseppe Lo Iacono è un autore indipendente che attraverso la narrativa
+          e la riflessione esplora le grandi domande dell'esistenza umana.
+        </p>
+
+        <p>
+          Nei suoi libri convivono mondi apparentemente lontani: coscienza e tecnologia,
+          desiderio e libertà, spiritualità e società, scienza e immaginazione.
+        </p>
+
+        <p>
+          <strong>Ogni cambiamento autentico nasce da una domanda sincera.</strong>
+        </p>
+
+        <a class="btn outline" href="chi-sono.html">Leggi il percorso</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <span>Recensioni</span>
+      <h2>Cosa dicono i lettori</h2>
+    </div>
+
+    <div class="blog-box">
+      <article class="blog-card">
+        <h3>★★★★★</h3>
+        <p>“Una volta che inizi a leggere non riesci a smettere.”</p>
+        <p><strong>LAETITIA VOLPE</strong> — La Teoria del Desiderio</p>
+      </article>
+
+      <article class="blog-card">
+        <h3>★★★★★</h3>
+        <p>“Bellissimo, letto tutto d’un fiato. Rimarrà impresso nella memoria.”</p>
+        <p><strong>Luca C.</strong> — La Teoria del Desiderio</p>
+      </article>
+
+      <article class="blog-card">
+        <h3>★★★★☆</h3>
+        <p>“Non è il classico romanzo sul desiderio o sulle relazioni. È qualcosa di più lucido e profondo.”</p>
+        <p><strong>Mario</strong> — La Teoria del Desiderio</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contatti" class="contact">
+    <div class="section-title">
+      <span>Contatti</span>
+      <h2>Contatti e Social</h2>
+    </div>
+
+    <p>
+      Per collaborazioni, recensioni, interviste o informazioni sui libri puoi contattarmi direttamente.
+    </p>
+
+    <br>
+
+    <a class="btn" href="mailto:lgiuseppe38@yahoo.com">Scrivimi</a>
+
+    <p style="margin-top:20px;">📧 lgiuseppe38@yahoo.com</p>
+
+    <div class="amazon-box">
+      <h3 style="margin-bottom:15px;">📚 Dove trovare i miei libri</h3>
+
+      <p style="line-height:2;">
+        📚 <a href="https://www.amazon.it/stores/Giuseppe-lo-Iacono/author/B0DWPVJ4MM?language=en&ref=ap_rdr&shoppingPortalEnabled=true" target="_blank">Pagina Autore Amazon</a>
       </p>
-      <a href="venticinque-anni-che-non-dimentico.html">Leggi l’articolo</a>
-    </article>
+    </div>
 
-    <article class="blog-card">
-      <h3>Tecnologia e libertà mentale</h3>
-      <p>
-        Una riflessione su attenzione, algoritmi, dipendenza digitale e libertà interiore.
-      </p>
-      <a href="tecnologia-liberta-mentale.html">Leggi l’articolo</a>
-    </article>
+    <h3 style="margin-top:30px;">Seguimi sui social</h3>
 
-    <article class="blog-card">
-      <h3>Il desiderio è davvero libero?</h3>
-      <p>
-        Quanto scegliamo davvero ciò che desideriamo? Una domanda al centro della narrativa e delle relazioni.
-      </p>
-      <a href="il-desiderio-e-davvero-libero.html">Leggi l’articolo</a>
-    </article>
+    <p class="social-links" style="margin-top:15px;line-height:2;">
+      📘 <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank">Facebook</a><br>
+      🎵 <a href="https://tiktok.com/@ilviandante1" target="_blank">TikTok</a><br>
+      📷 <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank">Instagram</a>
+    </p>
+  </section>
 
-  </div>
+</main>
 
-  <div style="text-align:center;margin-top:35px;">
-    <a class="btn" href="blog.html">Vai al Blog</a>
-  </div>
-</section>
-    <section>
-  <div class="section-title">
-    <span>Recensioni</span>
-    <h2>Cosa dicono i lettori</h2>
-  </div>
+<footer>
+  <p>© 2026 Giuseppe Lo Iacono – Tutti i diritti riservati</p>
+</footer>
 
-  <div class="blog-box">
-
-    <article class="blog-card">
-      <h3>★★★★★</h3>
-      <p>
-        “Una volta che inizi a leggere non riesci a smettere.”
-      </p>
-      <p><strong>LAETITIA VOLPE</strong> — La Teoria del Desiderio</p>
-    </article>
-
-    <article class="blog-card">
-      <h3>★★★★★</h3>
-      <p>
-        “Bellissimo, letto tutto d’un fiato. Rimarrà impresso nella memoria.”
-      </p>
-      <p><strong>Luca C.</strong> — La Teoria del Desiderio</p>
-    </article>
-
-    <article class="blog-card">
-      <h3>★★★★☆</h3>
-      <p>
-        “Non è il classico romanzo sul desiderio o sulle relazioni. È qualcosa di più lucido e profondo.”
-      </p>
-      <p><strong>Mario</strong> — La Teoria del Desiderio</p>
-    </article>
-
-  </div>
-</section>
-    <section id="contatti" class="contact">
-      <div class="section-title"><span>Contatti</span><h2>Contatti e Social</h2></div>
-      <p>Per collaborazioni, recensioni, interviste o informazioni sui libri puoi contattarmi direttamente.</p><br>
-      <a class="btn" href="mailto:lgiuseppe38@yahoo.com">Scrivimi</a>
-      <p style="margin-top:20px;">📧 lgiuseppe38@yahoo.com</p>
-      <div style="
-margin-top:30px;
-padding:25px;
-background:#141414;
-border:1px solid rgba(255,255,255,.08);
-border-radius:18px;
-">
-
-<h3 style="margin-bottom:15px;">
-📚 Dove trovare i miei libri
-</h3>
-
-<p style="line-height:2;">
-📚 <a href="https://www.amazon.it/stores/Giuseppe-lo-Iacono/author/B0DWPVJ4MM?language=en&ref=ap_rdr&shoppingPortalEnabled=true" target="_blank">Pagina Autore Amazon</a><br>
-
-
-</p>
-
-</div>
-      <h3 style="margin-top:30px;">Seguimi sui social</h3>
-      <p class="social-links" style="margin-top:15px; line-height:2;">
-        📘 <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank">Facebook</a><br>
-        🎵 <a href="https://tiktok.com/@ilviandante1" target="_blank">TikTok</a><br>
-        📷 <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank">Instagram</a>
-      </p>
-    </section>
-  </main>
-  <footer><p>© 2026 Giuseppe Lo Iacono – Tutti i diritti riservati</p></footer>
 </body>
 </html>
