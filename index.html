@@ -25,7 +25,74 @@ gtag('config', 'G-QZWXQ4MQWM');
 <meta name="twitter:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
 <meta name="twitter:description" content="Libri, riflessioni e domande sulla natura umana, la società, la libertà e la tecnologia.">
 <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
+/* NUOVA IDENTITÀ VISIVA - HOME CHIARA */
+body{
+  background:#f5f2eb;
+  color:#222;
+}
 
+header{
+  background:#f5f2eb !important;
+  color:#222;
+}
+
+nav a,
+.logo{
+  color:#222 !important;
+}
+
+nav a:hover{
+  color:#8b1e24 !important;
+}
+
+.tag,
+.section-title span,
+.book a,
+.blog-card a,
+.social-links a{
+  color:#8b1e24 !important;
+}
+
+.hero h1,
+h2,
+.book h3,
+.blog-card h3{
+  color:#1f1f1f !important;
+}
+
+.hero p,
+.intro p,
+.about p,
+.contact p,
+.book p,
+.blog-card p{
+  color:#444 !important;
+}
+
+.btn{
+  background:#8b1e24 !important;
+  color:#fff !important;
+}
+
+.btn.outline{
+  background:transparent !important;
+  border:1px solid #8b1e24 !important;
+  color:#8b1e24 !important;
+}
+
+.about,
+.contact,
+.book,
+.blog-card,
+.stat-card{
+  background:#fffaf2 !important;
+  border:1px solid rgba(0,0,0,.08) !important;
+}
+
+footer{
+  background:#eee6dc !important;
+  color:#555 !important;
+}
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -153,33 +220,34 @@ nav a:hover {
   </style>
 </head>
 <body>
- <header style="min-height:90vh;padding:35px 20px 80px;">
+<header style="min-height:90vh;padding:35px 20px 90px;">
 
   <nav style="
-    width:min(1150px, calc(100% - 40px));
-    margin:0 auto 70px;
+    width:min(1180px, calc(100% - 40px));
+    margin:0 auto 80px;
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    gap:30px;
+    gap:40px;
   ">
     <div style="
-      font-size:1.6rem;
-      font-weight:bold;
-      letter-spacing:1px;
-      color:#fff;
-      line-height:1.1;
+      font-size:2rem;
+      font-weight:800;
+      letter-spacing:-1px;
+      line-height:.95;
+      color:#222;
     ">
       Giuseppe<br>Lo Iacono
     </div>
 
     <div style="
       display:flex;
-      gap:18px;
+      gap:22px;
       flex-wrap:wrap;
       justify-content:flex-end;
-      font-size:.95rem;
+      font-size:.98rem;
       font-weight:bold;
+      padding-top:4px;
     ">
       <a href="blog.html">Riflessioni</a>
       <a href="#libri">Libri</a>
@@ -190,53 +258,51 @@ nav a:hover {
   </nav>
 
   <div style="
-    width:min(1150px, calc(100% - 40px));
+    width:min(1180px, calc(100% - 40px));
     margin:0 auto;
     display:grid;
-    grid-template-columns:1fr 420px;
-    gap:70px;
+    grid-template-columns:1.1fr .9fr;
+    gap:80px;
     align-items:center;
   ">
 
     <div>
-      <div class="tag">Autore indipendente</div>
+      <div class="tag">Libri, riflessioni e domande</div>
 
       <h1 style="
         font-size:clamp(3.4rem,8vw,7rem);
         line-height:.95;
-        margin-bottom:35px;
-        letter-spacing:-2px;
+        margin-bottom:34px;
+        letter-spacing:-3px;
+        color:#222;
       ">
-        Storie.<br>
-        Domande.<br>
-        Esseri umani.
+        Chi siamo<br>
+        quando le certezze<br>
+        non bastano più?
       </h1>
 
       <p style="
-        max-width:650px;
+        max-width:680px;
         font-size:1.25rem;
-        color:#ccc;
-        margin-bottom:34px;
+        color:#444;
+        margin-bottom:36px;
       ">
-        Libri, riflessioni e romanzi sulla natura umana, sulla libertà,
-        sul desiderio, sulla tecnologia e su ciò che spesso rimane invisibile.
+        Uno spazio dedicato alla natura umana, alla libertà,
+        al desiderio, alla tecnologia e a ciò che spesso rimane invisibile.
       </p>
 
-      <div>
-        <a class="btn" href="blog.html">Entra nelle riflessioni</a>
-        <a class="btn outline" href="echo.html">Scopri ECHO</a>
-      </div>
+      <a class="btn" href="blog.html">Inizia da qui</a>
     </div>
 
     <div style="text-align:right;">
       <img src="io.jpg"
            alt="Giuseppe Lo Iacono"
            style="
-           max-width:420px;
+           max-width:430px;
            width:100%;
-           border-radius:8px;
-           box-shadow:0 0 55px rgba(193,18,31,.35);
-           border:1px solid rgba(255,255,255,.12);
+           border-radius:4px;
+           box-shadow:0 20px 60px rgba(0,0,0,.18);
+           border:1px solid rgba(0,0,0,.08);
            ">
     </div>
 
