@@ -68,28 +68,46 @@
       gap:34px;
     }
 
-    .logo{
-      color:var(--text);
-      font-size:clamp(1.8rem,4vw,3.1rem);
-      font-weight:800;
-      line-height:.92;
-      letter-spacing:-1.5px;
-    }
+ .logo{
+  color:var(--text);
+  font-size:clamp(2.2rem,4.8vw,3.8rem);
+  font-weight:800;
+  line-height:.9;
+  letter-spacing:-2px;
+  font-family:Georgia,'Times New Roman',serif;
+}
 
-    .nav-links{
-      display:flex;
-      gap:22px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-      padding-top:8px;
-    }
+  .nav-links{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  align-items:center;
+  padding-top:8px;
+}
 
-    nav a{
-      color:var(--text);
-      font-weight:700;
-      font-size:.96rem;
-      white-space:nowrap;
-    }
+.nav-social{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  margin-top:14px;
+  font-size:1.15rem;
+}
+
+.nav-social a{
+  color:var(--red);
+  font-weight:700;
+}
+nav a{
+  color:var(--text);
+  font-weight:600;
+  font-size:1.08rem;
+  white-space:nowrap;
+  font-family:Georgia,'Times New Roman',serif;
+  letter-spacing:.2px;
+}
+  
 
     nav a:hover{color:var(--red)}
 
@@ -356,9 +374,10 @@
 <body>
 
 <header>
-  <nav>
-    <div class="logo">Giuseppe<br>Lo Iacono</div>
+<nav>
+  <div class="logo">Giuseppe<br>Lo Iacono</div>
 
+  <div>
     <div class="nav-links">
       <a href="blog.html">Riflessioni</a>
       <a href="#libri">Libri</a>
@@ -367,7 +386,15 @@
       <a href="community.html">Community</a>
       <a href="#contatti">Contatti</a>
     </div>
-  </nav>
+
+    <div class="nav-social">
+      <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank">Facebook</a>
+      <a href="https://tiktok.com/@ilviandante1" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank">Instagram</a>
+      <a href="javascript:navigator.share ? navigator.share({title:'Giuseppe Lo Iacono', url:'https://giuseppeloiacono.github.io/giuseppeloiacono-sito/'}) : alert('Copia il link del sito: https://giuseppeloiacono.github.io/giuseppeloiacono-sito/');">Condividi</a>
+    </div>
+  </div>
+</nav>
 
   <div class="hero">
     <div>
