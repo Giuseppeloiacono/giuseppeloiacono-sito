@@ -327,6 +327,30 @@ nav a{
     }
 
     footer p{color:#555}
+    .hero-photo{
+  position:relative;
+}
+
+.hero-social{
+  position:absolute;
+  top:20px;
+  right:-55px;
+
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.hero-social a{
+  color:#7b4f3a;
+  font-size:1.2rem;
+  transition:all .2s ease;
+}
+
+.hero-social a:hover{
+  transform:translateX(-3px);
+  color:#5d3a2b;
+}
 
     @media(max-width:900px){
       nav{
