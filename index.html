@@ -148,12 +148,13 @@ nav a{
       margin-bottom:34px;
     }
 
-    .hero-photo img{
+ .hero-photo img{
   max-width:620px;
   margin-left:auto;
   display:block;
+  border-radius:28px;
+  box-shadow:0 28px 70px rgba(85,60,42,.22);
 }
-
     .btn{
       display:inline-block;
       padding:13px 24px;
@@ -372,10 +373,13 @@ nav a{
         grid-template-columns:1fr;
         gap:34px;
       }
-      .hero-photo img{
-        margin:0;
-        max-width:360px;
-      }
+      .hero-photo{
+  position:relative;
+  padding:18px;
+  border-radius:34px;
+  background:rgba(255,250,243,.38);
+  border:1px solid rgba(139,30,36,.10);
+}
       .books,
       .blog-box{
         grid-template-columns:repeat(2,1fr);
