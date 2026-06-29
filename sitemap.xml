@@ -31,4 +31,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
 </url>
+  
+  <loc>https://giuseppeloiacono.github.io/giuseppeloiacono-sito/the-theory-of-desire.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+</url>
+
+<url>
+    <loc>https://giuseppeloiacono.github.io/giuseppeloiacono-sito/observer-collection.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+</url>
 </urlset>
