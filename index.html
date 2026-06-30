@@ -417,6 +417,96 @@ nav a:hover{
         padding:28px;
       }
     }
+    /* FORZATURA HERO HOME DEFINITIVA */
+
+header{
+  min-height:100vh !important;
+  padding:34px 22px 80px !important;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(120,90,55,.12), transparent 28%),
+    radial-gradient(circle at 88% 82%, rgba(120,90,55,.10), transparent 30%),
+    linear-gradient(120deg,#fbf7ef 0%,#efe7db 52%,#fffaf3 100%) !important;
+}
+
+nav{
+  width:100% !important;
+  max-width:1280px !important;
+  margin:0 auto 95px !important;
+  display:flex !important;
+  justify-content:space-between !important;
+  align-items:flex-start !important;
+  padding:0 26px !important;
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+.logo img{
+  width:330px !important;
+  max-width:100% !important;
+  display:block !important;
+}
+
+.nav-links{
+  display:flex !important;
+  gap:26px !important;
+  flex-wrap:wrap !important;
+  justify-content:flex-end !important;
+  align-items:center !important;
+  padding-top:4px !important;
+}
+
+.hero{
+  width:min(980px, calc(100% - 40px)) !important;
+  min-height:62vh !important;
+  margin:0 auto !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:center !important;
+  text-align:center !important;
+  grid-template-columns:none !important;
+}
+
+.hero h1{
+  font-family:"Cormorant Garamond", Georgia, serif !important;
+  font-size:clamp(3.4rem,8vw,7.2rem) !important;
+  line-height:.95 !important;
+  letter-spacing:-3px !important;
+  margin-bottom:28px !important;
+  max-width:900px !important;
+}
+
+.hero p{
+  max-width:760px !important;
+  font-size:clamp(1.18rem,2.3vw,1.55rem) !important;
+  line-height:1.7 !important;
+  margin-bottom:8px !important;
+  text-align:center !important;
+}
+
+.hero-photo,
+.hero-social,
+.tag{
+  display:none !important;
+}
+
+@media(max-width:900px){
+  nav{
+    flex-direction:column !important;
+    align-items:center !important;
+    text-align:center !important;
+  }
+
+  .nav-links{
+    justify-content:center !important;
+  }
+
+  .logo img{
+    width:260px !important;
+    margin:0 auto !important;
+  }
+}
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
