@@ -50,40 +50,41 @@
       --red:#8b1e24;
       --red-dark:#6f171c;
     }
-
-  header{
-  min-height:88vh;
+header{
+  min-height:100vh;
   padding:34px 22px 80px;
   background:
-    linear-gradient(135deg,
-      #e8ddcd 0%,
-      #efe7db 45%,
-      #f5eee5 100%);
+    radial-gradient(circle at 18% 18%, rgba(123,95,63,.10), transparent 26%),
+    linear-gradient(120deg,#f8f3eb 0%,#efe7db 52%,#fbf8f2 100%);
+  position:relative;
+  overflow:hidden;
 }
 
- nav{
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(105deg, transparent 0%, transparent 58%, rgba(255,255,255,.55) 59%, transparent 72%),
+    radial-gradient(circle at 0% 82%, rgba(114,94,64,.13), transparent 28%);
+  pointer-events:none;
+}
+
+nav{
   width:min(1180px, calc(100% - 40px));
-  margin:0 auto 45px;
+  margin:0 auto 70px;
   display:flex;
   justify-content:space-between;
   align-items:center;
   gap:34px;
-
-  background:rgba(255,250,243,.42);
-  border:1px solid rgba(139,30,36,.10);
-  border-radius:28px;
-  padding:18px 24px;
-  box-shadow:0 18px 45px rgba(85,60,42,.10);
-  backdrop-filter:blur(8px);
+  position:relative;
+  z-index:2;
 }
 
- .logo{
-  color:var(--text);
-  font-size:clamp(2.2rem,4.8vw,3.8rem);
-  font-weight:800;
-  line-height:.9;
-  letter-spacing:-2px;
-  font-family:Georgia,'Times New Roman',serif;
+.logo img{
+  width:250px;
+  max-width:100%;
+  display:block;
 }
 
 .nav-links{
@@ -92,76 +93,68 @@
   flex-wrap:wrap;
   justify-content:flex-end;
   align-items:center;
-  padding-top:0;
 }
 
-.nav-social{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
-  justify-content:flex-end;
-  margin-top:14px;
-  font-size:1.15rem;
-}
-
-.nav-social a{
-  color:var(--red);
-  font-weight:700;
-}
 nav a{
   color:var(--text);
   font-family:"Cormorant Garamond", Georgia, serif;
-  font-size:1.35rem;
+  font-size:1.25rem;
   font-weight:600;
   letter-spacing:.5px;
   white-space:nowrap;
   transition:all .25s ease;
 }
-  
 
-    nav a:hover{color:var(--red)}
+nav a:hover{color:var(--red)}
 
-  .hero{
-  width:min(1180px, calc(100% - 40px));
+.hero{
+  width:min(980px, calc(100% - 40px));
+  min-height:62vh;
   margin:0 auto;
-  display:grid;
-  grid-template-columns:1fr .95fr;
-  gap:45px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   align-items:center;
+  text-align:center;
+  position:relative;
+  z-index:2;
 }
 
-    .tag{
-      color:var(--red);
-      text-transform:uppercase;
-      letter-spacing:3px;
-      margin-bottom:18px;
-      font-size:.82rem;
-      font-weight:800;
-    }
-
-    .hero h1{
-      font-size:clamp(3.2rem,8vw,7.4rem);
-      line-height:.9;
-      letter-spacing:-4px;
-      color:var(--text);
-      margin-bottom:34px;
-      text-shadow:0 2px 10px rgba(255,255,255,.35);
-    }
-
-    .hero p{
-      max-width:650px;
-      color:var(--muted);
-      font-size:1.25rem;
-      margin-bottom:34px;
-    }
-
- .hero-photo img{
-  max-width:620px;
-  margin-left:auto;
-  display:block;
-  border-radius:28px;
-  box-shadow:0 28px 70px rgba(85,60,42,.22);
+.hero::after{
+  content:"";
+  width:78px;
+  height:1px;
+  background:rgba(34,34,34,.35);
+  margin:26px auto 0;
+  order:2;
 }
+
+.hero h1{
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-size:clamp(3.4rem,8vw,7.2rem);
+  line-height:.95;
+  letter-spacing:-3px;
+  color:var(--text);
+  margin-bottom:28px;
+  max-width:900px;
+}
+
+.hero p{
+  max-width:760px;
+  color:var(--text);
+  font-size:clamp(1.18rem,2.3vw,1.55rem);
+  line-height:1.7;
+  margin-bottom:8px;
+}
+
+.hero .hero-small{
+  color:var(--muted);
+}
+
+.tag{
+  display:none;
+}
+
     .btn{
       display:inline-block;
       padding:13px 24px;
@@ -442,69 +435,16 @@ nav a{
   </div>
 </nav>
 
-  <div class="hero">
-    <div>
-  <h1 style="
-font-size:clamp(3rem,7vw,5.8rem);
-line-height:1;
-margin-bottom:20px;
-letter-spacing:-2px;
-">
-Chi siamo<br>
-quando nessuna certezza<br>
-ci protegge più?
-</h1>
+<div class="hero">
+  <h1>Ogni libro nasce<br>da una domanda.</h1>
 
-<p style="
-font-size:1.25rem;
-max-width:650px;
-margin-bottom:30px;
-">
-Forse il vero mistero non è il mondo.
-Forse siamo noi.
-</p>
+  <p>Non scrivo per offrire certezze.</p>
+  <p class="hero-small">Scrivo per osservare ciò che spesso rimane invisibile.</p>
 
-<div class="tag" style="margin-top:25px;">
-Libri, riflessioni e domande sulla natura umana
-</div>
-<a class="btn" href="https://payhip.com/GiuseppeLoIacono" target="_blank">Visit the Library</a>
-
-<a class="btn outline" href="blog.html">Leggi le riflessioni</a>
-
-<a class="btn outline" href="#english-books">International</a>
-    </div>
-
- <div class="hero-photo">
-
-  <div class="hero-social">
-
-    <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank">
-      <i class="fa-brands fa-facebook-f"></i>
-    </a>
-
-    <a href="https://tiktok.com/@ilviandante1" target="_blank">
-      <i class="fa-brands fa-tiktok"></i>
-    </a>
-
-    <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-
-    <a href="https://www.wattpad.com/story/412308189-il-cuore-di-echo" target="_blank">
-      <i class="fa-solid fa-book"></i>
-    </a>
-
-    <a href="#"
-       onclick="navigator.share ? navigator.share({title:'Giuseppe Lo Iacono',url:window.location.href}) : null; return false;">
-      <i class="fa-solid fa-share-nodes"></i>
-    </a>
-
+  <div style="margin-top:38px;">
+    <a class="btn" href="#libri">INIZIA IL VIAGGIO</a>
   </div>
-
-  <img src="giuseppe-home.jpg" alt="Giuseppe Lo Iacono">
-
 </div>
-  </div>
 </header>
 
 <main>
