@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlante delle Domande | Giuseppe Lo Iacono</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  min-height:100vh;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#050505;
+  color:#f4ead8;
+}
+
+.atlante{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
+    url("atlante-bg.png");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.logo{
+  width:180px;
+  margin-bottom:25px;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:clamp(2.8rem,7vw,5.5rem);
+  margin-bottom:18px;
+}
+
+p{
+  max-width:720px;
+  color:#e8d7b8;
+  font-size:1.15rem;
+  margin-bottom:45px;
+}
+
+.mappa{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  width:min(850px,100%);
+}
+
+.nodo{
+  background:rgba(0,0,0,.65);
+  border:1px solid rgba(232,201,130,.55);
+  color:#f4ead8;
+  padding:22px;
+  border-radius:20px;
+  text-decoration:none;
+  font-weight:bold;
+  letter-spacing:1px;
+  transition:.25s;
+}
+
+.nodo:hover{
+  background:#8b1e24;
+  transform:translateY(-5px);
+}
+
+.centro{
+  grid-column:2;
+  background:rgba(232,201,130,.18);
+  color:#e8c982;
+  font-family:Georgia,serif;
+  font-size:1.4rem;
+}
+
+.back{
+  margin-top:45px;
+  color:#e8c982;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+@media(max-width:700px){
+  .mappa{grid-template-columns:1fr}
+  .centro{grid-column:auto}
+}
+</style>
+</head>
+
+<body>
+
+<section class="atlante">
+
+  <img class="logo" src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono">
+
+  <h1>Atlante delle Domande</h1>
+
+  <p>
+    Non esiste un unico percorso. Ogni domanda conduce in una direzione diversa.
+    Scegli da dove iniziare.
+  </p>
+
+  <div class="mappa">
+    <a class="nodo" href="echo.html">ECHO</a>
+    <a class="nodo centro" href="index.html">OSSERVARE</a>
+    <a class="nodo" href="blog.html">RIFLESSIONI</a>
+
+    <a class="nodo" href="libri.html">LIBRI</a>
+    <a class="nodo" href="library.html">LIBRARY</a>
+    <a class="nodo" href="community.html">COMMUNITY</a>
+
+    <a class="nodo" href="library.html">INTERNATIONAL</a>
+    <a class="nodo" href="chi-sono.html">CHI SONO</a>
+    <a class="nodo" href="index.html#contatti">CONTATTI</a>
+  </div>
+
+  <a class="back" href="index.html">← Torna alla Home</a>
+
+</section>
+
+</body>
+</html>
