@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
 <meta charset="UTF-8">
@@ -8,103 +7,132 @@
 <title>Community | Giuseppe Lo Iacono</title>
 <meta name="description" content="Entra in contatto con Giuseppe Lo Iacono: iscriviti agli aggiornamenti, fai una domanda e partecipa al progetto.">
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#eee;line-height:1.7}
+body{font-family:Arial,Helvetica,sans-serif;background:#efe7db;color:#222;line-height:1.8}
 a{text-decoration:none;color:inherit}
 
-header{
-padding:90px 20px;
+.page{max-width:1120px;margin:auto;padding:38px 22px 80px}
+.back{display:inline-block;margin-bottom:38px;color:#8b1e24;font-weight:bold}
+
+.hero{
+background:#fffaf3;
+border:1px solid rgba(0,0,0,.10);
+border-radius:30px;
+padding:60px 45px;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.96)),radial-gradient(circle at top,#3b0008,#000);
+box-shadow:0 18px 45px rgba(0,0,0,.08);
+margin-bottom:42px;
 }
 
-header h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.05;margin-bottom:20px}
-header p{max-width:850px;margin:auto;color:#ccc;font-size:1.15rem}
+.label{
+color:#8b1e24;
+font-size:.85rem;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:2px;
+margin-bottom:16px;
+}
 
-.container{max-width:1050px;margin:auto;padding:55px 20px}
-.back{display:inline-block;margin-bottom:35px;color:#c1121f;font-weight:bold}
+h1,h2{
+font-family:"Cormorant Garamond",Georgia,serif;
+color:#222;
+line-height:1.05;
+}
 
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-bottom:70px}
+h1{font-size:clamp(3.2rem,7vw,5.8rem);margin-bottom:24px}
+h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}
 
-.card{
-background:#111;
-border:1px solid rgba(255,255,255,.08);
+p{color:#5d5a55;font-size:1.08rem;margin-bottom:18px}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-bottom:42px;
+}
+
+.card,.section{
+background:#fffaf3;
+border:1px solid rgba(0,0,0,.10);
 border-radius:24px;
-padding:32px;
-transition:.25s;
+padding:34px;
+box-shadow:0 12px 30px rgba(0,0,0,.06);
 }
 
-.card:hover{transform:translateY(-5px);border-color:rgba(193,18,31,.55)}
-
-.card h2{color:#fff;font-size:1.6rem;margin-bottom:15px}
-.card p{color:#ccc;margin-bottom:20px}
+.card h2{font-size:2rem}
+.card:hover{transform:translateY(-4px);transition:.25s}
 
 .button{
 display:inline-block;
-background:#c1121f;
-color:white;
-padding:13px 22px;
-border-radius:30px;
+background:#8b1e24;
+color:#fffaf3;
+padding:14px 28px;
+border-radius:999px;
 font-weight:bold;
+margin-top:8px;
 }
 
-.section{
-background:#111;
-border:1px solid rgba(255,255,255,.08);
-border-radius:26px;
-padding:38px;
-margin-bottom:45px;
+.button:hover{background:#6f171c}
+
+.section{margin-bottom:38px}
+.social a{color:#8b1e24;font-weight:bold}
+
+.notice{font-size:.95rem;color:#777;margin-top:20px}
+
+footer{
+text-align:center;
+background:#eee6dc;
+color:#555;
+padding:30px;
 }
 
-.section h2{font-size:2rem;margin-bottom:15px}
-.section p{color:#ccc;font-size:1.08rem;margin-bottom:18px}
-
-.notice{
-margin-top:18px;
-color:#aaa;
-font-size:.95rem;
+@media(max-width:850px){
+.grid{grid-template-columns:1fr}
+.hero{padding:42px 26px}
+.card,.section{padding:28px}
 }
-
-.social a{color:#c1121f;font-weight:bold}
-
-footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px}
-
-@media(max-width:850px){.grid{grid-template-columns:1fr}}
 </style>
-
 </head>
 
 <body>
 
-<header>
-  <h1>Partecipa al progetto</h1>
-  <p>
-    Iscriviti agli aggiornamenti, invia una domanda o condividi una riflessione.
-    Questo spazio nasce per trasformare il sito in un luogo di dialogo, non solo in una vetrina.
-  </p>
-</header>
-
-<main class="container">
+<div class="page">
 
 <a class="back" href="index.html">← Torna al sito</a>
+
+<section class="hero">
+  <div class="label">Community</div>
+  <h1>Partecipa al progetto</h1>
+  <p>
+    Questo spazio nasce per trasformare il sito in un luogo di dialogo, non solo in una vetrina.
+  </p>
+  <p>
+    Puoi iscriverti agli aggiornamenti, inviare una domanda o condividere una riflessione sui temi dei libri.
+  </p>
+</section>
 
 <div class="grid">
 
   <div class="card">
-    <h2>📚 Aggiornamenti</h2>
-    <p>Ricevi novità sui libri, nuovi articoli del blog e riflessioni in anteprima.</p>
+    <div class="label">Aggiornamenti</div>
+    <h2>Novità e libri</h2>
+    <p>Ricevi aggiornamenti sui nuovi libri, articoli del blog e progetti in arrivo.</p>
     <a class="button" href="#modulo">Iscriviti</a>
   </div>
 
   <div class="card">
-    <h2>❓ Domande</h2>
-    <p>Hai una domanda su un libro, un tema o un articolo? Puoi inviarla direttamente.</p>
-    <a class="button" href="#modulo">Fai una domanda</a>
+    <div class="label">Domande</div>
+    <h2>Fai una domanda</h2>
+    <p>Hai una domanda su un libro, un tema o una riflessione? Puoi inviarla direttamente.</p>
+    <a class="button" href="#modulo">Scrivi</a>
   </div>
 
   <div class="card">
-    <h2>💬 Riflessioni</h2>
+    <div class="label">Riflessioni</div>
+    <h2>Partecipa</h2>
     <p>Condividi un pensiero, una critica o un’esperienza collegata ai temi del sito.</p>
     <a class="button" href="#modulo">Partecipa</a>
   </div>
@@ -112,7 +140,8 @@ footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px
 </div>
 
 <section id="modulo" class="section">
-  <h2>Iscriviti, fai una domanda o condividi una riflessione</h2>
+  <div class="label">Modulo ufficiale</div>
+  <h2>Iscriviti o lascia una riflessione</h2>
 
   <p>
     Usa il modulo ufficiale per lasciare il tuo nome, la tua email, una domanda
@@ -129,16 +158,13 @@ footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px
   </a>
 
   <p class="notice">
-    Il modulo si apre in una nuova scheda. Dopo l'invio, la risposta verrà registrata direttamente.
+    Il modulo si apre in una nuova scheda.
   </p>
 </section>
 
 <section class="section social">
+  <div class="label">Social</div>
   <h2>Seguimi anche sui social</h2>
-
-  <p>
-    Puoi seguire il progetto anche attraverso i social:
-  </p>
 
   <p>
     📘 <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank">Facebook</a><br>
@@ -147,7 +173,7 @@ footer{text-align:center;background:#000;color:#777;padding:30px;margin-top:50px
   </p>
 </section>
 
-</main>
+</div>
 
 <footer>
 © 2026 Giuseppe Lo Iacono
