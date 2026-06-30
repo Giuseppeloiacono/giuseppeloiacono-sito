@@ -71,28 +71,31 @@ header::before{
 }
 
 nav{
-  width:min(1180px, calc(100% - 40px));
-  margin:0 auto 70px;
+  width:100%;
+  max-width:1280px;
+  margin:0 auto 95px;
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  align-items:flex-start;
   gap:34px;
   position:relative;
   z-index:2;
+  padding:0 26px;
 }
 
 .logo img{
-  width:250px;
+  width:330px;
   max-width:100%;
   display:block;
 }
 
 .nav-links{
   display:flex;
-  gap:28px;
+  gap:26px;
   flex-wrap:wrap;
   justify-content:flex-end;
   align-items:center;
+  padding-top:4px;
 }
 
 nav a{
