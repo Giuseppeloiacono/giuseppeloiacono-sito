@@ -37,18 +37,89 @@
     img{width:100%;display:block}
     :root{--bg:#efe7db;--paper:#fffaf3;--white:#ffffff;--text:#222222;--muted:#5d5a55;--line:rgba(0,0,0,.10);--red:#8b1e24;--red-dark:#6f171c}
 
-    header.home-hero{min-height:100vh;padding:34px 22px 80px;background:radial-gradient(circle at 12% 20%, rgba(120,90,55,.12), transparent 28%),radial-gradient(circle at 88% 82%, rgba(120,90,55,.10), transparent 30%),linear-gradient(120deg,#fbf7ef 0%,#efe7db 52%,#fffaf3 100%);position:relative;overflow:hidden}
-    header.home-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg, transparent 0%, transparent 58%, rgba(255,255,255,.55) 59%, transparent 72%);pointer-events:none}
-    .home-nav{width:100%;max-width:1280px;margin:0 auto 95px;display:flex;justify-content:space-between;align-items:flex-start;gap:34px;position:relative;z-index:2;padding:0 26px;background:transparent;border:none;box-shadow:none;backdrop-filter:none}
-    .logo img{width:330px;max-width:100%;display:block}
+  header.home-hero{
+    min-height:100vh;
+    padding:34px 22px 80px;
+    position:relative;
+    overflow:hidden;
+
+    background-image:url("sfondo-home.jpg");
+    background-size:cover;
+    background-position:center bottom;
+    background-repeat:no-repeat;
+}
+    header.home-hero::before{
+content:"";
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+to bottom,
+rgba(248,244,236,.82) 0%,
+rgba(248,244,236,.45) 40%,
+rgba(248,244,236,.12) 100%
+);
+
+pointer-events:none;
+}
+    .home-nav{width:100%;max-width:1280px;margin:0 auto 35px;display:flex;justify-content:space-between;align-items:center;gap:34px;position:relative;z-index:2;padding:0 26px;background:transparent;border:none;box-shadow:none;backdrop-filter:none}
+  .logo img{
+width:185px;
+display:block;
+}
     .nav-links{display:flex;gap:26px;flex-wrap:wrap;justify-content:flex-end;align-items:center;padding-top:4px}
     nav a{color:var(--text);font-family:"Cormorant Garamond", Georgia, serif;font-size:1.25rem;font-weight:600;letter-spacing:.5px;white-space:nowrap;transition:all .25s ease}
     nav a:hover{color:var(--red)}
-    .hero{width:min(980px, calc(100% - 40px));min-height:62vh;margin:0 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;z-index:2}
-    .hero h1{font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(3.4rem,8vw,7.2rem);line-height:.95;letter-spacing:-3px;color:var(--text);margin-bottom:28px;max-width:900px}
-    .hero p{max-width:760px;color:var(--text);font-size:clamp(1.18rem,2.3vw,1.55rem);line-height:1.7;margin-bottom:8px;text-align:center}
+    .hero{width:min(980px, calc(100% - 40px));min-height:72vh;padding-top:40px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;z-index:2}
+ .hero h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:clamp(4rem,7vw,7rem);
+
+line-height:0.95;
+
+letter-spacing:-2px;
+
+margin-bottom:32px;
+
+color:#111;
+
+text-shadow:
+0 2px 10px rgba(255,255,255,.35);
+
+}
+    .hero p{
+
+font-size:1.30rem;
+
+color:#111;
+
+font-weight:500;
+
+line-height:1.8;
+
+}{max-width:760px;color:var(--text);font-size:clamp(1.18rem,2.3vw,1.55rem);line-height:1.7;margin-bottom:8px;text-align:center}
     .hero-small{color:var(--muted)!important}.hero-action{margin-top:38px}.tag{display:none}.hero-photo,.hero-social{display:none}
-    .btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--red);color:#fff;font-weight:bold;margin:6px 8px 6px 0;transition:transform .25s ease,background .25s ease}
+   .btn{
+display:inline-block;
+padding:15px 34px;
+border-radius:999px;
+background:#7b1118;
+color:#f4d89d;
+font-weight:bold;
+letter-spacing:1px;
+margin:6px 8px 6px 0;
+transition:all .30s ease;
+box-shadow:0 10px 25px rgba(0,0,0,.20);
+}
+
+.btn:hover{
+transform:translateY(-3px);
+background:#5f0d13;
+box-shadow:0 14px 30px rgba(0,0,0,.28);
+}
     .btn:hover{transform:translateY(-2px);background:var(--red-dark)}.btn.outline{background:transparent;border:1px solid var(--red);color:var(--red)}
     main{width:min(1120px, calc(100% - 40px));margin:0 auto;padding:70px 0}section{margin-bottom:90px}
     .section-title{margin-bottom:30px}.section-title span{color:var(--red);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:800}
