@@ -317,6 +317,77 @@ background:
   }
   
   }
+    .books-banner{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  min-height:430px;
+  padding:95px 24px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(139,30,36,.10), transparent 26%),
+    radial-gradient(circle at 85% 80%, rgba(0,0,0,.08), transparent 30%),
+    linear-gradient(135deg,#fffaf3 0%,#efe7db 52%,#e7d9c7 100%);
+  border-top:1px solid rgba(0,0,0,.08);
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.books-banner::before{
+  content:"LIBRI";
+  position:absolute;
+  left:50%;
+  bottom:-34px;
+  transform:translateX(-50%);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(5rem,14vw,11rem);
+  letter-spacing:12px;
+  color:rgba(139,30,36,.055);
+  pointer-events:none;
+  white-space:nowrap;
+}
+
+.books-content{
+  max-width:860px;
+  position:relative;
+  z-index:2;
+}
+
+.books-content span{
+  color:#8b1e24;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:.82rem;
+  font-weight:800;
+}
+
+.books-content h2{
+  font-size:clamp(2.6rem,5vw,4.4rem);
+  margin:18px auto 26px;
+  line-height:1.05;
+}
+
+.books-content p{
+  max-width:760px;
+  margin:0 auto 34px;
+  color:#3f3934;
+  font-size:clamp(1.15rem,2vw,1.35rem);
+  line-height:1.8;
+}
+
+@media(max-width:700px){
+  .books-banner{
+    min-height:380px;
+    padding:70px 20px;
+  }
+
+  .books-content h2{
+    font-size:clamp(2.2rem,10vw,3.2rem);
+  }
+}
   </style>
 </head>
 <body>
@@ -371,7 +442,28 @@ background:
   
 
 </section>
-  <section class="panel"><div class="section-title"><span>Libri</span><h2>Ogni libro è una domanda diversa.</h2></div><p>Romanzi, saggi e riflessioni che esplorano la natura umana, la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.</p><a class="btn" href="libri.html">Scopri tutti i libri</a></section>
+ <section class="books-banner">
+
+  <div class="books-content">
+
+    <span>Libri</span>
+
+    <h2>
+      Ogni libro è una domanda diversa.
+    </h2>
+
+    <p>
+      Romanzi, saggi e riflessioni che esplorano la natura umana,
+      la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.
+    </p>
+
+    <a class="btn" href="libri.html">
+      Scopri tutti i libri
+    </a>
+
+  </div>
+
+</section>
   <section class="panel"><div class="section-title"><span>International</span><h2>Libri e risorse anche in inglese.</h2></div><p>Una sezione dedicata ai lettori internazionali, con libri, riflessioni e percorsi digitali pensati per esplorare le stesse domande oltre la lingua italiana.</p><a class="btn" href="library.html">Esplora la Library</a></section>
   <section class="panel"><div class="section-title"><span>Community</span><h2>Uno spazio per domande e riflessioni.</h2></div><p>Il sito non è solo una vetrina, ma un luogo aperto a chi desidera leggere, osservare, fare domande e condividere il proprio punto di vista.</p><a class="btn" href="community.html">Entra nella Community</a></section>
   <section class="panel"><div class="section-title"><span>Lettori</span><h2>Ogni libro continua nel lettore.</h2></div><p>Ogni storia trova un significato diverso in chi la legge. Se desideri scoprire le opinioni dei lettori e lasciare la tua recensione, puoi visitare la pagina dedicata a ciascun libro.</p><a class="btn" href="libri.html">Scopri i libri</a></section>
