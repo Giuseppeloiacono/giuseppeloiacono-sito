@@ -4,18 +4,26 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZWXQ4MQWM"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QZWXQ4MQWM');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QZWXQ4MQWM');
   </script>
 
-  <meta name="google-site-verification" content="asLTefzTvt8wuUHEjfitOZeD4Xc5Qb8f6eYe8JS1WxM" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Giuseppe Lo Iacono | Libri e riflessioni</title>
   <meta name="description" content="Sito ufficiale di Giuseppe Lo Iacono. Libri e riflessioni su coscienza, libertà, desiderio, tecnologia e trasformazione.">
+  <meta name="author" content="Giuseppe Lo Iacono">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#efe7db">
+  <meta name="google-site-verification" content="asLTefzTvt8wuUHEjfitOZeD4Xc5Qb8f6eYe8JS1WxM">
+  <meta name="p:domain_verify" content="a82d47d84301a5fc102259df94f55294">
+
+  <link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
@@ -29,506 +37,76 @@
   <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
 
   <style>
-
     *{margin:0;padding:0;box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{font-family:Arial,Helvetica,sans-serif;background:#efe7db;color:#222;line-height:1.75}
     a{text-decoration:none;color:inherit}
     img{width:100%;display:block}
-    :root{--bg:#efe7db;--paper:#fffaf3;--white:#ffffff;--text:#222222;--muted:#5d5a55;--line:rgba(0,0,0,.10);--red:#8b1e24;--red-dark:#6f171c}
-
-  header.home-hero{
-    min-height:100vh;
-    padding:34px 22px 80px;
-    position:relative;
-    overflow:hidden;
-
-    background-image:url("sfondo-home.jpg");
-    background-size:cover;
-    background-position:center bottom;
-    background-repeat:no-repeat;
-}
-    header.home-hero::before{
-content:"";
-position:absolute;
-inset:0;
-
-background:
-linear-gradient(
-to bottom,
-rgba(248,244,236,.82) 0%,
-rgba(248,244,236,.45) 40%,
-rgba(248,244,236,.12) 100%
-);
-
-pointer-events:none;
-}
-  .home-nav{
-width:100%;
-max-width:1500px;
-margin:0 auto 25px;
-display:flex;
-justify-content:space-between;
-align-items:flex-start;
-gap:20px;
-position:relative;
-z-index:2;
-padding:15px 35px 0;
-background:transparent;
-border:none;
-box-shadow:none;
-backdrop-filter:none;
-}
-.logo img{
-width:320px;
-max-width:100%;
-display:block;
-}
- .nav-links{
-display:flex;
-gap:34px;
-flex-wrap:wrap;
-justify-content:flex-end;
-align-items:flex-start;
-padding-top:28px;
-}
-    nav a{color:var(--text);font-family:"Cormorant Garamond", Georgia, serif;font-size:1.55rem;font-weight:600;letter-spacing:.5px;white-space:nowrap;transition:all .25s ease}
+    :root{--bg:#efe7db;--paper:#fffaf3;--white:#ffffff;--text:#222222;--muted:#5d5a55;--line:rgba(0,0,0,.10);--red:#8b1e24;--red-dark:#6f171c;--gold:#f4d89d}
+    header.home-hero{min-height:100vh;padding:34px 22px 80px;position:relative;overflow:hidden;background-image:url("sfondo-home.jpg");background-size:cover;background-position:center bottom;background-repeat:no-repeat}
+    header.home-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(248,244,236,.82) 0%,rgba(248,244,236,.45) 40%,rgba(248,244,236,.12) 100%);pointer-events:none}
+    .home-nav{width:100%;max-width:1500px;margin:0 auto 25px;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;position:relative;z-index:2;padding:15px 35px 0}
+    .logo img{width:320px;max-width:100%}
+    .nav-links{display:flex;gap:34px;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;padding-top:28px}
+    nav a{color:var(--text);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.55rem;font-weight:600;letter-spacing:.5px;white-space:nowrap;transition:.25s ease}
     nav a:hover{color:var(--red)}
-    .hero{width:min(980px, calc(100% - 40px));min-height:72vh;padding-top:40px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;z-index:2}
- .hero h1{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:clamp(4rem,7vw,7rem);
-
-line-height:0.95;
-
-letter-spacing:-2px;
-
-margin-bottom:32px;
-
-color:#111;
-
-text-shadow:
-0 2px 10px rgba(255,255,255,.35);
-
-}
-.hero p{
-  max-width:760px;
-  color:#111;
-  font-size:clamp(1.18rem,2.3vw,1.55rem);
-  line-height:1.8;
-  margin-bottom:8px;
-  text-align:center;
-  font-weight:500;
-}
-    .hero-small{color:var(--muted)!important}.hero-action{margin-top:38px}.tag{display:none}.hero-photo,.hero-social{display:none}
-   .btn{
-display:inline-block;
-padding:15px 34px;
-border-radius:999px;
-background:#7b1118;
-color:#f4d89d;
-font-weight:bold;
-letter-spacing:1px;
-margin:6px 8px 6px 0;
-transition:all .30s ease;
-box-shadow:0 10px 25px rgba(0,0,0,.20);
-}
-
-.btn:hover{
-transform:translateY(-3px);
-background:#5f0d13;
-box-shadow:0 14px 30px rgba(0,0,0,.28);
-}
-    .btn:hover{transform:translateY(-2px);background:var(--red-dark)}.btn.outline{background:transparent;border:1px solid var(--red);color:var(--red)}
-    main{width:min(1120px, calc(100% - 40px));margin:0 auto;padding:70px 0}section{margin-bottom:90px}
-    .section-title{margin-bottom:30px}.section-title span{color:var(--red);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:800}
-    h2{font-family:"Cormorant Garamond", Georgia, serif;font-size:clamp(2rem,4vw,3.2rem);color:var(--text);line-height:1.12;margin-top:8px}h3{color:var(--text)}p{color:var(--muted)}
-    .panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:42px}
-    .featured{display:grid;grid-template-columns:300px 1fr;gap:42px;align-items:center}.featured img{border-radius:8px;border:1px solid var(--line);box-shadow:0 18px 45px rgba(0,0,0,.14)}.featured p{font-size:1.08rem;margin-bottom:16px}.featured .quote{font-style:italic;color:var(--text);border-left:3px solid var(--red);padding-left:18px;margin:22px 0}
-    .books,.blog-box{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.book,.blog-card{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.book:hover,.blog-card:hover{transform:translateY(-5px);border-color:rgba(139,30,36,.35);box-shadow:0 18px 35px rgba(0,0,0,.08)}.book img{aspect-ratio:2/3;object-fit:cover;background:#eee6dc}.book-content,.blog-card{padding:24px}.book h3,.blog-card h3{font-size:1.25rem;margin-bottom:12px}.book p,.blog-card p{margin-bottom:15px;color:var(--muted)}.book a,.blog-card a,.social-links a{color:var(--red);font-weight:bold}
-    .intro{max-width:850px;margin-left:auto;margin-right:auto;text-align:center}.intro p{font-size:1.15rem}
-    .author-grid{display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:center}.author-grid img{border-radius:10px;border:1px solid var(--line);box-shadow:0 16px 40px rgba(0,0,0,.12)}
-    .contact{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:42px}.amazon-box{margin-top:30px;padding:25px;background:#fff;border:1px solid var(--line);border-radius:14px}footer{text-align:center;background:#eee6dc;color:#555;padding:30px}footer p{color:#555}
-    @media(max-width:900px){.home-nav{flex-direction:column;align-items:center;text-align:center;margin-bottom:55px;padding:0}.logo img{width:270px;margin:0 auto}.nav-links{justify-content:center;gap:14px 18px}.hero{min-height:58vh}.featured,.author-grid{grid-template-columns:1fr;gap:34px}.books,.blog-box{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:600px){header.home-hero{min-height:100vh;padding:24px 16px 64px}main{width:min(100% - 28px,1120px);padding:52px 0}.logo img{width:230px}.nav-links{gap:10px 15px}nav a{font-size:1.05rem}.hero{width:min(100% - 20px,760px);min-height:58vh}.hero h1{font-size:clamp(3rem,15vw,4.8rem);letter-spacing:-2px;margin-bottom:24px}.hero p{font-size:1.16rem;line-height:1.65}.books,.blog-box{grid-template-columns:1fr}.panel,.contact{padding:28px}}
-}
-    .final-banner{
-  position:relative;
-  min-height:430px;
-  padding:80px 24px;
-  background-image:url("sfondo-home.jpg");
-  background-size:cover;
-  background-position:center bottom;
-  background-repeat:no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  overflow:hidden;
-  margin-bottom:0;
-}
-
-.final-banner-overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to bottom,
-    rgba(239,231,219,.88) 0%,
-    rgba(239,231,219,.68) 48%,
-    rgba(239,231,219,.92) 100%
-  );
-}
-
-.final-banner-content{
-  position:relative;
-  z-index:2;
-  max-width:920px;
-  margin:0 auto;
-}
-
-.final-logo{
-  width:280px;
-  max-width:90%;
-  margin:0 auto 22px;
-}
-
-.final-subtitle{
-  font-family:"Cormorant Garamond", Georgia, serif;
-  font-size:1.45rem;
-  color:#3b332d;
-  letter-spacing:.8px;
-  margin-bottom:26px;
-}
-
-.final-line{
-  width:110px;
-  height:1px;
-  background:rgba(60,45,35,.35);
-  margin:0 auto 28px;
-}
-
-.final-icons{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:16px;
-  margin-bottom:30px;
-}
-
-.final-icons a{
-  width:46px;
-  height:46px;
-  border:1px solid rgba(60,45,35,.24);
-  border-radius:999px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#3b332d;
-  font-size:1.05rem;
-  transition:.25s ease;
-  background:rgba(255,250,243,.35);
-}
-
-.final-icons a:hover{
-  background:#8b1e24;
-  border-color:#8b1e24;
-  color:#fff;
-  transform:translateY(-3px);
-}
-
-.final-author-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:10px;
-  font-size:.95rem;
-  color:#4f4943;
-  margin-bottom:24px;
-}
-
-.final-author-links a{
-  font-weight:600;
-}
-
-.final-author-links a:hover{
-  color:#8b1e24;
-}
-
-.final-copy{
-  font-size:.85rem;
-  color:#6b625a;
-}
-
-@media(max-width:600px){
-  .final-banner{
-    min-height:390px;
-    padding:64px 18px;
-  }
-
-  .final-logo{
-    width:220px;
-  }
-
-  .final-subtitle{
-    font-size:1.2rem;
-  }
-
-  .final-icons a{
-    width:42px;
-    height:42px;
-  }
-}
+    .hero{width:min(980px,calc(100% - 40px));min-height:72vh;padding-top:40px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;z-index:2}
+    .hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(4rem,7vw,7rem);line-height:.95;letter-spacing:-2px;margin-bottom:32px;color:#111;text-shadow:0 2px 10px rgba(255,255,255,.35)}
+    .hero p{max-width:760px;color:#111;font-size:clamp(1.18rem,2.3vw,1.55rem);line-height:1.8;margin-bottom:8px;text-align:center;font-weight:500}
+    .hero-small{color:var(--muted)!important}
+    .hero-action{margin-top:38px}
+    .btn{display:inline-block;padding:15px 34px;border-radius:999px;background:#7b1118;color:var(--gold);font-weight:bold;letter-spacing:1px;margin:6px 8px 6px 0;transition:.30s ease;box-shadow:0 10px 25px rgba(0,0,0,.20)}
+    .btn:hover{transform:translateY(-3px);background:#5f0d13;box-shadow:0 14px 30px rgba(0,0,0,.28)}
+    .btn.light{background:transparent;border:1px solid var(--red);color:var(--red);box-shadow:none}
+    main{width:min(1120px,calc(100% - 40px));margin:0 auto;padding:70px 0 0}
+    section{margin-bottom:90px}
+    .section-title{margin-bottom:30px}
+    .section-title span{color:var(--red);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:800}
+    h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4vw,3.2rem);color:var(--text);line-height:1.12;margin-top:8px}
+    p{color:var(--muted)}
+    .panel,.manifesto{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:42px;text-align:center}
+    .panel p,.manifesto p{max-width:760px;margin:0 auto 22px;font-size:1.15rem}
+    .buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+    .final-banner{position:relative;min-height:430px;padding:80px 24px;background-image:url("sfondo-home.jpg");background-size:cover;background-position:center bottom;background-repeat:no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;margin:0 calc(50% - 50vw);width:100vw}
+    .final-banner-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(239,231,219,.88) 0%,rgba(239,231,219,.68) 48%,rgba(239,231,219,.92) 100%)}
+    .final-banner-content{position:relative;z-index:2;max-width:920px;margin:0 auto}
+    .final-logo{width:280px;max-width:90%;margin:0 auto 22px}
+    .final-subtitle{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem;color:#3b332d;letter-spacing:.8px;margin-bottom:26px}
+    .final-line{width:110px;height:1px;background:rgba(60,45,35,.35);margin:0 auto 28px}
+    .final-icons{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:16px;margin-bottom:30px}
+    .final-icons a{width:46px;height:46px;border:1px solid rgba(60,45,35,.24);border-radius:999px;display:flex;align-items:center;justify-content:center;color:#3b332d;font-size:1.05rem;transition:.25s ease;background:rgba(255,250,243,.35)}
+    .final-icons a:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-3px)}
+    .final-author-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;font-size:.95rem;color:#4f4943;margin-bottom:24px}
+    .final-author-links a{font-weight:600}.final-author-links a:hover{color:var(--red)}
+    .final-copy{font-size:.85rem;color:#6b625a;margin:0}
+    @media(max-width:900px){.home-nav{flex-direction:column;align-items:center;text-align:center;margin-bottom:55px;padding:0}.logo img{width:270px;margin:0 auto}.nav-links{justify-content:center;gap:14px 18px;padding-top:0}.hero{min-height:58vh}}
+    @media(max-width:600px){header.home-hero{min-height:100vh;padding:24px 16px 64px}main{width:min(100% - 28px,1120px);padding:52px 0 0}.logo img{width:230px}nav a{font-size:1.05rem}.hero{width:min(100% - 20px,760px);min-height:58vh}.hero h1{font-size:clamp(3rem,15vw,4.8rem);letter-spacing:-2px;margin-bottom:24px}.hero p{font-size:1.16rem;line-height:1.65}.panel,.manifesto{padding:28px}.final-banner{min-height:390px;padding:64px 18px}.final-logo{width:220px}.final-subtitle{font-size:1.2rem}.final-icons a{width:42px;height:42px}}
   </style>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<style>
-
-<meta name="p:domain_verify" content="a82d47d84301a5fc102259df94f55294"/>
-
-<link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/">
-
-<meta name="author" content="Giuseppe Lo Iacono">
-
-<meta name="robots" content="index, follow">
-
-<meta name="theme-color" content="#efe7db">
-
 </head>
-
-
 <body>
-
 <header class="home-hero">
   <nav class="home-nav">
-    <div class="logo">
-      <a href="index.html">
-        <img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono">
-      </a>
-    </div>
-
+    <div class="logo"><a href="index.html"><img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono"></a></div>
     <div class="nav-links">
-      <a href="blog.html">Riflessioni</a>
-<a href="libri.html">Libri</a>
-      <a href="library.html">Library</a>
-      <a href="#english-books">International</a>
-      <a href="echo.html">ECHO</a>
-      <a href="chi-sono.html">Chi sono</a>
-      <a href="sharol-pinna.html">SIC</a>
-      <a href="community.html">Community</a>
-      <a href="#contatti">Contatti</a>
+      <a href="blog.html">Riflessioni</a><a href="libri.html">Libri</a><a href="library.html">Library</a><a href="library.html">International</a><a href="echo.html">ECHO</a><a href="chi-sono.html">Chi sono</a><a href="sharol-pinna.html">SIC</a><a href="community.html">Community</a><a href="#footer">Contatti</a>
     </div>
   </nav>
-
   <div class="hero">
     <h1>Ogni libro nasce<br>da una domanda.</h1>
-
     <p>Non scrivo per offrire certezze.</p>
     <p class="hero-small">Scrivo per osservare ciò che spesso rimane invisibile.</p>
-
-    <div class="hero-action">
-    <a class="btn" href="atlante.html">INIZIA IL VIAGGIO</a>
-    </div>
+    <div class="hero-action"><a class="btn" href="atlante.html">INIZIA IL VIAGGIO</a></div>
   </div>
 </header>
-
 <main>
-
-
-   <section class="panel" style="text-align:center;">
-
-  <div class="section-title">
-    <span>Riflessioni</span>
-    <h2>Domande che continuano anche dopo la lettura.</h2>
-  </div>
-
-  <p style="max-width:760px;margin:0 auto 35px;font-size:1.15rem;">
-    Il blog raccoglie riflessioni sulla natura umana, la libertà, la tecnologia,
-    il desiderio e tutto ciò che spesso rimane ai margini delle conversazioni quotidiane.
-  </p>
-
-  <a class="btn" href="blog.html">
-    Leggi tutte le riflessioni
-  </a>
-
-</section>
-
- <section class="panel" style="text-align:center;">
-
-  <div class="section-title">
-    <span>ECHO</span>
-    <h2>Quando il mondo smette di vederti.</h2>
-  </div>
-
-  <p style="max-width:760px;margin:0 auto 35px;font-size:1.15rem;">
-    Un progetto narrativo distopico su identità, controllo, invisibilità sociale
-    e libertà interiore. Una storia che osserva il confine tra tecnologia e coscienza.
-  </p>
-
-  <a class="btn" href="echo.html">
-    Scopri Il Cuore di ECHO
-  </a>
-
-</section>
-
-<section class="panel" style="text-align:center;">
-
-  <div class="section-title">
-    <span>Libri</span>
-    <h2>Ogni libro è una domanda diversa.</h2>
-  </div>
-
-  <p style="max-width:760px;margin:0 auto 35px;font-size:1.15rem;">
-    Romanzi, saggi e riflessioni che esplorano la natura umana,
-    la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.
-  </p>
-
-  <a class="btn" href="libri.html">
-    Scopri tutti i libri
-  </a>
-
-</section>
-
-<section class="panel" style="text-align:center;">
-
-  <div class="section-title">
-    <span>International</span>
-    <h2>Libri e risorse anche in inglese.</h2>
-  </div>
-
-  <p style="max-width:760px;margin:0 auto 35px;font-size:1.15rem;">
-    Una sezione dedicata ai lettori internazionali, con libri, riflessioni
-    e percorsi digitali pensati per esplorare le stesse domande oltre la lingua italiana.
-  </p>
-
-  <a class="btn" href="library.html">
-    Esplora la Library
-  </a>
-
-</section>
-<section class="panel" style="text-align:center;">
-
-  <div class="section-title">
-    <span>Community</span>
-    <h2>Uno spazio per domande e riflessioni.</h2>
-  </div>
-
-  <p style="max-width:760px;margin:0 auto 35px;font-size:1.15rem;">
-    Il sito non è solo una vetrina, ma un luogo aperto a chi desidera
-    leggere, osservare, fare domande e condividere il proprio punto di vista.
-  </p>
-
-  <a class="btn" href="community.html">
-    Entra nella Community
-  </a>
-
-</section>
-
-<section class="panel" style="text-align:center;">
-
-    <div class="section-title">
-        <span>Lettori</span>
-        <h2>Ogni libro continua nel lettore.</h2>
-    </div>
-
-    <p style="max-width:760px;margin:0 auto 35px;font-size:1.15rem;">
-        Ogni storia trova un significato diverso in chi la legge.
-        Se desideri scoprire le opinioni dei lettori e lasciare la tua recensione,
-        puoi visitare la pagina dedicata a ciascun libro.
-    </p>
-
-    <a class="btn" href="libri.html">
-        Scopri i libri
-    </a>
-
-</section>
-<section class="manifesto">
-  <div class="section-title">
-    <span>Altri percorsi dello Studio</span>
-    <h2>Sharol Pinna · SIC</h2>
-  </div>
-
-  <p>
-    Accanto ai libri e alle riflessioni di Giuseppe Lo Iacono nasce il percorso editoriale di Sharol Pinna:
-    cucina, rituali quotidiani, semplicità e cura.
-  </p>
-
-  <p>
-    Una voce diversa, autonoma e complementare, dedicata a chi cerca libri capaci di riportare valore
-    ai gesti semplici della vita.
-  </p>
-
-  <div class="buttons">
-    <a class="btn" href="https://amazon.com/author/sic" target="_blank" rel="noopener">
-      Pagina autore Amazon di Sharol
-    </a>
-    <a class="btn light" href="sharol-pinna.html">
-      Scopri Sharol sul sito
-    </a>
-  </div>
-</section>
-
-<section class="final-banner">
-
-  <div class="final-banner-overlay"></div>
-
-  <div class="final-banner-content">
-
-    <img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono" class="final-logo">
-
-    <p class="final-subtitle">
-      Libri · Riflessioni · The Observer Collection
-    </p>
-
-    <div class="final-line"></div>
-
-    <div class="final-icons">
-      <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank" rel="noopener" aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-
-      <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank" rel="noopener" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-
-      <a href="https://tiktok.com/@ilviandante1" target="_blank" rel="noopener" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-
-      <a href="https://www.youtube.com/@giuseppeloiacono82" target="_blank" rel="noopener" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-
-      <a href="https://amazon.com/author/iltuttologonarrante" target="_blank" rel="noopener" aria-label="Amazon">
-        <i class="fa-brands fa-amazon"></i>
-      </a>
-
-      <a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">
-        <i class="fa-brands fa-pinterest-p"></i>
-      </a>
-    </div>
-
-    <div class="final-author-links">
-      <a href="sharol-pinna.html">Sharol Pinna · SIC</a>
-      <span>•</span>
-      <a href="https://amazon.com/author/sic" target="_blank" rel="noopener">Pagina autore Amazon</a>
-      <span>•</span>
-      <a href="https://payhip.com/GiuseppeLoIaconoStore" target="_blank" rel="noopener">Digital Library</a>
-    </div>
-
-    <p class="final-copy">
-      © 2026 Giuseppe Lo Iacono Studio · Tutti i diritti riservati
-    </p>
-
-  </div>
-
-</section>
-
+  <section class="panel"><div class="section-title"><span>Riflessioni</span><h2>Domande che continuano anche dopo la lettura.</h2></div><p>Il blog raccoglie riflessioni sulla natura umana, la libertà, la tecnologia, il desiderio e tutto ciò che spesso rimane ai margini delle conversazioni quotidiane.</p><a class="btn" href="blog.html">Leggi tutte le riflessioni</a></section>
+  <section class="panel"><div class="section-title"><span>ECHO</span><h2>Quando il mondo smette di vederti.</h2></div><p>Un progetto narrativo distopico su identità, controllo, invisibilità sociale e libertà interiore. Una storia che osserva il confine tra tecnologia e coscienza.</p><a class="btn" href="echo.html">Scopri Il Cuore di ECHO</a></section>
+  <section class="panel"><div class="section-title"><span>Libri</span><h2>Ogni libro è una domanda diversa.</h2></div><p>Romanzi, saggi e riflessioni che esplorano la natura umana, la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.</p><a class="btn" href="libri.html">Scopri tutti i libri</a></section>
+  <section class="panel"><div class="section-title"><span>International</span><h2>Libri e risorse anche in inglese.</h2></div><p>Una sezione dedicata ai lettori internazionali, con libri, riflessioni e percorsi digitali pensati per esplorare le stesse domande oltre la lingua italiana.</p><a class="btn" href="library.html">Esplora la Library</a></section>
+  <section class="panel"><div class="section-title"><span>Community</span><h2>Uno spazio per domande e riflessioni.</h2></div><p>Il sito non è solo una vetrina, ma un luogo aperto a chi desidera leggere, osservare, fare domande e condividere il proprio punto di vista.</p><a class="btn" href="community.html">Entra nella Community</a></section>
+  <section class="panel"><div class="section-title"><span>Lettori</span><h2>Ogni libro continua nel lettore.</h2></div><p>Ogni storia trova un significato diverso in chi la legge. Se desideri scoprire le opinioni dei lettori e lasciare la tua recensione, puoi visitare la pagina dedicata a ciascun libro.</p><a class="btn" href="libri.html">Scopri i libri</a></section>
+  <section class="manifesto"><div class="section-title"><span>Altri percorsi dello Studio</span><h2>Sharol Pinna · SIC</h2></div><p>Accanto ai libri e alle riflessioni di Giuseppe Lo Iacono nasce il percorso editoriale di Sharol Pinna: cucina, rituali quotidiani, semplicità e cura.</p><p>Una voce diversa, autonoma e complementare, dedicata a chi cerca libri capaci di riportare valore ai gesti semplici della vita.</p><div class="buttons"><a class="btn" href="https://amazon.com/author/sic" target="_blank" rel="noopener">Pagina autore Amazon di Sharol</a><a class="btn light" href="sharol-pinna.html">Scopri Sharol sul sito</a></div></section>
+  <section class="final-banner" id="footer"><div class="final-banner-overlay"></div><div class="final-banner-content"><img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono" class="final-logo"><p class="final-subtitle">Libri · Riflessioni · The Observer Collection</p><div class="final-line"></div><div class="final-icons"><a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://tiktok.com/@ilviandante1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="https://www.youtube.com/@giuseppeloiacono82" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="https://amazon.com/author/iltuttologonarrante" target="_blank" rel="noopener" aria-label="Amazon"><i class="fa-brands fa-amazon"></i></a><a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></div><div class="final-author-links"><a href="sharol-pinna.html">Sharol Pinna · SIC</a><span>•</span><a href="https://amazon.com/author/sic" target="_blank" rel="noopener">Pagina autore Amazon</a><span>•</span><a href="https://payhip.com/GiuseppeLoIaconoStore" target="_blank" rel="noopener">Digital Library</a></div><p class="final-copy">© 2026 Giuseppe Lo Iacono Studio · Tutti i diritti riservati</p></div></section>
 </main>
-
 </body>
 </html>
