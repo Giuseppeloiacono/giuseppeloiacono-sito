@@ -261,54 +261,31 @@ background:
     font-size:clamp(2.2rem,10vw,3.2rem);
   }
 .echo-banner{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  margin-bottom:90px;
-  background:#050505;
-  overflow:hidden;
+
+    width:100vw;
+
+    margin-left:calc(50% - 50vw);
+
+    margin-bottom:90px;
+
+    overflow:hidden;
+
+    background:#0b0b0b;
+
 }
 
 .echo-banner-link{
-  position:relative;
-  display:block;
-  width:100%;
+
+    display:block;
+
 }
 
 .echo-banner img{
-  width:100%;
-  display:block;
-  border-radius:18px;
-  box-shadow:0 35px 80px rgba(0,0,0,.35);
-  transition:transform .45s ease;
-}
 
-.echo-banner-link:hover img{
-  transform:scale(1.015);
-}
+    width:100%;
 
-.echo-banner-button{
-  position:absolute;
-  right:8%;
-  bottom:12%;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:16px 34px;
-  border:1px solid rgba(180,0,0,.85);
-  color:#f4f0ea;
-  background:rgba(0,0,0,.45);
-  backdrop-filter:blur(3px);
-  font-weight:bold;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-  border-radius:999px;
-  transition:.25s ease;
-}
+    display:block;
 
-.echo-banner-link:hover .echo-banner-button{
-  background:#8b1e24;
-  border-color:#8b1e24;
-  transform:translateY(-3px);
 }
 
 @media(max-width:700px){
@@ -367,9 +344,15 @@ background:
 
     <img src="echo-banner.jpg" alt="Il Cuore di ECHO - Quando il mondo smette di vederti">
 
-    <span class="echo-banner-button">
-      Scopri Il Cuore di ECHO
-    </span>
+ <section class="echo-banner">
+
+    <a href="echo.html" class="echo-banner-link">
+
+        <img src="echo-banner.jpg" alt="Banner Il Cuore di ECHO">
+
+    </a>
+
+</section>
 
   </a>
 
