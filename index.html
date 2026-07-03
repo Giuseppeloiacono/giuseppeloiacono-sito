@@ -260,23 +260,58 @@ background:
   .reflection-content h2{
     font-size:clamp(2.2rem,10vw,3.2rem);
   }
-.echo-banner{
+.echo-showcase{
   width:100vw;
   margin-left:calc(50% - 50vw);
-  margin-bottom:90px;
+  padding:90px 24px;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(139,30,36,.18), transparent 28%),
+    radial-gradient(circle at 82% 80%, rgba(0,0,0,.32), transparent 36%),
+    linear-gradient(135deg, #120f0f 0%, #211816 48%, #efe7db 100%);
+  border-top:1px solid rgba(0,0,0,.12);
+  border-bottom:1px solid rgba(0,0,0,.12);
   overflow:hidden;
-  background:#0b0b0b;
 }
 
-.echo-banner-link{
+.echo-showcase-inner{
+  width:min(1180px, calc(100% - 40px));
+  margin:0 auto;
+}
+
+.echo-showcase-link{
   display:block;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:
+    0 35px 90px rgba(0,0,0,.38),
+    0 0 0 1px rgba(255,255,255,.08);
+  transition:transform .45s ease, box-shadow .45s ease;
 }
 
-.echo-banner img{
+.echo-showcase-link:hover{
+  transform:translateY(-6px);
+  box-shadow:
+    0 45px 110px rgba(0,0,0,.48),
+    0 0 0 1px rgba(255,255,255,.12);
+}
+
+.echo-showcase img{
   width:100%;
   display:block;
 }
-  
+
+@media(max-width:700px){
+  .echo-showcase{
+    padding:60px 16px;
+  }
+
+  .echo-showcase-inner{
+    width:100%;
+  }
+
+  .echo-showcase-link{
+    border-radius:16px;
+  }
 
   </style>
 </head>
@@ -315,11 +350,18 @@ background:
 
   </div>
 
-</section>
-<section class="echo-banner">
-  <a href="echo.html" class="echo-banner-link" aria-label="Scopri Il Cuore di ECHO">
-   <img src="echo-banner.jpg.png" alt="Banner Il Cuore di ECHO">
-  </a>
+<section class="echo-showcase">
+
+  <div class="echo-showcase-inner">
+
+    <a href="echo.html" class="echo-showcase-link" aria-label="Scopri Il Cuore di ECHO">
+
+      <img src="echo-banner.jpg.png" alt="Il Cuore di ECHO - progetto distopico in lavorazione">
+
+    </a>
+
+  </div>
+
 </section>
   </a>
 
