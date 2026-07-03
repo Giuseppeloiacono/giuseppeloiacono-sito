@@ -176,6 +176,94 @@
 }
     @media(max-width:900px){.home-nav{flex-direction:column;align-items:center;text-align:center;margin-bottom:55px;padding:0}.logo img{width:270px;margin:0 auto}.nav-links{justify-content:center;gap:14px 18px;padding-top:0}.hero{min-height:58vh}}
     @media(max-width:600px){header.home-hero{min-height:100vh;padding:24px 16px 64px}main{width:min(100% - 28px,1120px);padding:52px 0 0}.logo img{width:230px}nav a{font-size:1.05rem}.hero{width:min(100% - 20px,760px);min-height:58vh}.hero h1{font-size:clamp(3rem,15vw,4.8rem);letter-spacing:-2px;margin-bottom:24px}.hero p{font-size:1.16rem;line-height:1.65}.panel,.manifesto{padding:28px}.final-banner{min-height:390px;padding:64px 18px}.final-logo{width:220px}.final-subtitle{font-size:1.2rem}.final-icons a{width:42px;height:42px}}
+ .reflection-banner{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  min-height:430px;
+  padding:90px 24px;
+  background:
+    linear-gradient(
+      120deg,
+      rgba(239,231,219,.96) 0%,
+      rgba(239,231,219,.88) 45%,
+      rgba(139,30,36,.14) 100%
+    ),
+    url("sfondo-home.jpg");
+  background-size:cover;
+  background-position:center bottom;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  border-top:1px solid rgba(0,0,0,.08);
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.reflection-banner::before{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  border:1px solid rgba(139,30,36,.16);
+  border-radius:50%;
+  right:-130px;
+  top:-120px;
+}
+
+.reflection-banner::after{
+  content:"RIFLESSIONI";
+  position:absolute;
+  bottom:-34px;
+  left:50%;
+  transform:translateX(-50%);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(4rem,13vw,11rem);
+  letter-spacing:8px;
+  color:rgba(139,30,36,.055);
+  line-height:1;
+  pointer-events:none;
+}
+
+.reflection-content{
+  max-width:860px;
+  position:relative;
+  z-index:2;
+}
+
+.reflection-content span{
+  color:#8b1e24;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:.82rem;
+  font-weight:800;
+}
+
+.reflection-content h2{
+  font-size:clamp(2.6rem,5vw,4.4rem);
+  margin:18px auto 26px;
+  line-height:1.05;
+}
+
+.reflection-content p{
+  max-width:760px;
+  margin:0 auto 34px;
+  color:#3f3934;
+  font-size:clamp(1.15rem,2vw,1.35rem);
+  line-height:1.8;
+}
+
+@media(max-width:600px){
+  .reflection-banner{
+    min-height:390px;
+    padding:70px 20px;
+  }
+
+  .reflection-content h2{
+    font-size:clamp(2.2rem,10vw,3.2rem);
+  }
+
   </style>
 </head>
 <body>
@@ -194,7 +282,26 @@
   </div>
 </header>
 <main>
-  <section class="panel"><div class="section-title"><span>Riflessioni</span><h2>Domande che continuano anche dopo la lettura.</h2></div><p>Il blog raccoglie riflessioni sulla natura umana, la libertà, la tecnologia, il desiderio e tutto ciò che spesso rimane ai margini delle conversazioni quotidiane.</p><a class="btn" href="blog.html">Leggi tutte le riflessioni</a></section>
+ <section class="reflection-banner">
+
+  <div class="reflection-content">
+
+    <span>Riflessioni</span>
+
+    <h2>Domande che continuano anche dopo la lettura.</h2>
+
+    <p>
+      Il blog raccoglie pensieri sulla natura umana, la libertà, la tecnologia,
+      il desiderio e tutto ciò che spesso rimane ai margini delle conversazioni quotidiane.
+    </p>
+
+    <a class="btn" href="blog.html">
+      Leggi tutte le riflessioni
+    </a>
+
+  </div>
+
+</section>
   <section class="panel"><div class="section-title"><span>ECHO</span><h2>Quando il mondo smette di vederti.</h2></div><p>Un progetto narrativo distopico su identità, controllo, invisibilità sociale e libertà interiore. Una storia che osserva il confine tra tecnologia e coscienza.</p><a class="btn" href="echo.html">Scopri Il Cuore di ECHO</a></section>
   <section class="panel"><div class="section-title"><span>Libri</span><h2>Ogni libro è una domanda diversa.</h2></div><p>Romanzi, saggi e riflessioni che esplorano la natura umana, la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.</p><a class="btn" href="libri.html">Scopri tutti i libri</a></section>
   <section class="panel"><div class="section-title"><span>International</span><h2>Libri e risorse anche in inglese.</h2></div><p>Una sezione dedicata ai lettori internazionali, con libri, riflessioni e percorsi digitali pensati per esplorare le stesse domande oltre la lingua italiana.</p><a class="btn" href="library.html">Esplora la Library</a></section>
