@@ -260,6 +260,68 @@ background:
   .reflection-content h2{
     font-size:clamp(2.2rem,10vw,3.2rem);
   }
+.echo-banner{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-bottom:90px;
+  background:#050505;
+  overflow:hidden;
+}
+
+.echo-banner-link{
+  position:relative;
+  display:block;
+  width:100%;
+}
+
+.echo-banner img{
+  width:100%;
+  display:block;
+  border-radius:18px;
+  box-shadow:0 35px 80px rgba(0,0,0,.35);
+  transition:transform .45s ease;
+}
+
+.echo-banner-link:hover img{
+  transform:scale(1.015);
+}
+
+.echo-banner-button{
+  position:absolute;
+  right:8%;
+  bottom:12%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px 34px;
+  border:1px solid rgba(180,0,0,.85);
+  color:#f4f0ea;
+  background:rgba(0,0,0,.45);
+  backdrop-filter:blur(3px);
+  font-weight:bold;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  border-radius:999px;
+  transition:.25s ease;
+}
+
+.echo-banner-link:hover .echo-banner-button{
+  background:#8b1e24;
+  border-color:#8b1e24;
+  transform:translateY(-3px);
+}
+
+@media(max-width:700px){
+  .echo-banner-button{
+    position:static;
+    width:calc(100% - 36px);
+    margin:18px auto 26px;
+    display:flex;
+    background:#8b1e24;
+    border-color:#8b1e24;
+    font-size:.85rem;
+    padding:14px 22px;
+  }
 
   </style>
 </head>
@@ -299,7 +361,19 @@ background:
   </div>
 
 </section>
-  <section class="panel"><div class="section-title"><span>ECHO</span><h2>Quando il mondo smette di vederti.</h2></div><p>Un progetto narrativo distopico su identità, controllo, invisibilità sociale e libertà interiore. Una storia che osserva il confine tra tecnologia e coscienza.</p><a class="btn" href="echo.html">Scopri Il Cuore di ECHO</a></section>
+ <section class="echo-banner">
+
+  <a href="echo.html" class="echo-banner-link" aria-label="Scopri Il Cuore di ECHO">
+
+    <img src="echo-banner.jpg" alt="Il Cuore di ECHO - Quando il mondo smette di vederti">
+
+    <span class="echo-banner-button">
+      Scopri Il Cuore di ECHO
+    </span>
+
+  </a>
+
+</section>
   <section class="panel"><div class="section-title"><span>Libri</span><h2>Ogni libro è una domanda diversa.</h2></div><p>Romanzi, saggi e riflessioni che esplorano la natura umana, la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.</p><a class="btn" href="libri.html">Scopri tutti i libri</a></section>
   <section class="panel"><div class="section-title"><span>International</span><h2>Libri e risorse anche in inglese.</h2></div><p>Una sezione dedicata ai lettori internazionali, con libri, riflessioni e percorsi digitali pensati per esplorare le stesse domande oltre la lingua italiana.</p><a class="btn" href="library.html">Esplora la Library</a></section>
   <section class="panel"><div class="section-title"><span>Community</span><h2>Uno spazio per domande e riflessioni.</h2></div><p>Il sito non è solo una vetrina, ma un luogo aperto a chi desidera leggere, osservare, fare domande e condividere il proprio punto di vista.</p><a class="btn" href="community.html">Entra nella Community</a></section>
