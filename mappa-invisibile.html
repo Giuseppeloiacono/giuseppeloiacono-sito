@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>La Mappa Invisibile | Giuseppe Lo Iacono</title>
+  <meta name="description" content="Scopri La Mappa Invisibile, il Volume 003 dell'Archivio delle Osservazioni di Giuseppe Lo Iacono. Un viaggio dedicato ai modelli mentali, alle convinzioni e ai percorsi invisibili che guidano il nostro modo di interpretare la realtà.">
+  <meta name="author" content="Giuseppe Lo Iacono">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090909">
+
+  <link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/mappa-invisibile.html">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="book">
+  <meta property="og:title" content="La Mappa Invisibile | Giuseppe Lo Iacono">
+  <meta property="og:description" content="Il Volume 003 dell'Archivio delle Osservazioni. Il processo invisibile che sta dietro ogni pensiero, emozione e decisione.">
+  <meta property="og:url" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/mappa-invisibile.html">
+  <meta property="og:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/mappa-invisibile.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La Mappa Invisibile | Giuseppe Lo Iacono">
+  <meta name="twitter:description" content="Il Volume 003 dell'Archivio delle Osservazioni. Pensieri, emozioni, decisioni e percorsi invisibili.">
+  <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/mappa-invisibile.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "La Mappa Invisibile",
+    "author": {
+      "@type": "Person",
+      "name": "Giuseppe Lo Iacono"
+    },
+    "isPartOf": {
+      "@type": "CreativeWorkSeries",
+      "name": "Archivio delle Osservazioni"
+    },
+    "position": "003",
+    "inLanguage": "it",
+    "description": "Un viaggio dedicato ai modelli mentali, alle convinzioni e ai percorsi invisibili che guidano il nostro modo di interpretare la realtà.",
+    "image": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/mappa-invisibile.png",
+    "url": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/mappa-invisibile.html",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://payhip.com/b/Z4WrT",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#090909;
+      color:#f6efe1;
+      line-height:1.75;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+
+    :root{
+      --black:#090909;
+      --black-soft:#11100e;
+      --ivory:#f6efe1;
+      --paper:#eee4d3;
+      --gold:#d4ad58;
+      --gold-light:#f0cb7c;
+      --line:rgba(212,173,88,.28);
+      --muted:rgba(246,239,225,.68);
+    }
+
+    .topbar{
+      width:min(1440px,calc(100% - 40px));
+      margin:0 auto;
+      padding:28px 0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:28px;
+    }
+
+    .brand img{width:190px}
+
+    .topnav{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:26px;
+    }
+
+    .topnav a{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:1.23rem;
+      font-weight:600;
+      transition:.25s ease;
+    }
+
+    .topnav a:hover{color:var(--gold)}
+
+    .volume-hero{
+      position:relative;
+      overflow:hidden;
+      border-top:1px solid rgba(212,173,88,.12);
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(circle at 25% 18%,rgba(212,173,88,.12),transparent 28%),
+        radial-gradient(circle at 82% 82%,rgba(212,173,88,.08),transparent 30%),
+        linear-gradient(135deg,#070707 0%,#11100e 58%,#18140f 100%);
+    }
+
+    .volume-hero::after{
+      content:"003";
+      position:absolute;
+      right:2%;
+      bottom:-90px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(12rem,27vw,28rem);
+      line-height:1;
+      color:rgba(212,173,88,.04);
+      pointer-events:none;
+    }
+
+    .volume-hero-inner{
+      width:min(1180px,calc(100% - 40px));
+      min-height:730px;
+      margin:0 auto;
+      padding:90px 0;
+      display:grid;
+      grid-template-columns:minmax(280px,420px) 1fr;
+      gap:80px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .cover{
+      max-width:390px;
+      margin:0 auto;
+      position:relative;
+    }
+
+    .cover::before{
+      content:"";
+      position:absolute;
+      inset:18px -18px -18px 18px;
+      border:1px solid rgba(212,173,88,.36);
+      z-index:-1;
+    }
+
+    .cover img{
+      width:100%;
+      border:1px solid rgba(212,173,88,.26);
+      box-shadow:0 35px 90px rgba(0,0,0,.58);
+      transition:.4s ease;
+    }
+
+    .cover:hover img{
+      transform:translateY(-7px);
+      box-shadow:0 45px 110px rgba(0,0,0,.68);
+    }
+
+    .eyebrow,
+    .section-kicker,
+    .availability{
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:.78rem;
+      font-weight:800;
+    }
+
+    h1,h2,h3{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      line-height:1.06;
+    }
+
+    h1{
+      margin:18px 0 20px;
+      font-size:clamp(4rem,7vw,7rem);
+      letter-spacing:-2px;
+    }
+
+    .subtitle{
+      max-width:700px;
+      margin-bottom:24px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(1.65rem,3vw,2.35rem);
+      line-height:1.35;
+      color:#e8d2a5;
+    }
+
+    .hero-copy{
+      max-width:690px;
+      margin-bottom:32px;
+      color:var(--muted);
+      font-size:1.1rem;
+    }
+
+    .availability{
+      margin-bottom:24px;
+      color:#cfb57a;
+    }
+
+    .btn{
+      display:inline-flex;
+      justify-content:center;
+      align-items:center;
+      min-height:52px;
+      padding:14px 30px;
+      border:1px solid var(--gold);
+      border-radius:999px;
+      background:var(--gold);
+      color:#111;
+      font-weight:800;
+      letter-spacing:.7px;
+      transition:.3s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:var(--gold-light);
+      border-color:var(--gold-light);
+      box-shadow:0 16px 36px rgba(0,0,0,.34);
+    }
+
+    .btn.outline{
+      background:transparent;
+      color:var(--gold);
+    }
+
+    .btn.outline:hover{
+      background:var(--gold);
+      color:#111;
+    }
+
+    .intro{
+      padding:110px 20px;
+      background:var(--paper);
+      color:#191714;
+    }
+
+    .intro-inner{
+      width:min(980px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .intro h2{
+      max-width:900px;
+      margin:14px 0 34px;
+      font-size:clamp(3rem,5.5vw,5.1rem);
+    }
+
+    .intro-copy{
+      max-width:850px;
+      color:#544d45;
+      font-size:1.17rem;
+    }
+
+    .intro-copy p+p{margin-top:18px}
+
+    .paths{
+      padding:115px 20px;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(212,173,88,.08),transparent 30%),
+        var(--black);
+    }
+
+    .paths-inner{
+      width:min(1120px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .paths-header{
+      max-width:850px;
+      margin:0 auto 65px;
+      text-align:center;
+    }
+
+    .paths-header h2{
+      margin:14px 0 22px;
+      font-size:clamp(3rem,5.7vw,5.2rem);
+    }
+
+    .paths-header p{
+      color:var(--muted);
+      font-size:1.1rem;
+    }
+
+    .path-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .path{
+      min-height:190px;
+      padding:34px;
+      border:1px solid var(--line);
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.025),rgba(212,173,88,.04)),
+        var(--black-soft);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .path::after{
+      content:attr(data-number);
+      position:absolute;
+      right:18px;
+      bottom:-30px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:7rem;
+      color:rgba(212,173,88,.045);
+      line-height:1;
+    }
+
+    .path h3{
+      margin-bottom:14px;
+      font-size:2rem;
+      color:#f3e5c9;
+      position:relative;
+      z-index:2;
+    }
+
+    .path p{
+      color:var(--muted);
+      position:relative;
+      z-index:2;
+    }
+
+    .central-question{
+      padding:110px 20px;
+      background:#efe5d5;
+      color:#191714;
+      text-align:center;
+    }
+
+    .central-question-inner{
+      width:min(950px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .central-question h2{
+      margin:14px auto 30px;
+      font-size:clamp(3rem,6vw,5.4rem);
+    }
+
+    .central-question blockquote{
+      max-width:800px;
+      margin:0 auto;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(1.8rem,3vw,2.55rem);
+      line-height:1.45;
+      color:#3d362e;
+    }
+
+    .archive-link{
+      padding:110px 20px;
+      background:
+        radial-gradient(circle at 50% 50%,rgba(212,173,88,.10),transparent 30%),
+        #050505;
+      text-align:center;
+    }
+
+    .archive-link-inner{
+      width:min(900px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .archive-link h2{
+      margin:14px 0 24px;
+      font-size:clamp(3rem,5.5vw,5rem);
+    }
+
+    .archive-link p{
+      max-width:680px;
+      margin:0 auto 34px;
+      color:var(--muted);
+    }
+
+    .navigation{
+      padding:70px 20px;
+      background:#11100e;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .navigation-inner{
+      width:min(1000px,calc(100% - 40px));
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .nav-volume{
+      color:var(--gold);
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:1.45rem;
+      font-weight:600;
+      transition:.25s ease;
+    }
+
+    .nav-volume:hover{
+      color:var(--gold-light);
+      transform:translateY(-2px);
+    }
+
+    .buy{
+      padding:110px 20px;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(212,173,88,.12),transparent 32%),
+        #080808;
+    }
+
+    .buy h2{
+      margin:14px 0 22px;
+      font-size:clamp(3rem,5.7vw,5.2rem);
+    }
+
+    .buy p{
+      max-width:690px;
+      margin:0 auto 34px;
+      color:var(--muted);
+      font-size:1.08rem;
+    }
+
+    footer{
+      padding:34px 20px;
+      text-align:center;
+      border-top:1px solid rgba(212,173,88,.16);
+      background:#050505;
+      color:rgba(246,239,225,.48);
+      font-size:.88rem;
+    }
+
+    @media(max-width:950px){
+      .topbar{flex-direction:column}
+      .brand img{width:220px}
+
+      .volume-hero-inner{
+        grid-template-columns:1fr;
+        gap:58px;
+        text-align:center;
+      }
+
+      .cover{max-width:340px}
+
+      .hero-copy{
+        margin-left:auto;
+        margin-right:auto;
+      }
+    }
+
+    @media(max-width:700px){
+      .topnav{gap:14px 18px}
+      .topnav a{font-size:1.05rem}
+
+      .volume-hero-inner{
+        width:min(100% - 28px,1180px);
+        min-height:auto;
+        padding:70px 0;
+      }
+
+      .cover{max-width:285px}
+
+      .intro,
+      .paths,
+      .central-question,
+      .archive-link,
+      .buy{
+        padding-left:14px;
+        padding-right:14px;
+      }
+
+      .intro-inner,
+      .paths-inner,
+      .central-question-inner,
+      .archive-link-inner{
+        width:min(100% - 28px,1120px);
+      }
+
+      .path-grid{grid-template-columns:1fr}
+
+      .navigation-inner{
+        justify-content:center;
+        text-align:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="topbar">
+      <a class="brand" href="index.html">
+        <img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono">
+      </a>
+
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="archivio-osservazioni.html">Archivio</a>
+        <a href="blog.html">Riflessioni</a>
+        <a href="libri.html">Libri</a>
+        <a href="chi-sono.html">Chi sono</a>
+      </div>
+    </nav>
+
+    <section class="volume-hero">
+      <div class="volume-hero-inner">
+        <div class="cover">
+          <img src="mappa-invisibile.png" alt="Copertina de La Mappa Invisibile">
+        </div>
+
+        <div>
+          <span class="eyebrow">Archivio delle Osservazioni · Volume 003</span>
+
+          <h1>La Mappa Invisibile</h1>
+
+          <p class="subtitle">
+            Il processo invisibile che sta dietro ogni pensiero, emozione e decisione.
+          </p>
+
+          <p class="hero-copy">
+            Un volume dedicato ai percorsi interiori che orientano il nostro modo
+            di interpretare ciò che accade. Esperienze, convinzioni, paure e aspettative
+            costruiscono mappe che spesso seguiamo senza rendercene conto.
+          </p>
+
+          <p class="availability">Disponibile su Payhip</p>
+
+          <a class="btn" href="https://payhip.com/b/Z4WrT" target="_blank" rel="noopener">
+            Leggi il Volume 003
+          </a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <div class="intro-inner">
+        <span class="section-kicker">Perché nasce questo volume</span>
+
+        <h2>
+          Nessuna decisione nasce nel vuoto.
+        </h2>
+
+        <div class="intro-copy">
+          <p>
+            Pensieri, emozioni e scelte sembrano emergere nel presente.
+          </p>
+
+          <p>
+            Ma spesso seguono percorsi costruiti molto prima:
+            esperienze, convinzioni, paure, desideri e interpretazioni
+            che hanno lasciato una traccia.
+          </p>
+
+          <p>
+            <em>La Mappa Invisibile</em> osserva questi itinerari interiori:
+            le strutture silenziose attraverso cui leggiamo il mondo,
+            attribuiamo significati e decidiamo come reagire.
+          </p>
+
+          <p>
+            Il volume non pretende di disegnare una mappa universale.
+            Invita ciascun lettore a riconoscere la propria.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="paths">
+      <div class="paths-inner">
+        <div class="paths-header">
+          <span class="section-kicker">I percorsi invisibili</span>
+
+          <h2>
+            Ciò che guida una scelta non è sempre visibile.
+          </h2>
+
+          <p>
+            Il volume attraversa alcuni elementi che contribuiscono
+            a formare il modo in cui pensiamo, sentiamo e decidiamo.
+          </p>
+        </div>
+
+        <div class="path-grid">
+          <article class="path" data-number="01">
+            <h3>Esperienze</h3>
+            <p>
+              Ciò che abbiamo vissuto crea riferimenti, aspettative
+              e percorsi che influenzano il presente.
+            </p>
+          </article>
+
+          <article class="path" data-number="02">
+            <h3>Convinzioni</h3>
+            <p>
+              Le idee sedimentate nel tempo definiscono ciò che consideriamo
+              possibile, normale o inevitabile.
+            </p>
+          </article>
+
+          <article class="path" data-number="03">
+            <h3>Emozioni</h3>
+            <p>
+              Le emozioni non sono semplici reazioni:
+              orientano l’attenzione e modificano il significato degli eventi.
+            </p>
+          </article>
+
+          <article class="path" data-number="04">
+            <h3>Paure</h3>
+            <p>
+              Ciò che temiamo può restringere il campo delle possibilità
+              prima ancora che una scelta venga formulata.
+            </p>
+          </article>
+
+          <article class="path" data-number="05">
+            <h3>Interpretazioni</h3>
+            <p>
+              Tra un fatto e una decisione esiste il significato
+              che scegliamo, spesso inconsapevolmente, di attribuirgli.
+            </p>
+          </article>
+
+          <article class="path" data-number="06">
+            <h3>Decisioni</h3>
+            <p>
+              Ogni scelta è il punto visibile di un percorso
+              che può essere iniziato molto tempo prima.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="central-question">
+      <div class="central-question-inner">
+        <span class="section-kicker">La domanda centrale</span>
+
+        <h2>
+          Stiamo scegliendo la strada oppure seguendo una mappa già tracciata?
+        </h2>
+
+        <blockquote>
+          Quanto delle nostre decisioni nasce dal presente,
+          e quanto dai percorsi invisibili costruiti dalle esperienze passate?
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="archive-link">
+      <div class="archive-link-inner">
+        <span class="section-kicker">Archivio delle Osservazioni</span>
+
+        <h2>
+          Il terzo volume osserva ciò che accade prima della scelta.
+        </h2>
+
+        <p>
+          Dopo aver interrogato le convinzioni e il punto di vista dell’osservatore,
+          <em>La Mappa Invisibile</em> entra nei processi silenziosi
+          che trasformano esperienze e interpretazioni in pensieri, emozioni e decisioni.
+        </p>
+
+        <a class="btn outline" href="archivio-osservazioni.html">
+          Torna all’Archivio
+        </a>
+      </div>
+    </section>
+
+    <section class="navigation">
+      <div class="navigation-inner">
+        <a class="nav-volume" href="chi-osserva-chi.html">
+          ← Volume 002 · Chi osserva chi
+        </a>
+
+        <a class="nav-volume" href="archivio-osservazioni.html">
+          Archivio delle Osservazioni →
+        </a>
+      </div>
+    </section>
+
+    <section class="buy">
+      <span class="section-kicker">Disponibile su Payhip</span>
+
+      <h2>
+        Continua con il Volume 003.
+      </h2>
+
+      <p>
+        Un libro breve per chi vuole osservare i percorsi invisibili
+        che trasformano esperienze, convinzioni ed emozioni in decisioni.
+      </p>
+
+      <a class="btn" href="https://payhip.com/b/Z4WrT" target="_blank" rel="noopener">
+        Acquista La Mappa Invisibile
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Giuseppe Lo Iacono Studio · Tutti i diritti riservati
+  </footer>
+
+</body>
+</html>
