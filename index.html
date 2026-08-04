@@ -262,7 +262,55 @@ background:
 }
 
 }
+.archive-showcase{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  padding:90px 24px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(212,173,88,.12), transparent 34%),
+    linear-gradient(180deg,#090909 0%,#11100e 100%);
+  border-top:1px solid rgba(212,173,88,.18);
+  border-bottom:1px solid rgba(212,173,88,.18);
+}
 
+.archive-showcase-inner{
+  width:min(1180px,calc(100% - 40px));
+  margin:auto;
+}
+
+.archive-showcase-link{
+  display:block;
+  overflow:hidden;
+  border-radius:22px;
+  box-shadow:0 30px 70px rgba(0,0,0,.45);
+  transition:.35s;
+}
+
+.archive-showcase-link:hover{
+  transform:translateY(-5px);
+  box-shadow:0 40px 90px rgba(0,0,0,.55);
+}
+
+.archive-showcase img{
+  display:block;
+  width:100%;
+}
+
+@media(max-width:700px){
+
+.archive-showcase{
+padding:60px 16px;
+}
+
+.archive-showcase-inner{
+width:100%;
+}
+
+.archive-showcase-link{
+border-radius:16px;
+}
+
+}
 .echo-showcase{
   width:100vw;
   margin-left:calc(50% - 50vw);
@@ -425,6 +473,24 @@ background:
 
   </div>
    </section>
+
+<section class="archive-showcase">
+
+  <div class="archive-showcase-inner">
+
+    <a href="archivio-osservazioni.html"
+       class="archive-showcase-link">
+
+      <img src="immagine collezione delle osservazioni..png"
+           alt="Archivio delle Osservazioni">
+
+    </a>
+
+  </div>
+
+</section>
+
+<section class="echo-showcase">
 
 <section class="echo-showcase">
 
