@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Archivio delle Osservazioni | Giuseppe Lo Iacono</title>
+
+  <meta name="description" content="Scopri l’Archivio delle Osservazioni di Giuseppe Lo Iacono: libri brevi, domande profonde e prospettive dedicate al comportamento umano, alla percezione e al pensiero.">
+
+  <meta name="author" content="Giuseppe Lo Iacono">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090909">
+
+  <link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/archivio-osservazioni.html">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Archivio delle Osservazioni | Giuseppe Lo Iacono">
+  <meta property="og:description" content="Libri brevi. Domande profonde. Prospettive che restano aperte.">
+  <meta property="og:url" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/archivio-osservazioni.html">
+  <meta property="og:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/archivio-osservazioni-hero.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Archivio delle Osservazioni | Giuseppe Lo Iacono">
+  <meta name="twitter:description" content="Libri brevi. Domande profonde. Prospettive che restano aperte.">
+  <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/archivio-osservazioni-hero.png">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#090909;
+      color:#f6efe1;
+      line-height:1.75;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    :root{
+      --black:#090909;
+      --black-soft:#11100e;
+      --ivory:#f6efe1;
+      --paper:#eee4d3;
+      --gold:#d4ad58;
+      --gold-light:#f0cb7c;
+      --line:rgba(212,173,88,.28);
+      --muted:rgba(246,239,225,.68);
+    }
+
+    .topbar{
+      width:min(1440px,calc(100% - 40px));
+      margin:0 auto;
+      padding:28px 0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:28px;
+    }
+
+    .brand img{
+      width:190px;
+    }
+
+    .topnav{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:28px;
+    }
+
+    .topnav a{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:1.25rem;
+      font-weight:600;
+      transition:.25s ease;
+    }
+
+    .topnav a:hover{
+      color:var(--gold);
+    }
+
+    .hero-image{
+      width:100%;
+      background:#050505;
+      border-top:1px solid rgba(212,173,88,.14);
+      border-bottom:1px solid var(--line);
+      overflow:hidden;
+    }
+
+    .hero-image img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    .hero-intro{
+      padding:95px 20px;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(212,173,88,.12),transparent 32%),
+        linear-gradient(180deg,#090909,#11100e);
+    }
+
+    .hero-intro-inner{
+      width:min(930px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .eyebrow,
+    .section-kicker,
+    .volume-number,
+    .availability,
+    .future-label{
+      color:var(--gold);
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:.78rem;
+      font-weight:800;
+    }
+
+    h1,
+    h2,
+    h3{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      line-height:1.06;
+    }
+
+    h1{
+      margin:18px 0 24px;
+      font-size:clamp(3.6rem,7vw,7rem);
+    }
+
+    .hero-tagline{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(1.6rem,3vw,2.4rem);
+      line-height:1.35;
+      color:#ecd9b3;
+      margin-bottom:24px;
+    }
+
+    .hero-copy{
+      max-width:760px;
+      margin:0 auto 38px;
+      color:var(--muted);
+      font-size:1.12rem;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:52px;
+      padding:14px 30px;
+      border:1px solid var(--gold);
+      border-radius:999px;
+      background:var(--gold);
+      color:#111;
+      font-weight:800;
+      letter-spacing:.8px;
+      transition:.3s ease;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:var(--gold-light);
+      border-color:var(--gold-light);
+      box-shadow:0 16px 34px rgba(0,0,0,.30);
+    }
+
+    .btn.outline{
+      background:transparent;
+      color:var(--gold);
+    }
+
+    .btn.outline:hover{
+      background:var(--gold);
+      color:#111;
+    }
+
+    .manifesto{
+      padding:110px 20px;
+      background:var(--paper);
+      color:#191714;
+    }
+
+    .manifesto-inner{
+      width:min(980px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .manifesto h2{
+      margin:14px 0 36px;
+      font-size:clamp(3rem,5.5vw,5.2rem);
+    }
+
+    .manifesto-copy{
+      max-width:850px;
+      color:#544d45;
+      font-size:1.17rem;
+    }
+
+    .manifesto-copy p+p{
+      margin-top:18px;
+    }
+
+    .collection{
+      padding:120px 20px;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(212,173,88,.08),transparent 28%),
+        var(--black);
+    }
+
+    .collection-header{
+      width:min(1000px,calc(100% - 40px));
+      margin:0 auto 80px;
+      text-align:center;
+    }
+
+    .collection-header h2{
+      margin:14px 0 22px;
+      font-size:clamp(3.3rem,6vw,5.6rem);
+    }
+
+    .collection-header p{
+      max-width:720px;
+      margin:0 auto;
+      color:var(--muted);
+      font-size:1.1rem;
+    }
+
+    .volume{
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto 110px;
+      padding:64px;
+      display:grid;
+      grid-template-columns:minmax(280px,420px) 1fr;
+      gap:78px;
+      align-items:center;
+      border:1px solid var(--line);
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.025),rgba(212,173,88,.04)),
+        var(--black-soft);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .volume.reverse{
+      grid-template-columns:1fr minmax(280px,420px);
+    }
+
+    .volume.reverse .volume-cover{
+      order:2;
+    }
+
+    .volume.reverse .volume-copy{
+      order:1;
+    }
+
+    .volume::after{
+      content:attr(data-volume);
+      position:absolute;
+      right:24px;
+      bottom:-60px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(9rem,18vw,18rem);
+      color:rgba(212,173,88,.04);
+      line-height:1;
+      pointer-events:none;
+    }
+
+    .volume-cover{
+      max-width:390px;
+      margin:0 auto;
+      position:relative;
+      z-index:2;
+    }
+
+    .volume-cover::before{
+      content:"";
+      position:absolute;
+      inset:16px -16px -16px 16px;
+      border:1px solid rgba(212,173,88,.32);
+      z-index:-1;
+    }
+
+    .volume-cover img{
+      width:100%;
+      border:1px solid rgba(212,173,88,.26);
+      box-shadow:0 34px 80px rgba(0,0,0,.52);
+      transition:.45s ease;
+    }
+
+    .volume-cover:hover img{
+      transform:translateY(-7px);
+      box-shadow:0 44px 100px rgba(0,0,0,.62);
+    }
+
+    .volume-copy{
+      position:relative;
+      z-index:2;
+    }
+
+    .volume-copy h3{
+      margin:16px 0 12px;
+      font-size:clamp(3rem,5.2vw,5rem);
+    }
+
+    .volume-subtitle{
+      margin-bottom:24px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:1.55rem;
+      line-height:1.35;
+      color:#e7cf9f;
+    }
+
+    .volume-description{
+      max-width:690px;
+      margin-bottom:28px;
+      color:var(--muted);
+      font-size:1.08rem;
+    }
+
+    .availability{
+      margin-bottom:24px;
+      color:#cdb57e;
+    }
+
+    .thread{
+      padding:110px 20px;
+      background:#efe5d5;
+      color:#181511;
+      text-align:center;
+    }
+
+    .thread-inner{
+      width:min(950px,calc(100% - 40px));
+      margin:0 auto;
+    }
+
+    .thread h2{
+      margin:12px 0 28px;
+      font-size:clamp(3rem,5vw,4.8rem);
+    }
+
+    .timeline{
+      max-width:430px;
+      margin:55px auto;
+      display:grid;
+    }
+
+    .timeline-item{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:2.2rem;
+      font-weight:700;
+    }
+
+    .timeline-line{
+      width:1px;
+      height:60px;
+      margin:10px auto;
+      background:linear-gradient(var(--gold),rgba(212,173,88,.18));
+    }
+
+    .thread-quote{
+      max-width:760px;
+      margin:0 auto;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(1.8rem,3vw,2.55rem);
+      line-height:1.4;
+      color:#3c352d;
+    }
+
+    .observer{
+      min-height:520px;
+      padding:90px 20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 50%,rgba(212,173,88,.10),transparent 28%),
+        #050505;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .observer blockquote{
+      max-width:950px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(3rem,6vw,5.6rem);
+      line-height:1.18;
+      color:#fff4dc;
+    }
+
+    .future{
+      padding:110px 20px;
+      background:#11100e;
+    }
+
+    .future-card{
+      width:min(900px,calc(100% - 40px));
+      margin:0 auto;
+      padding:70px 40px;
+      text-align:center;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+    }
+
+    .future-number{
+      display:block;
+      margin:16px 0;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(5rem,10vw,9rem);
+      line-height:1;
+      color:var(--gold);
+    }
+
+    .future-card h2{
+      margin-bottom:20px;
+      font-size:clamp(2.7rem,5vw,4.5rem);
+    }
+
+    .future-card p{
+      max-width:660px;
+      margin:0 auto;
+      color:var(--muted);
+    }
+
+    .closing{
+      padding:120px 20px;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(212,173,88,.12),transparent 30%),
+        #080808;
+    }
+
+    .closing h2{
+      max-width:980px;
+      margin:0 auto 36px;
+      font-size:clamp(3rem,6vw,5.4rem);
+    }
+
+    footer{
+      padding:34px 20px;
+      text-align:center;
+      border-top:1px solid rgba(212,173,88,.16);
+      background:#050505;
+      color:rgba(246,239,225,.48);
+      font-size:.88rem;
+    }
+
+    @media(max-width:980px){
+      .topbar{
+        flex-direction:column;
+      }
+
+      .brand img{
+        width:220px;
+      }
+
+      .volume,
+      .volume.reverse{
+        grid-template-columns:1fr;
+        gap:55px;
+        padding:50px 34px;
+        text-align:center;
+      }
+
+      .volume.reverse .volume-cover,
+      .volume.reverse .volume-copy{
+        order:initial;
+      }
+
+      .volume-description{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .volume-cover{
+        max-width:340px;
+      }
+    }
+
+    @media(max-width:650px){
+      .topnav{
+        gap:14px 18px;
+      }
+
+      .topnav a{
+        font-size:1.05rem;
+      }
+
+      .hero-intro{
+        padding:75px 14px;
+      }
+
+      .hero-intro-inner,
+      .manifesto-inner,
+      .collection-header,
+      .thread-inner,
+      .future-card{
+        width:min(100% - 28px,980px);
+      }
+
+      .manifesto{
+        padding:80px 14px;
+      }
+
+      .collection{
+        padding:90px 14px;
+      }
+
+      .volume{
+        width:min(100% - 28px,1180px);
+        margin-bottom:70px;
+        padding:34px 22px;
+      }
+
+      .volume-cover{
+        max-width:285px;
+      }
+
+      .thread,
+      .observer,
+      .future,
+      .closing{
+        padding-left:14px;
+        padding-right:14px;
+      }
+
+      .future-card{
+        padding:50px 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="topbar">
+
+      <a class="brand" href="index.html">
+        <img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono">
+      </a>
+
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Riflessioni</a>
+        <a href="libri.html">Libri</a>
+        <a href="library.html">Library</a>
+        <a href="echo.html">ECHO</a>
+        <a href="chi-sono.html">Chi sono</a>
+      </div>
+
+    </nav>
+
+    <section class="hero-image">
+      <img
+        src="archivio-osservazioni-hero.png"
+        alt="Archivio delle Osservazioni di Giuseppe Lo Iacono">
+    </section>
+
+    <section class="hero-intro">
+
+      <div class="hero-intro-inner">
+
+        <span class="eyebrow">
+          Giuseppe Lo Iacono · Collana editoriale
+        </span>
+
+        <h1>
+          Archivio delle Osservazioni
+        </h1>
+
+        <p class="hero-tagline">
+          Libri brevi.<br>
+          Domande profonde.<br>
+          Nessuna risposta definitiva.
+        </p>
+
+        <p class="hero-copy">
+          Ogni volume osserva un frammento diverso della realtà,
+          del comportamento umano e del modo in cui costruiamo
+          ciò che chiamiamo verità.
+        </p>
+
+        <a class="btn" href="#volumi">
+          Esplora i volumi
+        </a>
+
+      </div>
+
+    </section>
+
+  </header>
+
+  <main>
+
+    <section class="manifesto">
+
+      <div class="manifesto-inner">
+
+        <span class="section-kicker">
+          Il manifesto
+        </span>
+
+        <h2>
+          Osservare non significa spiegare.
+        </h2>
+
+        <div class="manifesto-copy">
+
+          <p>
+            Ogni giorno osserviamo il mondo.
+            Molto più raramente osserviamo il modo in cui pensiamo.
+          </p>
+
+          <p>
+            L’Archivio delle Osservazioni nasce da questa semplice idea.
+          </p>
+
+          <p>
+            Ogni volume raccoglie osservazioni indipendenti dedicate
+            al comportamento umano, alla percezione, alle convinzioni
+            e ai meccanismi invisibili che influenzano il nostro modo
+            di interpretare la realtà.
+          </p>
+
+          <p>Non offre regole.</p>
+
+          <p>Non propone verità assolute.</p>
+
+          <p>
+            Non cerca di dire al lettore cosa dovrebbe pensare.
+          </p>
+
+          <p>
+            Invita soltanto a fermarsi e guardare da una prospettiva diversa.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="collection" id="volumi">
+
+      <div class="collection-header">
+
+        <span class="section-kicker">
+          La collezione
+        </span>
+
+        <h2>
+          Tre volumi. Tre prospettive.
+        </h2>
+
+        <p>
+          Ogni volume può essere letto in modo indipendente.
+          Insieme formano un percorso dedicato a ciò che vediamo,
+          a chi osserva e ai processi invisibili che guidano le nostre scelte.
+        </p>
+
+      </div>
+
+      <article class="volume" data-volume="001">
+
+        <div class="volume-cover">
+
+          <img
+            src="7-osservazioni.png"
+            alt="Copertina di 7 Osservazioni">
+
+        </div>
+
+        <div class="volume-copy">
+
+          <span class="volume-number">
+            Volume 001
+          </span>
+
+          <h3>
+            7 Osservazioni
+          </h3>
+
+          <p class="volume-subtitle">
+            Sei idee, una domanda che può cambiare il tuo modo di pensare.
+          </p>
+
+          <p class="volume-description">
+            Sei osservazioni indipendenti e una domanda conclusiva attraversano
+            comportamento umano, convinzioni e percezione della realtà.
+            Un percorso breve, costruito per mettere in discussione ciò che
+            spesso accettiamo senza più osservarlo.
+          </p>
+
+          <p class="availability">
+            Disponibile su Payhip
+          </p>
+
+          <a
+            class="btn outline"
+            href="https://payhip.com/b/uHsKh"
+            target="_blank"
+            rel="noopener">
+            Scopri il volume
+          </a>
+
+        </div>
+
+      </article>
+
+      <article class="volume reverse" data-volume="002">
+
+        <div class="volume-cover">
+
+          <img
+            src="chi-osserva-chi.jpg"
+            alt="Copertina di Chi osserva chi">
+
+        </div>
+
+        <div class="volume-copy">
+
+          <span class="volume-number">
+            Volume 002
+          </span>
+
+          <h3>
+            Chi osserva chi
+          </h3>
+
+          <p class="volume-subtitle">
+            Un’esplorazione del confine tra osservatore e osservato.
+          </p>
+
+          <p class="volume-description">
+            Perché ogni giudizio racconta qualcosa di ciò che vediamo,
+            ma anche di chi sta guardando.
+            Un volume dedicato alla percezione, all’identità e alle immagini
+            che costruiamo degli altri e di noi stessi.
+          </p>
+
+          <p class="availability">
+            Disponibile su Amazon
+          </p>
+
+          <a
+            class="btn outline"
+            href="https://amzn.eu/d/0bHiPUNt"
+            target="_blank"
+            rel="noopener">
+            Scopri il volume
+          </a>
+
+        </div>
+
+      </article>
+
+      <article class="volume" data-volume="003">
+
+        <div class="volume-cover">
+
+          <img
+            src="mappa-invisibile.png"
+            alt="Copertina de La Mappa Invisibile">
+
+        </div>
+
+        <div class="volume-copy">
+
+          <span class="volume-number">
+            Volume 003
+          </span>
+
+          <h3>
+            La Mappa Invisibile
+          </h3>
+
+          <p class="volume-subtitle">
+            Il processo invisibile che sta dietro ogni pensiero,
+            emozione e decisione.
+          </p>
+
+          <p class="volume-description">
+            Pensieri, emozioni e decisioni non nascono nel vuoto.
+            Ogni scelta attraversa una mappa costruita da esperienze,
+            convinzioni, paure e interpretazioni.
+            Questo volume osserva i percorsi invisibili che guidano
+            il nostro modo di leggere il mondo.
+          </p>
+
+          <p class="availability">
+            Disponibile su Payhip
+          </p>
+
+          <a
+            class="btn outline"
+            href="https://payhip.com/b/Z4WrT"
+            target="_blank"
+            rel="noopener">
+            Scopri il volume
+          </a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+    <section class="thread">
+
+      <div class="thread-inner">
+
+        <span class="section-kicker">
+          Il filo dell’Archivio
+        </span>
+
+        <h2>
+          Nessun volume conclude il percorso.
+        </h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">001</div>
+
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">002</div>
+
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">003</div>
+
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            L’Archivio continua
+          </div>
+
+        </div>
+
+        <p class="thread-quote">
+          Ognuno apre una domanda nuova.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section class="observer">
+
+      <blockquote>
+        Chi osserva davvero<br>
+        non cambia soltanto ciò che vede.<br>
+        Cambia il proprio modo di guardare.
+      </blockquote>
+
+    </section>
+
+    <section class="future">
+
+      <div class="future-card">
+
+        <span class="future-label">
+          Prossimo volume
+        </span>
+
+        <strong class="future-number">
+          004
+        </strong>
+
+        <h2>
+          In preparazione
+        </h2>
+
+        <p>
+          L’Archivio continua con nuove osservazioni dedicate
+          ai meccanismi ricorrenti della mente,
+          delle relazioni e della società.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section class="closing">
+
+      <h2>
+        L’Archivio non raccoglie risposte.<br>
+        Raccoglie prospettive.
+      </h2>
+
+      <a
+        class="btn"
+        href="https://payhip.com/b/uHsKh"
+        target="_blank"
+        rel="noopener">
+        Inizia dal Volume 001
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Giuseppe Lo Iacono Studio · Tutti i diritti riservati
+  </footer>
+
+</body>
+</html>
