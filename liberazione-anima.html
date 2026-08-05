@@ -277,6 +277,57 @@
       font-size:1.1rem;
     }
 
+
+    .continue-journey{
+      margin-top:70px;
+      padding:58px 36px;
+      text-align:center;
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:#fffaf3;
+      box-shadow:0 20px 55px rgba(45,34,24,.08);
+    }
+
+    .continue-journey h2{
+      margin:8px 0 18px;
+      font-size:clamp(2.5rem,5vw,4rem);
+    }
+
+    .continue-journey p{
+      max-width:720px;
+      margin:0 auto 30px;
+      color:var(--muted);
+      font-size:1.08rem;
+    }
+
+    .journey-links{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .journey-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:13px 22px;
+      border:1px solid rgba(139,30,36,.22);
+      border-radius:999px;
+      background:#f3e8da;
+      color:var(--red);
+      font-weight:700;
+      transition:.25s ease;
+    }
+
+    .journey-link:hover{
+      transform:translateY(-3px);
+      background:var(--red);
+      color:#fffaf3;
+      border-color:var(--red);
+      box-shadow:0 12px 28px rgba(139,30,36,.20);
+    }
+
     footer{
       padding:34px 20px;
       text-align:center;
@@ -474,6 +525,48 @@
         rel="noopener">
         Acquista su Amazon
       </a>
+
+    </section>
+
+
+    <section class="continue-journey">
+
+      <span class="section-label">
+        Continua il viaggio
+      </span>
+
+      <h2>
+        Ogni libro apre una domanda nuova
+      </h2>
+
+      <p>
+        Prosegui l’esplorazione tra libri, riflessioni e progetti
+        che osservano ciò che spesso rimane invisibile.
+      </p>
+
+      <div class="journey-links">
+
+        <a class="journey-link" href="archivio-osservazioni.html">
+          Archivio delle Osservazioni
+        </a>
+
+        <a class="journey-link" href="avventura-particelle.html">
+          L’Avventura delle Particelle
+        </a>
+
+        <a class="journey-link" href="echo.html">
+          ECHO
+        </a>
+
+        <a class="journey-link" href="blog.html">
+          Riflessioni
+        </a>
+
+        <a class="journey-link" href="libri.html">
+          Tutti i libri
+        </a>
+
+      </div>
 
     </section>
 
