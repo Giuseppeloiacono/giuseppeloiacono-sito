@@ -6,6 +6,7 @@
 
 <title>Il Tuttologo Narrante | Giuseppe Lo Iacono</title>
 <meta name="description" content="Il Tuttologo Narrante di Giuseppe Lo Iacono. Un libro sulla disobbedienza civile, il potere, la libertà e la resistenza intellettuale.">
+<link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/tuttologo-narrante.html">
 
 <style>
 body{background:#050505;color:#eee;font-family:Arial,Helvetica,sans-serif;margin:0;line-height:1.7}
@@ -13,14 +14,89 @@ body{background:#050505;color:#eee;font-family:Arial,Helvetica,sans-serif;margin
 .hero{display:grid;grid-template-columns:400px 1fr;gap:50px;align-items:center}
 .hero img{width:100%;border-radius:12px;box-shadow:0 0 30px rgba(0,0,0,.5)}
 h1{font-size:3rem;margin-bottom:15px}
+h2{color:#fff}
 .subtitle{color:#c1121f;font-weight:bold;margin-bottom:20px;text-transform:uppercase;letter-spacing:2px}
 .description{font-size:1.15rem;color:#ccc}
-.button{display:inline-block;margin-top:30px;background:#c1121f;color:white;padding:15px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
+.button{display:inline-block;margin-top:30px;background:#c1121f;color:white;padding:15px 25px;border-radius:30px;text-decoration:none;font-weight:bold;transition:.25s}
+.button:hover{background:#96101a;transform:translateY(-2px)}
 .section{margin-top:80px}
 .back{display:inline-block;margin-bottom:40px;color:#c1121f;text-decoration:none}
 p{color:#ccc}
 strong{color:#fff}
-@media(max-width:900px){.hero{grid-template-columns:1fr}h1{font-size:2.2rem}}
+
+.journey{
+  margin-top:80px;
+  padding:55px 35px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(193,18,31,.16),transparent 34%),
+    linear-gradient(135deg,#111,#1a1112);
+  box-shadow:0 24px 60px rgba(0,0,0,.35);
+}
+
+.journey-label{
+  display:block;
+  margin-bottom:12px;
+  color:#c1121f;
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.journey h2{
+  margin:0 0 18px;
+  font-size:clamp(2.2rem,4vw,3.6rem);
+}
+
+.journey p{
+  max-width:760px;
+  margin:0 auto 30px;
+}
+
+.journey-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.journey-links a{
+  display:inline-block;
+  padding:13px 22px;
+  border:1px solid #c1121f;
+  border-radius:999px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.25s;
+}
+
+.journey-links a:hover{
+  background:#c1121f;
+  transform:translateY(-2px);
+}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  h1{font-size:2.2rem}
+}
+
+@media(max-width:600px){
+  .journey{
+    padding:40px 22px;
+  }
+
+  .journey-links{
+    flex-direction:column;
+  }
+
+  .journey-links a{
+    width:auto;
+  }
+}
 </style>
 </head>
 
@@ -42,7 +118,7 @@ strong{color:#fff}
 Una provocatoria esplorazione della disobbedienza civile, del potere e delle contraddizioni di un sistema che spesso promette soluzioni ma produce ingiustizie.
 </p>
 
-<a class="button" href="https://amzn.eu/d/0exZ622U" target="_blank">Acquista su Amazon</a>
+<a class="button" href="https://amzn.eu/d/0exZ622U" target="_blank" rel="noopener">Acquista su Amazon</a>
 </div>
 </div>
 
@@ -69,6 +145,44 @@ Non è solo un libro. È un invito a guardare oltre la superficie delle soluzion
 
 <p><strong>Un manifesto di resistenza intellettuale per chi non vuole smettere di farsi domande.</strong></p>
 </div>
+
+<section class="journey">
+
+  <span class="journey-label">Continua il viaggio</span>
+
+  <h2>Ogni domanda apre una nuova prospettiva</h2>
+
+  <p>
+    Se questo libro ti ha portato a mettere in discussione ciò che sembra ovvio,
+    puoi continuare il percorso attraverso gli altri libri e progetti editoriali
+    di Giuseppe Lo Iacono.
+  </p>
+
+  <div class="journey-links">
+
+    <a href="archivio-osservazioni.html">
+      Archivio delle Osservazioni
+    </a>
+
+    <a href="istituzioni-viste-dallinterno.html">
+      Istituzioni viste dall’interno
+    </a>
+
+    <a href="blog.html">
+      Riflessioni
+    </a>
+
+    <a href="echo.html">
+      ECHO
+    </a>
+
+    <a href="libri.html">
+      Tutti i libri
+    </a>
+
+  </div>
+
+</section>
 
 </div>
 
