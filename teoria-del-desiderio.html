@@ -1,115 +1,730 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>La Teoria del Desiderio | Giuseppe Lo Iacono</title>
-<meta name="description" content="La Teoria del Desiderio, thriller psicologico di Giuseppe Lo Iacono. Una storia intensa tra desiderio, controllo e verità nascoste.">
+  <title>La Teoria del Desiderio | Giuseppe Lo Iacono</title>
 
-<style>
-body{background:#050505;color:#eee;font-family:Arial,Helvetica,sans-serif;margin:0;line-height:1.7}
-.container{max-width:1100px;margin:auto;padding:40px 20px}
-.hero{display:grid;grid-template-columns:400px 1fr;gap:50px;align-items:center}
-.hero img{width:100%;border-radius:12px;box-shadow:0 0 30px rgba(0,0,0,.5)}
-h1{font-size:3rem;margin-bottom:15px}
-.subtitle{color:#c1121f;font-weight:bold;margin-bottom:20px;text-transform:uppercase;letter-spacing:2px}
-.description{font-size:1.15rem;color:#ccc}
-.button{display:inline-block;margin-top:30px;background:#c1121f;color:white;padding:15px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
-.section{margin-top:80px}
-.back{display:inline-block;margin-bottom:40px;color:#c1121f;text-decoration:none}
-p{color:#ccc}
-strong{color:#fff}
-.review{background:#111;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:25px;margin-bottom:22px}
-.stars{color:#c1121f;font-size:1.2rem;margin-bottom:10px}
-@media(max-width:900px){.hero{grid-template-columns:1fr}h1{font-size:2.2rem}}
-</style>
+  <meta name="description" content="La Teoria del Desiderio, thriller psicologico di Giuseppe Lo Iacono. Una storia intensa tra desiderio, controllo e verità nascoste, disponibile anche in inglese.">
+
+  <meta name="author" content="Giuseppe Lo Iacono">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#efe7db">
+
+  <link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/teoria-del-desiderio.html">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="book">
+  <meta property="og:title" content="La Teoria del Desiderio | Giuseppe Lo Iacono">
+  <meta property="og:description" content="Un thriller psicologico sul desiderio, il controllo e ciò che accade quando una teoria diventa impossibile da fermare.">
+  <meta property="og:url" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/teoria-del-desiderio.html">
+  <meta property="og:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/copertina%20ufficiale%20libro.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La Teoria del Desiderio | Giuseppe Lo Iacono">
+  <meta name="twitter:description" content="Il desiderio non è quello che provi. È quello che non riesci a fermare.">
+  <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/copertina%20ufficiale%20libro.jpg">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      color:#211d1b;
+      line-height:1.75;
+      background:
+        radial-gradient(circle at 12% 10%,rgba(139,30,36,.08),transparent 28%),
+        radial-gradient(circle at 88% 82%,rgba(197,154,74,.13),transparent 32%),
+        linear-gradient(135deg,#fbf8f3 0%,#efe7db 52%,#e8dccb 100%);
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    :root{
+      --paper:#fffaf3;
+      --paper-soft:#f5ede2;
+      --text:#211d1b;
+      --muted:#655d56;
+      --red:#8b1e24;
+      --red-dark:#68151a;
+      --gold:#c59a4a;
+      --line:rgba(0,0,0,.10);
+      --shadow:0 24px 65px rgba(55,40,28,.12);
+    }
+
+    .page{
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto;
+      padding:38px 0 90px;
+    }
+
+    .back{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:36px;
+      color:var(--red);
+      font-weight:700;
+      transition:.25s ease;
+    }
+
+    .back:hover{
+      transform:translateX(-4px);
+      color:var(--red-dark);
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(280px,420px) 1fr;
+      gap:72px;
+      align-items:center;
+      padding:68px;
+      background:rgba(255,250,243,.95);
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"DESIDERIO";
+      position:absolute;
+      right:-15px;
+      bottom:-48px;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(5rem,12vw,10rem);
+      color:rgba(139,30,36,.045);
+      letter-spacing:8px;
+      line-height:1;
+      pointer-events:none;
+    }
+
+    .cover{
+      max-width:390px;
+      margin:0 auto;
+      position:relative;
+      z-index:2;
+    }
+
+    .cover::before{
+      content:"";
+      position:absolute;
+      inset:18px -18px -18px 18px;
+      border:1px solid rgba(197,154,74,.40);
+      border-radius:18px;
+      z-index:-1;
+    }
+
+    .cover img{
+      width:100%;
+      border-radius:16px;
+      border:1px solid rgba(0,0,0,.10);
+      box-shadow:0 30px 70px rgba(0,0,0,.24);
+      transition:.4s ease;
+    }
+
+    .cover:hover img{
+      transform:translateY(-6px);
+      box-shadow:0 42px 90px rgba(0,0,0,.30);
+    }
+
+    .hero-copy{
+      position:relative;
+      z-index:2;
+    }
+
+    .kicker,
+    .section-label{
+      color:var(--red);
+      font-size:.8rem;
+      font-weight:800;
+      letter-spacing:3px;
+      text-transform:uppercase;
+    }
+
+    h1,
+    h2,
+    h3{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      color:var(--text);
+      line-height:1.06;
+    }
+
+    h1{
+      margin:16px 0 24px;
+      font-size:clamp(3.7rem,7vw,6.5rem);
+      letter-spacing:-1.5px;
+    }
+
+    .tagline{
+      max-width:700px;
+      margin-bottom:30px;
+      color:#4b433d;
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(1.55rem,2.8vw,2.25rem);
+      line-height:1.35;
+    }
+
+    .hero-copy p{
+      max-width:680px;
+      color:var(--muted);
+      font-size:1.1rem;
+    }
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:34px;
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:52px;
+      padding:14px 28px;
+      border-radius:999px;
+      background:var(--red);
+      color:#fff8e8;
+      font-weight:800;
+      letter-spacing:.5px;
+      box-shadow:0 12px 28px rgba(139,30,36,.22);
+      transition:.3s ease;
+    }
+
+    .button:hover{
+      transform:translateY(-3px);
+      background:var(--red-dark);
+      box-shadow:0 18px 36px rgba(139,30,36,.28);
+    }
+
+    .button.secondary{
+      background:transparent;
+      color:var(--red);
+      border:1px solid var(--red);
+      box-shadow:none;
+    }
+
+    .button.secondary:hover{
+      background:var(--red);
+      color:#fff8e8;
+    }
+
+    .synopsis{
+      margin-top:70px;
+      padding:64px;
+      background:rgba(255,250,243,.95);
+      border:1px solid var(--line);
+      border-radius:26px;
+      box-shadow:0 20px 55px rgba(45,34,24,.08);
+    }
+
+    .synopsis h2,
+    .reviews h2,
+    .english h2,
+    .journey h2{
+      margin:12px 0 28px;
+      font-size:clamp(2.7rem,5vw,4.4rem);
+    }
+
+    .synopsis-content{
+      max-width:900px;
+    }
+
+    .synopsis p{
+      margin-bottom:18px;
+      color:var(--muted);
+      font-size:1.08rem;
+    }
+
+    .synopsis strong{
+      color:#2a2522;
+    }
+
+    .reviews{
+      margin-top:70px;
+      padding:64px;
+      background:rgba(255,250,243,.95);
+      border:1px solid var(--line);
+      border-radius:26px;
+      box-shadow:0 20px 55px rgba(45,34,24,.08);
+    }
+
+    .reviews-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .review{
+      padding:28px;
+      background:#fff;
+      border:1px solid rgba(0,0,0,.08);
+      border-radius:18px;
+      box-shadow:0 12px 30px rgba(0,0,0,.05);
+    }
+
+    .stars{
+      color:var(--red);
+      font-size:1.2rem;
+      margin-bottom:12px;
+      letter-spacing:2px;
+    }
+
+    .review h3{
+      margin-bottom:6px;
+      font-size:1.45rem;
+    }
+
+    .review em{
+      display:block;
+      margin-bottom:12px;
+      color:#3e3732;
+    }
+
+    .review p{
+      color:var(--muted);
+    }
+
+    .reviews-cta{
+      margin-top:34px;
+      text-align:center;
+    }
+
+    .english{
+      margin-top:70px;
+      padding:62px;
+      display:grid;
+      grid-template-columns:minmax(240px,330px) 1fr;
+      gap:55px;
+      align-items:center;
+      border-radius:26px;
+      background:
+        radial-gradient(circle at 18% 20%,rgba(197,154,74,.15),transparent 34%),
+        linear-gradient(135deg,#171311,#2a201b);
+      border:1px solid rgba(197,154,74,.28);
+      box-shadow:0 26px 70px rgba(0,0,0,.22);
+      color:#f7efe3;
+    }
+
+    .english-cover img{
+      width:100%;
+      border-radius:14px;
+      border:1px solid rgba(197,154,74,.30);
+      box-shadow:0 28px 70px rgba(0,0,0,.42);
+    }
+
+    .english .section-label{
+      color:#d8b56d;
+    }
+
+    .english h2{
+      color:#f7efe3;
+    }
+
+    .english p{
+      margin-bottom:28px;
+      color:rgba(247,239,227,.72);
+      font-size:1.08rem;
+    }
+
+    .english .button{
+      background:#d4ad58;
+      color:#171311;
+      box-shadow:none;
+    }
+
+    .english .button:hover{
+      background:#efcc7f;
+    }
+
+    .journey{
+      margin-top:70px;
+      padding:60px 35px;
+      text-align:center;
+      border-radius:26px;
+      background:rgba(255,250,243,.95);
+      border:1px solid var(--line);
+      box-shadow:0 20px 55px rgba(45,34,24,.08);
+    }
+
+    .journey p{
+      max-width:760px;
+      margin:0 auto 30px;
+      color:var(--muted);
+    }
+
+    .journey-links{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .journey-links a{
+      display:inline-block;
+      padding:13px 22px;
+      border:1px solid var(--red);
+      border-radius:999px;
+      color:var(--red);
+      font-weight:800;
+      transition:.25s ease;
+    }
+
+    .journey-links a:hover{
+      background:var(--red);
+      color:#fff8e8;
+      transform:translateY(-2px);
+    }
+
+    footer{
+      padding:34px 20px;
+      text-align:center;
+      background:#e8ddcf;
+      border-top:1px solid rgba(0,0,0,.08);
+      color:#68615a;
+      font-size:.9rem;
+    }
+
+    @media(max-width:950px){
+      .hero,
+      .english{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero-copy p,
+      .tagline{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .actions{
+        justify-content:center;
+      }
+
+      .english-cover{
+        max-width:300px;
+        margin:0 auto;
+      }
+
+      .reviews-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:600px){
+      .page{
+        width:min(100% - 28px,1180px);
+        padding-top:24px;
+      }
+
+      .hero,
+      .synopsis,
+      .reviews,
+      .english,
+      .journey{
+        padding:34px 22px;
+        border-radius:20px;
+      }
+
+      .cover{
+        max-width:290px;
+      }
+
+      .cover::before{
+        inset:12px -10px -12px 10px;
+      }
+
+      h1{
+        font-size:clamp(3rem,14vw,4.6rem);
+      }
+
+      .actions,
+      .journey-links{
+        flex-direction:column;
+      }
+
+      .button,
+      .journey-links a{
+        width:100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <main class="page">
 
-<a class="back" href="index.html">← Torna al sito</a>
+    <a class="back" href="libri.html">
+      ← Torna ai libri
+    </a>
 
-<div class="hero">
-<img src="copertina ufficiale libro.jpg" alt="La Teoria del Desiderio">
+    <section class="hero">
 
-<div>
-<div class="subtitle">Thriller Psicologico</div>
+      <div class="cover">
+        <img
+          src="copertina ufficiale libro.jpg"
+          alt="Copertina del libro La Teoria del Desiderio">
+      </div>
 
-<h1>La Teoria del Desiderio</h1>
+      <div class="hero-copy">
 
-<p class="description">
-Il desiderio non è quello che provi. È quello che non riesci a fermare.
-</p>
+        <span class="kicker">
+          Thriller psicologico
+        </span>
 
-<a class="button" href="https://amzn.eu/d/03kYIFAu" target="_blank">Acquista su Amazon</a>
-</div>
-</div>
+        <h1>
+          La Teoria del Desiderio
+        </h1>
 
-<div class="section">
-<h2>Sinossi</h2>
+        <p class="tagline">
+          Il desiderio non è quello che provi.
+          È quello che non riesci a fermare.
+        </p>
 
-<p><strong>Il desiderio non è quello che provi. È quello che non riesci a fermare.</strong></p>
+        <p>
+          Una storia intensa sul confine tra attrazione, controllo
+          e ciò che accade quando una teoria smette di essere un esperimento.
+        </p>
 
-<p>Elena ha costruito una teoria.</p>
+        <div class="actions">
 
-<p>Per anni ha studiato il comportamento umano fino a ridurre l’attrazione a una sequenza precisa: mistero, rischio, accesso limitato.</p>
+          <a
+            class="button"
+            href="https://amzn.eu/d/03kYIFAu"
+            target="_blank"
+            rel="noopener">
+            Acquista su Amazon
+          </a>
 
-<p>Serve solo una prova.</p>
+          <a
+            class="button secondary"
+            href="#english-edition">
+            Scopri l’edizione inglese
+          </a>
 
-<p>Andrea è l’uomo perfetto.</p>
+        </div>
 
-<p>Non cerca. Non cede. Non si espone.</p>
+      </div>
 
-<p>Ma quando la teoria viene applicata, qualcosa cambia.</p>
+    </section>
 
-<p>Quello che doveva essere un esperimento diventa una dinamica fuori controllo.</p>
+    <section class="synopsis">
 
-<p>Perché il problema non è accendere il desiderio.</p>
+      <span class="section-label">
+        Il libro
+      </span>
 
-<p><strong>È fermarlo.</strong></p>
+      <h2>
+        Sinossi
+      </h2>
 
-<p><em>La Teoria del Desiderio</em> è un thriller psicologico intenso, dove attrazione e controllo si trasformano in qualcosa di più pericoloso.</p>
+      <div class="synopsis-content">
 
-<p><strong>E quando succede, è già tardi.</strong></p>
-</div>
+        <p>
+          <strong>
+            Il desiderio non è quello che provi.
+            È quello che non riesci a fermare.
+          </strong>
+        </p>
 
-<div class="section">
-<h2>Cosa dicono i lettori</h2>
+        <p>Elena ha costruito una teoria.</p>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p><strong>LAETITIA VOLPE</strong></p>
-<p><em>“Stupendo!”</em></p>
-<p>
-“Questo libro mi è piaciuto molto. I due personaggi sono davvero interessanti e non mancano i colpi di scena. Una volta che inizi a leggere non riesci a smettere.”
-</p>
-</div>
+        <p>
+          Per anni ha studiato il comportamento umano fino a ridurre
+          l’attrazione a una sequenza precisa: mistero, rischio, accesso limitato.
+        </p>
 
-<div class="review">
-<div class="stars">★★★★★</div>
-<p><strong>Luca C.</strong></p>
-<p><em>“Spettacolare!!!!”</em></p>
-<p>
-“Bellissimo, letto tutto d’un fiato. Non anticipo nulla per non rivelare spoiler. Leggetelo, non ve ne pentirete: rimarrà impresso nella vostra memoria per molto tempo.”
-</p>
-</div>
+        <p>Serve solo una prova.</p>
 
-<div class="review">
-<div class="stars">★★★★☆</div>
-<p><strong>Mario</strong></p>
-<p><em>“Non è una storia, è una dinamica”</em></p>
-<p>
-“Non è il classico romanzo sul desiderio o sulle relazioni. È qualcosa di più freddo, più lucido, quasi chirurgico nel modo in cui analizza ciò che succede tra due persone. La tensione è costante e il rapporto tra Andrea ed Elena non segue le regole classiche.”
-</p>
-</div>
+        <p>Andrea è l’uomo perfetto.</p>
 
-<a class="button" href="https://amzn.eu/d/03kYIFAu" target="_blank">Acquista su Amazon</a>
-</div>
+        <p>Non cerca. Non cede. Non si espone.</p>
 
-</div>
+        <p>Ma quando la teoria viene applicata, qualcosa cambia.</p>
+
+        <p>
+          Quello che doveva essere un esperimento diventa
+          una dinamica fuori controllo.
+        </p>
+
+        <p>Perché il problema non è accendere il desiderio.</p>
+
+        <p><strong>È fermarlo.</strong></p>
+
+        <p>
+          <em>La Teoria del Desiderio</em> è un thriller psicologico intenso,
+          dove attrazione e controllo si trasformano in qualcosa di più pericoloso.
+        </p>
+
+        <p><strong>E quando succede, è già tardi.</strong></p>
+
+      </div>
+
+    </section>
+
+    <section class="reviews">
+
+      <span class="section-label">
+        Recensioni
+      </span>
+
+      <h2>
+        Cosa dicono i lettori
+      </h2>
+
+      <div class="reviews-grid">
+
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <h3>Laetitia Volpe</h3>
+          <em>“Stupendo!”</em>
+          <p>
+            “Questo libro mi è piaciuto molto. I due personaggi sono davvero
+            interessanti e non mancano i colpi di scena. Una volta che inizi
+            a leggere non riesci a smettere.”
+          </p>
+        </article>
+
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <h3>Luca C.</h3>
+          <em>“Spettacolare!!!!”</em>
+          <p>
+            “Bellissimo, letto tutto d’un fiato. Non anticipo nulla per non
+            rivelare spoiler. Leggetelo, non ve ne pentirete: rimarrà impresso
+            nella vostra memoria per molto tempo.”
+          </p>
+        </article>
+
+        <article class="review">
+          <div class="stars">★★★★☆</div>
+          <h3>Mario</h3>
+          <em>“Non è una storia, è una dinamica”</em>
+          <p>
+            “Non è il classico romanzo sul desiderio o sulle relazioni.
+            È qualcosa di più freddo, più lucido, quasi chirurgico nel modo
+            in cui analizza ciò che succede tra due persone.”
+          </p>
+        </article>
+
+      </div>
+
+      <div class="reviews-cta">
+        <a
+          class="button"
+          href="https://amzn.eu/d/03kYIFAu"
+          target="_blank"
+          rel="noopener">
+          Acquista su Amazon
+        </a>
+      </div>
+
+    </section>
+
+    <section class="english" id="english-edition">
+
+      <div class="english-cover">
+        <img
+          src="copertina la teoria del desiderio inglese .png"
+          alt="Copertina inglese di The Theory of Desire">
+      </div>
+
+      <div>
+
+        <span class="section-label">
+          English edition
+        </span>
+
+        <h2>
+          The Theory of Desire
+        </h2>
+
+        <p>
+          La storia di Elena e Andrea è disponibile anche in inglese.
+          Una versione pensata per il pubblico internazionale,
+          con la stessa tensione psicologica e lo stesso equilibrio
+          tra attrazione, controllo e verità nascoste.
+        </p>
+
+        <a
+          class="button"
+          href="the-theory-of-desire.html">
+          Scopri la versione inglese
+        </a>
+
+      </div>
+
+    </section>
+
+    <section class="journey">
+
+      <span class="section-label">
+        Continua il viaggio
+      </span>
+
+      <h2>
+        Ogni desiderio apre una nuova domanda
+      </h2>
+
+      <p>
+        Continua l’esplorazione attraverso gli altri libri,
+        le riflessioni e i progetti editoriali di Giuseppe Lo Iacono.
+      </p>
+
+      <div class="journey-links">
+
+        <a href="archivio-osservazioni.html">
+          Archivio delle Osservazioni
+        </a>
+
+        <a href="blog.html">
+          Riflessioni
+        </a>
+
+        <a href="liberazione-anima.html">
+          La Liberazione dell’Anima
+        </a>
+
+        <a href="echo.html">
+          ECHO
+        </a>
+
+        <a href="libri.html">
+          Tutti i libri
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Giuseppe Lo Iacono Studio · Tutti i diritti riservati
+  </footer>
 
 </body>
 </html>
