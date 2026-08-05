@@ -7,6 +7,7 @@
 <title>Libri | Giuseppe Lo Iacono</title>
 <meta name="description" content="I libri di Giuseppe Lo Iacono: opere su coscienza, libertà, desiderio, tecnologia, trasformazione interiore e società.">
 
+<link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/libri.html">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -50,6 +51,69 @@ h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}
 h3{font-size:1.8rem;margin-bottom:12px}
 
 p{color:#5d5a55;font-size:1.06rem;margin-bottom:18px}
+
+.archive-section{
+margin-bottom:60px;
+padding:42px;
+display:grid;
+grid-template-columns:minmax(300px,1.1fr) 1fr;
+gap:46px;
+align-items:center;
+overflow:hidden;
+background:#090909;
+border:1px solid rgba(212,173,88,.28);
+border-radius:28px;
+box-shadow:0 20px 50px rgba(0,0,0,.16);
+}
+
+.archive-section img{
+width:100%;
+display:block;
+border-radius:18px;
+border:1px solid rgba(212,173,88,.22);
+box-shadow:0 24px 60px rgba(0,0,0,.42);
+}
+
+.archive-content{
+color:#f6efe1;
+}
+
+.archive-label{
+margin-bottom:12px;
+color:#d4ad58;
+font-size:.8rem;
+font-weight:800;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.archive-section h2{
+color:#f6efe1;
+font-size:clamp(2.8rem,5vw,4.5rem);
+margin-bottom:18px;
+}
+
+.archive-section p{
+color:rgba(246,239,225,.74);
+font-size:1.1rem;
+margin-bottom:26px;
+}
+
+.archive-button{
+display:inline-block;
+padding:14px 28px;
+border-radius:999px;
+background:#d4ad58;
+color:#111;
+font-weight:800;
+transition:.3s ease;
+}
+
+.archive-button:hover{
+transform:translateY(-3px);
+background:#f0cb7c;
+box-shadow:0 14px 30px rgba(0,0,0,.28);
+}
 
 .books{
 display:grid;
@@ -98,6 +162,12 @@ padding:30px;
 }
 
 @media(max-width:900px){
+.archive-section{
+grid-template-columns:1fr;
+padding:30px 24px;
+text-align:center;
+}
+.archive-button{margin:auto}
 .books{grid-template-columns:1fr}
 .hero{padding:38px 24px}
 }
@@ -119,6 +189,31 @@ padding:30px;
   </p>
 </section>
 
+<section class="archive-section">
+  <div>
+    <img
+      src="immagine collezione delle osservazioni..png"
+      alt="Archivio delle Osservazioni di Giuseppe Lo Iacono">
+  </div>
+
+  <div class="archive-content">
+    <div class="archive-label">Collana editoriale</div>
+
+    <h2>Archivio delle Osservazioni</h2>
+
+    <p>
+      Libri brevi. Domande profonde. Prospettive che restano aperte.
+      Una collana dedicata al comportamento umano, alla percezione
+      e ai meccanismi invisibili che guidano il nostro modo
+      di interpretare la realtà.
+    </p>
+
+    <a class="archive-button" href="archivio-osservazioni.html">
+      Entra nell’Archivio
+    </a>
+  </div>
+</section>
+
 <div class="books">
 
   <article class="book">
@@ -130,24 +225,16 @@ padding:30px;
     </div>
   </article>
 
-<article class="book">
+  <article class="book">
+    <img src="copertina ufficiale la liberazione dell'anima .png"
+         alt="Copertina del libro La Liberazione dell'Anima">
+    <div class="book-content">
+      <h3>La Liberazione dell’Anima</h3>
+      <p>Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.</p>
+      <a class="button" href="liberazione-anima.html">Scopri il libro</a>
+    </div>
+  </article>
 
-  <img src="copertina ufficiale la liberazione dell'anima .png"
-       alt="Copertina del libro La Liberazione dell'Anima">
-
-  <div class="book-content">
-
-    <h3>La Liberazione dell’Anima</h3>
-
-    <p>
-      Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.
-    </p>
-
-<a class="button" href="liberazione-anima.html">Scopri il libro</a>
-
-  </div>
-
-</article>
   <article class="book">
     <img src="copertina ufficiale sei tu la cura .png" alt="Sei Tu la Cura">
     <div class="book-content">
@@ -166,26 +253,15 @@ padding:30px;
     </div>
   </article>
 
- <article class="book">
-
+  <article class="book">
     <img src="copertina ufficiale l'avventura delle particelle.png"
          alt="Copertina del libro L'Avventura delle Particelle">
-
     <div class="book-content">
-
-        <h3>L’Avventura delle Particelle</h3>
-
-        <p>
-            Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.
-        </p>
-
-        <a class="button" href="avventura-particelle.html">
-            Scopri il libro
-        </a>
-
+      <h3>L’Avventura delle Particelle</h3>
+      <p>Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.</p>
+      <a class="button" href="avventura-particelle.html">Scopri il libro</a>
     </div>
-
-</article>
+  </article>
 
   <article class="book">
     <img src="copertina ufficiale libro.jpg" alt="La Teoria del Desiderio">
