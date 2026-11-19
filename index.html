@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -36,73 +37,47 @@
   <meta name="twitter:title" content="Giuseppe Lo Iacono | Libri e riflessioni">
   <meta name="twitter:description" content="Libri, riflessioni e domande sulla natura umana, la società, la libertà e la tecnologia.">
   <meta name="twitter:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg">
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"Person",
-"name":"Giuseppe Lo Iacono",
-"url":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/",
-"image":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg",
-"jobTitle":"Autore",
-"description":"Autore di libri e riflessioni sulla coscienza, la libertà, la tecnologia e la natura umana.",
-"sameAs":[
-"https://www.facebook.com/share/18r9T9vdZ8/",
-"https://www.instagram.com/ilviandante82",
-"https://www.youtube.com/@giuseppeloiacono82",
-"https://payhip.com/GiuseppeLoIacono"
-]
-}
-</script>
-  <meta ...>
 
-<script type="application/ld+json">
-...
-</script>
-
-
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"Giuseppe Lo Iacono",
-  "url":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/",
-  "inLanguage":"it-IT",
-  "publisher":{
-    "@type":"Person",
-    "name":"Giuseppe Lo Iacono"
-  }
-}
-</script>
   <script type="application/ld+json">
-Person
-</script>
-
-<script type="application/ld+json">
-WebSite
-</script>
-
-
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Giuseppe Lo Iacono Studio",
-  "url":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/",
-  "logo":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/logo-giuseppe-lo-iacono.png",
-  "founder":{
-    "@type":"Person",
-    "name":"Giuseppe Lo Iacono"
-  },
-  "sameAs":[
-    "https://www.facebook.com/share/18r9T9vdZ8/",
-    "https://www.instagram.com/ilviandante82",
-    "https://www.youtube.com/@giuseppeloiacono82",
-    "https://payhip.com/GiuseppeLoIacono"
-  ]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#author",
+        "name": "Giuseppe Lo Iacono",
+        "url": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/",
+        "image": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/io.jpg",
+        "jobTitle": "Autore",
+        "description": "Autore di libri e riflessioni sulla coscienza, la libertà, la tecnologia e la natura umana."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#website",
+        "name": "Giuseppe Lo Iacono",
+        "url": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/",
+        "inLanguage": "it-IT",
+        "publisher": {
+          "@id": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#author"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#webpage",
+        "url": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/",
+        "name": "Giuseppe Lo Iacono | Libri e riflessioni",
+        "description": "Sito ufficiale di Giuseppe Lo Iacono. Libri e riflessioni su coscienza, libertà, desiderio, tecnologia e trasformazione.",
+        "inLanguage": "it-IT",
+        "isPartOf": {
+          "@id": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#website"
+        },
+        "about": {
+          "@id": "https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#author"
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -110,408 +85,484 @@ WebSite
     body{font-family:Arial,Helvetica,sans-serif;background:#efe7db;color:#222;line-height:1.75}
     a{text-decoration:none;color:inherit}
     img{width:100%;display:block}
-    :root{--bg:#efe7db;--paper:#fffaf3;--white:#ffffff;--text:#222222;--muted:#5d5a55;--line:rgba(0,0,0,.10);--red:#8b1e24;--red-dark:#6f171c;--gold:#f4d89d}
-    header.home-hero{min-height:100vh;padding:34px 22px 80px;position:relative;overflow:hidden;background-image:url("sfondo-home.jpg");background-size:cover;background-position:center bottom;background-repeat:no-repeat}
-    header.home-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(248,244,236,.82) 0%,rgba(248,244,236,.45) 40%,rgba(248,244,236,.12) 100%);pointer-events:none}
-    .home-nav{width:100%;max-width:1500px;margin:0 auto 25px;display:flex;justify-content:space-between;align-items:flex-start;gap:20px;position:relative;z-index:2;padding:15px 35px 0}
+
+    :root{
+      --bg:#efe7db;
+      --paper:#fffaf3;
+      --white:#ffffff;
+      --text:#222222;
+      --muted:#5d5a55;
+      --line:rgba(0,0,0,.10);
+      --red:#8b1e24;
+      --red-dark:#6f171c;
+      --gold:#f4d89d;
+    }
+
+    header.home-hero{
+      min-height:100vh;
+      padding:34px 22px 80px;
+      position:relative;
+      overflow:hidden;
+      background-image:url("sfondo-home.jpg");
+      background-size:cover;
+      background-position:center bottom;
+      background-repeat:no-repeat;
+    }
+
+    header.home-hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to bottom,rgba(248,244,236,.82) 0%,rgba(248,244,236,.45) 40%,rgba(248,244,236,.12) 100%);
+      pointer-events:none;
+    }
+
+    .home-nav{
+      width:100%;
+      max-width:1500px;
+      margin:0 auto 25px;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:20px;
+      position:relative;
+      z-index:2;
+      padding:15px 35px 0;
+    }
+
     .logo img{width:320px;max-width:100%}
-    .nav-links{display:flex;gap:34px;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;padding-top:28px}
-    nav a{color:var(--text);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.55rem;font-weight:600;letter-spacing:.5px;white-space:nowrap;transition:.25s ease}
+
+    .nav-links{
+      display:flex;
+      gap:34px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      align-items:flex-start;
+      padding-top:28px;
+    }
+
+    nav a{
+      color:var(--text);
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:1.55rem;
+      font-weight:600;
+      letter-spacing:.5px;
+      white-space:nowrap;
+      transition:.25s ease;
+    }
+
     nav a:hover{color:var(--red)}
-    .hero{width:min(980px,calc(100% - 40px));min-height:72vh;padding-top:40px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;z-index:2}
-    .hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(4rem,7vw,7rem);line-height:.95;letter-spacing:-2px;margin-bottom:32px;color:#111;text-shadow:0 2px 10px rgba(255,255,255,.35)}
-    .hero p{max-width:760px;color:#111;font-size:clamp(1.18rem,2.3vw,1.55rem);line-height:1.8;margin-bottom:8px;text-align:center;font-weight:500}
+
+    .hero{
+      width:min(980px,calc(100% - 40px));
+      min-height:72vh;
+      padding-top:40px;
+      margin:0 auto;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero h1{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(4rem,7vw,7rem);
+      line-height:.95;
+      letter-spacing:-2px;
+      margin-bottom:32px;
+      color:#111;
+      text-shadow:0 2px 10px rgba(255,255,255,.35);
+    }
+
+    .hero p{
+      max-width:760px;
+      color:#111;
+      font-size:clamp(1.18rem,2.3vw,1.55rem);
+      line-height:1.8;
+      margin-bottom:8px;
+      text-align:center;
+      font-weight:500;
+    }
+
     .hero-small{color:var(--muted)!important}
     .hero-action{margin-top:38px}
-    .btn{display:inline-block;padding:15px 34px;border-radius:999px;background:#7b1118;color:var(--gold);font-weight:bold;letter-spacing:1px;margin:6px 8px 6px 0;transition:.30s ease;box-shadow:0 10px 25px rgba(0,0,0,.20)}
-    .btn:hover{transform:translateY(-3px);background:#5f0d13;box-shadow:0 14px 30px rgba(0,0,0,.28)}
-    .btn.light{background:transparent;border:1px solid var(--red);color:var(--red);box-shadow:none}
-    main{width:min(1120px,calc(100% - 40px));margin:0 auto;padding:70px 0 0}
+
+    .btn{
+      display:inline-block;
+      padding:15px 34px;
+      border-radius:999px;
+      background:#7b1118;
+      color:var(--gold);
+      font-weight:bold;
+      letter-spacing:1px;
+      margin:6px 8px 6px 0;
+      transition:.30s ease;
+      box-shadow:0 10px 25px rgba(0,0,0,.20);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:#5f0d13;
+      box-shadow:0 14px 30px rgba(0,0,0,.28);
+    }
+
+    main{
+      width:min(1120px,calc(100% - 40px));
+      margin:0 auto;
+      padding:70px 0 0;
+    }
+
     section{margin-bottom:90px}
-    .section-title{margin-bottom:30px}
-    .section-title span{color:var(--red);text-transform:uppercase;letter-spacing:2px;font-size:.8rem;font-weight:800}
-    h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4vw,3.2rem);color:var(--text);line-height:1.12;margin-top:8px}
+
+    h2{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(2rem,4vw,3.2rem);
+      color:var(--text);
+      line-height:1.12;
+      margin-top:8px;
+    }
+
     p{color:var(--muted)}
-    .panel,.manifesto{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:42px;text-align:center}
-    .panel p,.manifesto p{max-width:760px;margin:0 auto 22px;font-size:1.15rem}
-    .buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:18px}
-   .final-banner{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  background:#efe7db;
-  border-top:1px solid rgba(0,0,0,.08);
-  padding:90px 30px 70px;
-}
 
-.final-banner-content{
-  max-width:980px;
-  margin:auto;
-  text-align:center;
-}
+    .final-banner{
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      background:#efe7db;
+      border-top:1px solid rgba(0,0,0,.08);
+      padding:90px 30px 70px;
+    }
 
-.footer-quote{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(2.2rem,3vw,2.8rem);
-  line-height:1.45;
-  color:#242424;
-  max-width:860px;
-  margin:0 auto 60px;
-  font-style:italic;
-  font-weight:500;
-}
+    .final-banner-content{
+      max-width:980px;
+      margin:auto;
+      text-align:center;
+    }
 
-.footer-divider{
-  width:120px;
-  height:1px;
-  background:#bba890;
-  margin:0 auto 55px;
-}
+    .footer-quote{
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(2.2rem,3vw,2.8rem);
+      line-height:1.45;
+      color:#242424;
+      max-width:860px;
+      margin:0 auto 60px;
+      font-style:italic;
+      font-weight:500;
+    }
 
-.footer-social{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:18px;
-  margin-bottom:45px;
-}
+    .footer-divider{
+      width:120px;
+      height:1px;
+      background:#bba890;
+      margin:0 auto 55px;
+    }
 
-.footer-social a{
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#fff;
-  border:1px solid rgba(0,0,0,.10);
-  transition:.25s;
-  font-size:1.1rem;
-  color:#222;
-}
+    .footer-social{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:18px;
+      margin-bottom:45px;
+    }
 
-.footer-social a:hover{
-  background:#8b1e24;
-  color:white;
-  transform:translateY(-3px);
-}
+    .footer-social a{
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#fff;
+      border:1px solid rgba(0,0,0,.10);
+      transition:.25s;
+      font-size:1.1rem;
+      color:#222;
+    }
 
-.payhip{
-  width:auto!important;
-  padding:0 22px;
-  border-radius:999px!important;
-  font-size:.95rem;
-  font-weight:600;
-}
+    .footer-social a:hover{
+      background:#8b1e24;
+      color:white;
+      transform:translateY(-3px);
+    }
 
-.footer-editorial{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-bottom:45px;
-  color:#666;
-  font-size:.95rem;
-}
+    .payhip{
+      width:auto!important;
+      padding:0 22px;
+      border-radius:999px!important;
+      font-size:.95rem;
+      font-weight:600;
+    }
 
-.footer-editorial a{
-  transition:.25s;
-}
+    .footer-editorial{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-bottom:45px;
+      color:#666;
+      font-size:.95rem;
+    }
 
-.footer-editorial a:hover{
-  color:#8b1e24;
-}
+    .footer-editorial a{transition:.25s}
+    .footer-editorial a:hover{color:#8b1e24}
 
-.footer-copy{
-  border-top:1px solid rgba(0,0,0,.08);
-  padding-top:28px;
-  color:#888;
-  font-size:.88rem;
-}
+    .footer-copy{
+      border-top:1px solid rgba(0,0,0,.08);
+      padding-top:28px;
+      color:#888;
+      font-size:.88rem;
+    }
 
-@media(max-width:600px){
-  .final-banner{
-    padding:70px 20px 55px;
-  }
+    .reflection-banner{
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      min-height:430px;
+      padding:90px 24px;
+      background:
+        radial-gradient(circle at 18% 20%,rgba(139,30,36,.13),transparent 28%),
+        radial-gradient(circle at 82% 75%,rgba(40,35,30,.10),transparent 32%),
+        linear-gradient(135deg,#fffaf3 0%,#efe7db 48%,#e1d3bf 100%);
+      background-size:cover;
+      background-position:center bottom;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+      border-top:1px solid rgba(0,0,0,.08);
+      border-bottom:1px solid rgba(0,0,0,.08);
+    }
 
-  .footer-quote{
-    font-size:clamp(1.8rem,8vw,2.3rem);
-  }
+    .reflection-banner::before{
+      content:"";
+      position:absolute;
+      width:420px;
+      height:420px;
+      border:1px solid rgba(139,30,36,.16);
+      border-radius:50%;
+      right:-130px;
+      top:-120px;
+    }
 
-  .footer-social a{
-    width:44px;
-    height:44px;
-  }
-}
-    @media(max-width:900px){.home-nav{flex-direction:column;align-items:center;text-align:center;margin-bottom:55px;padding:0}.logo img{width:270px;margin:0 auto}.nav-links{justify-content:center;gap:14px 18px;padding-top:0}.hero{min-height:58vh}}
-    @media(max-width:600px){header.home-hero{min-height:100vh;padding:24px 16px 64px}main{width:min(100% - 28px,1120px);padding:52px 0 0}.logo img{width:230px}nav a{font-size:1.05rem}.hero{width:min(100% - 20px,760px);min-height:58vh}.hero h1{font-size:clamp(3rem,15vw,4.8rem);letter-spacing:-2px;margin-bottom:24px}.hero p{font-size:1.16rem;line-height:1.65}.panel,.manifesto{padding:28px}.final-banner{min-height:390px;padding:64px 18px}.final-logo{width:220px}.final-subtitle{font-size:1.2rem}.final-icons a{width:42px;height:42px}}
- .reflection-banner{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  min-height:430px;
-  padding:90px 24px;
-background:
-  radial-gradient(circle at 18% 20%, rgba(139,30,36,.13), transparent 28%),
-  radial-gradient(circle at 82% 75%, rgba(40,35,30,.10), transparent 32%),
-  linear-gradient(135deg, #fffaf3 0%, #efe7db 48%, #e1d3bf 100%);
-  
-  background-size:cover;
-  background-position:center bottom;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-  border-top:1px solid rgba(0,0,0,.08);
-  border-bottom:1px solid rgba(0,0,0,.08);
-}
+    .reflection-banner::after{
+      content:"RIFLESSIONI";
+      position:absolute;
+      bottom:-34px;
+      left:50%;
+      transform:translateX(-50%);
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(4rem,13vw,11rem);
+      letter-spacing:8px;
+      color:rgba(139,30,36,.055);
+      line-height:1;
+      pointer-events:none;
+    }
 
-.reflection-banner::before{
-  content:"";
-  position:absolute;
-  width:420px;
-  height:420px;
-  border:1px solid rgba(139,30,36,.16);
-  border-radius:50%;
-  right:-130px;
-  top:-120px;
-}
+    .reflection-content{
+      max-width:860px;
+      position:relative;
+      z-index:2;
+    }
 
-.reflection-banner::after{
-  content:"RIFLESSIONI";
-  position:absolute;
-  bottom:-34px;
-  left:50%;
-  transform:translateX(-50%);
-  font-family:"Cormorant Garamond",Georgia,serif;
-  font-size:clamp(4rem,13vw,11rem);
-  letter-spacing:8px;
-  color:rgba(139,30,36,.055);
-  line-height:1;
-  pointer-events:none;
-}
+    .reflection-content span{
+      color:#8b1e24;
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:.82rem;
+      font-weight:800;
+    }
 
-.reflection-content{
-  max-width:860px;
-  position:relative;
-  z-index:2;
-}
+    .reflection-content h2{
+      font-size:clamp(2.6rem,5vw,4.4rem);
+      margin:18px auto 26px;
+      line-height:1.05;
+    }
 
-.reflection-content span{
-  color:#8b1e24;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:.82rem;
-  font-weight:800;
-}
+    .reflection-content p{
+      max-width:760px;
+      margin:0 auto 34px;
+      color:#3f3934;
+      font-size:clamp(1.15rem,2vw,1.35rem);
+      line-height:1.8;
+    }
 
-.reflection-content h2{
-  font-size:clamp(2.6rem,5vw,4.4rem);
-  margin:18px auto 26px;
-  line-height:1.05;
-}
+    .archive-showcase{
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      padding:90px 24px;
+      background:
+        radial-gradient(circle at 50% 0%,rgba(212,173,88,.12),transparent 34%),
+        linear-gradient(180deg,#090909 0%,#11100e 100%);
+      border-top:1px solid rgba(212,173,88,.18);
+      border-bottom:1px solid rgba(212,173,88,.18);
+    }
 
-.reflection-content p{
-  max-width:760px;
-  margin:0 auto 34px;
-  color:#3f3934;
-  font-size:clamp(1.15rem,2vw,1.35rem);
-  line-height:1.8;
-}
+    .archive-showcase-inner{
+      width:min(1180px,calc(100% - 40px));
+      margin:auto;
+    }
 
-@media(max-width:600px){
-  .reflection-banner{
-    min-height:390px;
-    padding:70px 20px;
-  }
+    .archive-showcase-link{
+      display:block;
+      overflow:hidden;
+      border-radius:22px;
+      box-shadow:0 30px 70px rgba(0,0,0,.45);
+      transition:.35s;
+    }
 
-.reflection-content h2{
-  font-size:clamp(2.2rem,10vw,3.2rem);
-}
+    .archive-showcase-link:hover{
+      transform:translateY(-5px);
+      box-shadow:0 40px 90px rgba(0,0,0,.55);
+    }
 
-}
-.archive-showcase{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  padding:90px 24px;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(212,173,88,.12), transparent 34%),
-    linear-gradient(180deg,#090909 0%,#11100e 100%);
-  border-top:1px solid rgba(212,173,88,.18);
-  border-bottom:1px solid rgba(212,173,88,.18);
-}
+    .archive-showcase img{
+      display:block;
+      width:100%;
+    }
 
-.archive-showcase-inner{
-  width:min(1180px,calc(100% - 40px));
-  margin:auto;
-}
+    .echo-showcase{
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      padding:90px 24px;
+      background:
+        radial-gradient(circle at 18% 20%,rgba(139,30,36,.18),transparent 28%),
+        radial-gradient(circle at 82% 80%,rgba(0,0,0,.32),transparent 36%),
+        linear-gradient(135deg,#120f0f 0%,#211816 48%,#efe7db 100%);
+      border-top:1px solid rgba(0,0,0,.12);
+      border-bottom:1px solid rgba(0,0,0,.12);
+      overflow:hidden;
+    }
 
-.archive-showcase-link{
-  display:block;
-  overflow:hidden;
-  border-radius:22px;
-  box-shadow:0 30px 70px rgba(0,0,0,.45);
-  transition:.35s;
-}
+    .echo-showcase-inner{
+      width:min(1180px,calc(100% - 40px));
+      margin:0 auto;
+    }
 
-.archive-showcase-link:hover{
-  transform:translateY(-5px);
-  box-shadow:0 40px 90px rgba(0,0,0,.55);
-}
+    .echo-showcase-link{
+      display:block;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 35px 90px rgba(0,0,0,.38),0 0 0 1px rgba(255,255,255,.08);
+      transition:transform .45s ease,box-shadow .45s ease;
+    }
 
-.archive-showcase img{
-  display:block;
-  width:100%;
-}
+    .echo-showcase-link:hover{
+      transform:translateY(-6px);
+      box-shadow:0 45px 110px rgba(0,0,0,.48),0 0 0 1px rgba(255,255,255,.12);
+    }
 
-@media(max-width:700px){
+    .echo-showcase img{
+      width:100%;
+      display:block;
+    }
 
-.archive-showcase{
-padding:60px 16px;
-}
-
-.archive-showcase-inner{
-width:100%;
-}
-
-.archive-showcase-link{
-border-radius:16px;
-}
-
-}
-.echo-showcase{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  padding:90px 24px;
-  background:
-    radial-gradient(circle at 18% 20%, rgba(139,30,36,.18), transparent 28%),
-    radial-gradient(circle at 82% 80%, rgba(0,0,0,.32), transparent 36%),
-    linear-gradient(135deg, #120f0f 0%, #211816 48%, #efe7db 100%);
-  border-top:1px solid rgba(0,0,0,.12);
-  border-bottom:1px solid rgba(0,0,0,.12);
-  overflow:hidden;
-}
-
-.echo-showcase-inner{
-  width:min(1180px, calc(100% - 40px));
-  margin:0 auto;
-}
-
-.echo-showcase-link{
-  display:block;
-  border-radius:24px;
-  overflow:hidden;
-  box-shadow:
-    0 35px 90px rgba(0,0,0,.38),
-    0 0 0 1px rgba(255,255,255,.08);
-  transition:transform .45s ease, box-shadow .45s ease;
-}
-
-.echo-showcase-link:hover{
-  transform:translateY(-6px);
-  box-shadow:
-    0 45px 110px rgba(0,0,0,.48),
-    0 0 0 1px rgba(255,255,255,.12);
-}
-
-.echo-showcase img{
-  width:100%;
-  display:block;
-}
-
-@media(max-width:700px){
-  .echo-showcase{
-    padding:60px 16px;
-  }
-
-  .echo-showcase-inner{
-    width:100%;
-  }
-
-  .echo-showcase-link{
-    border-radius:16px;
-  }
-  
-  }
     .books-banner{
-  width:100vw;
-  margin-left:calc(50% - 50vw);
-  min-height:430px;
-  padding:95px 24px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  overflow:hidden;
-  position:relative;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(139,30,36,.10), transparent 26%),
-    radial-gradient(circle at 85% 80%, rgba(0,0,0,.08), transparent 30%),
-    linear-gradient(135deg,#fffaf3 0%,#efe7db 52%,#e7d9c7 100%);
-  border-top:1px solid rgba(0,0,0,.08);
-  border-bottom:1px solid rgba(0,0,0,.08);
-}
+      width:100vw;
+      margin-left:calc(50% - 50vw);
+      min-height:430px;
+      padding:95px 24px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      overflow:hidden;
+      position:relative;
+      background:
+        radial-gradient(circle at 15% 20%,rgba(139,30,36,.10),transparent 26%),
+        radial-gradient(circle at 85% 80%,rgba(0,0,0,.08),transparent 30%),
+        linear-gradient(135deg,#fffaf3 0%,#efe7db 52%,#e7d9c7 100%);
+      border-top:1px solid rgba(0,0,0,.08);
+      border-bottom:1px solid rgba(0,0,0,.08);
+    }
 
-.books-banner::before{
-  content:"LIBRI";
-  position:absolute;
-  left:50%;
-  bottom:-34px;
-  transform:translateX(-50%);
-  font-family:"Cormorant Garamond",Georgia,serif;
-  font-size:clamp(5rem,14vw,11rem);
-  letter-spacing:12px;
-  color:rgba(139,30,36,.055);
-  pointer-events:none;
-  white-space:nowrap;
-}
+    .books-banner::before{
+      content:"LIBRI";
+      position:absolute;
+      left:50%;
+      bottom:-34px;
+      transform:translateX(-50%);
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:clamp(5rem,14vw,11rem);
+      letter-spacing:12px;
+      color:rgba(139,30,36,.055);
+      pointer-events:none;
+      white-space:nowrap;
+    }
 
-.books-content{
-  max-width:860px;
-  position:relative;
-  z-index:2;
-}
+    .books-content{
+      max-width:860px;
+      position:relative;
+      z-index:2;
+    }
 
-.books-content span{
-  color:#8b1e24;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:.82rem;
-  font-weight:800;
-}
+    .books-content span{
+      color:#8b1e24;
+      text-transform:uppercase;
+      letter-spacing:3px;
+      font-size:.82rem;
+      font-weight:800;
+    }
 
-.books-content h2{
-  font-size:clamp(2.6rem,5vw,4.4rem);
-  margin:18px auto 26px;
-  line-height:1.05;
-}
+    .books-content h2{
+      font-size:clamp(2.6rem,5vw,4.4rem);
+      margin:18px auto 26px;
+      line-height:1.05;
+    }
 
-.books-content p{
-  max-width:760px;
-  margin:0 auto 34px;
-  color:#3f3934;
-  font-size:clamp(1.15rem,2vw,1.35rem);
-  line-height:1.8;
-}
+    .books-content p{
+      max-width:760px;
+      margin:0 auto 34px;
+      color:#3f3934;
+      font-size:clamp(1.15rem,2vw,1.35rem);
+      line-height:1.8;
+    }
 
-@media(max-width:700px){
-  .books-banner{
-    min-height:380px;
-    padding:70px 20px;
-  }
+    @media(max-width:900px){
+      .home-nav{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        margin-bottom:55px;
+        padding:0;
+      }
 
-  .books-content h2{
-    font-size:clamp(2.2rem,10vw,3.2rem);
-  }
-}
+      .logo img{width:270px;margin:0 auto}
+      .nav-links{justify-content:center;gap:14px 18px;padding-top:0}
+      .hero{min-height:58vh}
+    }
+
+    @media(max-width:700px){
+      .archive-showcase,.echo-showcase{padding:60px 16px}
+      .archive-showcase-inner,.echo-showcase-inner{width:100%}
+      .archive-showcase-link,.echo-showcase-link{border-radius:16px}
+      .books-banner{min-height:380px;padding:70px 20px}
+      .books-content h2{font-size:clamp(2.2rem,10vw,3.2rem)}
+    }
+
+    @media(max-width:600px){
+      header.home-hero{min-height:100vh;padding:24px 16px 64px}
+      main{width:min(100% - 28px,1120px);padding:52px 0 0}
+      .logo img{width:230px}
+      nav a{font-size:1.05rem}
+      .hero{width:min(100% - 20px,760px);min-height:58vh}
+      .hero h1{font-size:clamp(3rem,15vw,4.8rem);letter-spacing:-2px;margin-bottom:24px}
+      .hero p{font-size:1.16rem;line-height:1.65}
+      .final-banner{min-height:390px;padding:64px 18px}
+      .footer-quote{font-size:clamp(1.8rem,8vw,2.3rem)}
+      .footer-social a{width:44px;height:44px}
+      .reflection-banner{min-height:390px;padding:70px 20px}
+      .reflection-content h2{font-size:clamp(2.2rem,10vw,3.2rem)}
+    }
   </style>
 </head>
+
 <body>
 
 <header class="home-hero">
-
-  <nav class="home-nav">
-
+  <nav class="home-nav" aria-label="Navigazione principale">
     <div class="logo">
       <a href="index.html">
         <img src="logo-giuseppe-lo-iacono.png" alt="Giuseppe Lo Iacono">
@@ -529,169 +580,124 @@ border-radius:16px;
       <a href="community.html">Community</a>
       <a href="#footer">Contatti</a>
     </div>
-
   </nav>
 
   <div class="hero">
-
     <h1>Ogni libro nasce<br>da una domanda.</h1>
-
     <p>Non scrivo per offrire certezze.</p>
-
     <p class="hero-small">
       Scrivo per osservare ciò che spesso rimane invisibile.
     </p>
-
     <div class="hero-action">
-      <a class="btn" href="atlante.html">
-        INIZIA IL VIAGGIO
-      </a>
+      <a class="btn" href="atlante.html">INIZIA IL VIAGGIO</a>
     </div>
-
   </div>
-
 </header>
 
 <main>
-<main>
- <section class="reflection-banner">
 
-  <div class="reflection-content">
+  <section class="reflection-banner">
+    <div class="reflection-content">
+      <span>Riflessioni</span>
+      <h2>Domande che continuano anche dopo la lettura.</h2>
+      <p>
+        Il blog raccoglie pensieri sulla natura umana, la libertà, la tecnologia,
+        il desiderio e tutto ciò che spesso rimane ai margini delle conversazioni quotidiane.
+      </p>
+      <a class="btn" href="blog.html">Leggi tutte le riflessioni</a>
+    </div>
+  </section>
 
-    <span>Riflessioni</span>
-
-    <h2>Domande che continuano anche dopo la lettura.</h2>
-
-    <p>
-      Il blog raccoglie pensieri sulla natura umana, la libertà, la tecnologia,
-      il desiderio e tutto ciò che spesso rimane ai margini delle conversazioni quotidiane.
-    </p>
-
-    <a class="btn" href="blog.html">
-      Leggi tutte le riflessioni
-    </a>
-
-  </div>
-   </section>
-
-<section class="archive-showcase">
-
-  <div class="archive-showcase-inner">
-
-    <a href="archivio-osservazioni.html"
-       class="archive-showcase-link">
-
-      <img src="immagine collezione delle osservazioni..png"
-           alt="Archivio delle Osservazioni">
-
-    </a>
-
-  </div>
-
-</section>
-
-<section class="echo-showcase">
-
-<section class="echo-showcase">
-
-  <div class="echo-showcase-inner">
-
-    <a href="echo.html" class="echo-showcase-link" aria-label="Scopri Il Cuore di ECHO">
-
-      <img src="echo-banner.jpg.png" alt="Il Cuore di ECHO - progetto distopico in lavorazione">
-
-    </a>
-
-  </div>
-
-  
-
-</section>
- <section class="books-banner">
-
-  <div class="books-content">
-
-    <span>Libri</span>
-
-    <h2>
-      Ogni libro è una domanda diversa.
-    </h2>
-
-    <p>
-      Romanzi, saggi e riflessioni che esplorano la natura umana,
-      la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.
-    </p>
-
-    <a class="btn" href="libri.html">
-      Scopri tutti i libri
-    </a>
-
-  </div>
-
-</section>
-
-  
- 
-
-
- <section class="final-banner" id="footer">
-
-  <div class="final-banner-content">
-
-    <blockquote class="footer-quote">
-      Le persone non hanno paura della verità.
-      <br>
-      Hanno paura di perdere le proprie certezze.
-    </blockquote>
-
-    <div class="footer-divider"></div>
-
-    <div class="footer-social">
-
-      <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank" rel="noopener" aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
+  <section class="archive-showcase">
+    <div class="archive-showcase-inner">
+      <a href="archivio-osservazioni.html" class="archive-showcase-link">
+        <img src="immagine collezione delle osservazioni..png"
+             alt="Archivio delle Osservazioni, collana editoriale di Giuseppe Lo Iacono">
       </a>
+    </div>
+  </section>
 
-      <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank" rel="noopener" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
+  <section class="echo-showcase">
+    <div class="echo-showcase-inner">
+      <a href="echo.html" class="echo-showcase-link" aria-label="Scopri Il Cuore di ECHO">
+        <img src="echo-banner.jpg.png"
+             alt="Il Cuore di ECHO - progetto distopico in lavorazione">
       </a>
+    </div>
+  </section>
 
-      <a href="https://tiktok.com/@ilviandante1" target="_blank" rel="noopener" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
+  <section class="books-banner">
+    <div class="books-content">
+      <span>Libri</span>
+      <h2>Ogni libro è una domanda diversa.</h2>
+      <p>
+        Romanzi, saggi e riflessioni che esplorano la natura umana,
+        la libertà, il desiderio, la tecnologia e ciò che spesso rimane invisibile.
+      </p>
+      <a class="btn" href="libri.html">Scopri tutti i libri</a>
+    </div>
+  </section>
 
-      <a href="https://www.youtube.com/@giuseppeloiacono82" target="_blank" rel="noopener" aria-label="YouTube">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
+  <section class="final-banner" id="footer">
+    <div class="final-banner-content">
 
-      <a href="https://amazon.com/author/iltuttologonarrante" target="_blank" rel="noopener" aria-label="Amazon">
-        <i class="fa-brands fa-amazon"></i>
-      </a>
+      <blockquote class="footer-quote">
+        Le persone non hanno paura della verità.
+        <br>
+        Hanno paura di perdere le proprie certezze.
+      </blockquote>
 
-   <a href="https://payhip.com/GiuseppeLoIacono" target="_blank" rel="noopener" class="payhip">
-    Payhip
-</a>
+      <div class="footer-divider"></div>
 
-      <a href="https://pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">
-        <i class="fa-brands fa-pinterest-p"></i>
-      </a>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/18r9T9vdZ8/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/ilviandante82?igsh=MTZicDVrYjFpbnNnNg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://tiktok.com/@ilviandante1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@giuseppeloiacono82" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://amazon.com/author/iltuttologonarrante" target="_blank" rel="noopener noreferrer" aria-label="Amazon">
+          <i class="fa-brands fa-amazon"></i>
+        </a>
+
+        <a href="https://payhip.com/GiuseppeLoIacono" target="_blank" rel="noopener noreferrer" class="payhip">
+          Payhip
+        </a>
+
+        <a href="https://pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+          <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+      </div>
+
+      <div class="footer-editorial">
+        <a href="sharol-pinna.html">Sharol Pinna · SIC</a>
+        <span>—</span>
+        <a href="https://amazon.com/author/sic" target="_blank" rel="noopener noreferrer">Pagina Autore</a>
+        <span>—</span>
+        <a href="https://payhip.com/GiuseppeLoIacono" target="_blank" rel="noopener noreferrer">
+          Digital Library
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        © 2026 Giuseppe Lo Iacono · Tutti i diritti riservati
+      </p>
 
     </div>
+  </section>
 
-    <div class="footer-editorial">
-      <a href="sharol-pinna.html">Sharol Pinna · SIC</a>
-      <span>—</span>
-      <a href="https://amazon.com/author/sic" target="_blank" rel="noopener">Pagina Autore</a>
-      <span>—</span>
-     <a href="https://payhip.com/GiuseppeLoIacono" target="_blank" rel="noopener">
-    Digital Library
-</a>
-    </div>
+</main>
 
-    <p class="footer-copy">
-      © 2026 Giuseppe Lo Iacono Studio · Tutti i diritti riservati
-    </p>
+</body>
+</html>
 
-  </div>
-
-</section>
