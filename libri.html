@@ -5,282 +5,679 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Libri | Giuseppe Lo Iacono</title>
-<meta name="description" content="I libri di Giuseppe Lo Iacono: opere su coscienza, libertà, desiderio, tecnologia, trasformazione interiore e società.">
+<title>Libri di Giuseppe Lo Iacono | Opere e progetti editoriali</title>
+<meta name="description" content="Esplora i libri di Giuseppe Lo Iacono: narrativa, coscienza, libertà, desiderio, tecnologia e trasformazione. Scopri le opere e le prossime uscite.">
+<meta name="author" content="Giuseppe Lo Iacono">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#efe7db">
 
 <link rel="canonical" href="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/libri.html">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="I libri di Giuseppe Lo Iacono">
+<meta property="og:description" content="Una biblioteca d'autore tra coscienza, libertà, narrativa, tecnologia e trasformazione.">
+<meta property="og:url" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/libri.html">
+<meta property="og:image" content="https://giuseppeloiacono.github.io/giuseppeloiacono-sito/immagine%20collezione%20delle%20osservazioni..png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="I libri di Giuseppe Lo Iacono">
+<meta name="twitter:description" content="Scopri i libri, le collane e i progetti editoriali di Giuseppe Lo Iacono.">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "@id":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/libri.html#collection",
+  "name":"I libri di Giuseppe Lo Iacono",
+  "url":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/libri.html",
+  "description":"Le opere e i progetti editoriali di Giuseppe Lo Iacono.",
+  "inLanguage":"it-IT",
+  "author":{
+    "@id":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#author"
+  },
+  "isPartOf":{
+    "@id":"https://giuseppeloiacono.github.io/giuseppeloiacono-sito/#website"
+  }
+}
+</script>
 
 <style>
+:root{
+  --bg:#efe7db;
+  --paper:#fffaf3;
+  --text:#221f1c;
+  --muted:#635c55;
+  --red:#8b1e24;
+  --red-dark:#68151a;
+  --gold:#c59a4a;
+  --line:rgba(70,45,30,.14);
+}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,Helvetica,sans-serif;background:#efe7db;color:#222;line-height:1.8}
-a{text-decoration:none;color:inherit}
 
-.page{max-width:1150px;margin:auto;padding:38px 22px 80px}
-.back{display:inline-block;margin-bottom:38px;color:#8b1e24;font-weight:bold}
+html{scroll-behavior:smooth}
 
-.hero,.book{
-background:#fffaf3;
-border:1px solid rgba(0,0,0,.10);
-border-radius:28px;
-box-shadow:0 16px 38px rgba(0,0,0,.07);
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.75;
 }
 
-.hero{
-padding:65px 45px;
-text-align:center;
-margin-bottom:50px;
-}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
 
-.label{
-color:#8b1e24;
-font-size:.82rem;
-font-weight:800;
-text-transform:uppercase;
-letter-spacing:2px;
-margin-bottom:14px;
+a:focus-visible{
+  outline:3px solid var(--red);
+  outline-offset:5px;
 }
 
 h1,h2,h3{
-font-family:"Cormorant Garamond",Georgia,serif;
-color:#222;
-line-height:1.08;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-weight:600;
+  line-height:1.08;
 }
 
-h1{font-size:clamp(3rem,7vw,5.7rem);margin-bottom:22px}
-h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:18px}
-h3{font-size:1.8rem;margin-bottom:12px}
-
-p{color:#5d5a55;font-size:1.06rem;margin-bottom:18px}
-
-.archive-section{
-margin-bottom:60px;
-padding:42px;
-display:grid;
-grid-template-columns:minmax(300px,1.1fr) 1fr;
-gap:46px;
-align-items:center;
-overflow:hidden;
-background:#090909;
-border:1px solid rgba(212,173,88,.28);
-border-radius:28px;
-box-shadow:0 20px 50px rgba(0,0,0,.16);
+.container{
+  width:min(1160px,calc(100% - 48px));
+  margin:auto;
 }
 
-.archive-section img{
-width:100%;
-display:block;
-border-radius:18px;
-border:1px solid rgba(212,173,88,.22);
-box-shadow:0 24px 60px rgba(0,0,0,.42);
+.back{
+  display:inline-block;
+  padding:30px 0 0;
+  color:var(--red);
+  font-weight:700;
+  font-size:.95rem;
 }
 
-.archive-content{
-color:#f6efe1;
+.back:hover{text-decoration:underline}
+
+/* INTRODUZIONE */
+
+.intro{
+  padding:100px 20px 115px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
 }
 
-.archive-label{
-margin-bottom:12px;
-color:#d4ad58;
-font-size:.8rem;
-font-weight:800;
-letter-spacing:3px;
-text-transform:uppercase;
+.intro::after{
+  content:"OPERE";
+  position:absolute;
+  left:50%;
+  bottom:-45px;
+  transform:translateX(-50%);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(7rem,20vw,18rem);
+  color:rgba(139,30,36,.045);
+  pointer-events:none;
 }
 
-.archive-section h2{
-color:#f6efe1;
-font-size:clamp(2.8rem,5vw,4.5rem);
-margin-bottom:18px;
+.eyebrow{
+  display:block;
+  color:var(--red);
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
 }
 
-.archive-section p{
-color:rgba(246,239,225,.74);
-font-size:1.1rem;
-margin-bottom:26px;
+.intro h1{
+  max-width:900px;
+  margin:22px auto 26px;
+  font-size:clamp(3.8rem,8vw,7rem);
+  letter-spacing:-1.5px;
 }
 
-.archive-button{
-display:inline-block;
-padding:14px 28px;
-border-radius:999px;
-background:#d4ad58;
-color:#111;
-font-weight:800;
-transition:.3s ease;
+.intro p{
+  max-width:720px;
+  margin:auto;
+  color:var(--muted);
+  font-size:1.2rem;
 }
 
-.archive-button:hover{
-transform:translateY(-3px);
-background:#f0cb7c;
-box-shadow:0 14px 30px rgba(0,0,0,.28);
+.rule{
+  width:75px;
+  height:1px;
+  background:var(--gold);
+  margin:38px auto 0;
 }
 
-.books{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:28px;
+/* ARCHIVIO */
+
+.archive{
+  padding:70px 0;
+  background:#181513;
+  color:#f7efe3;
+}
+
+.archive-inner{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:65px;
+}
+
+.archive-image{
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 25px 65px rgba(0,0,0,.38);
+}
+
+.archive-image img{width:100%}
+
+.archive .eyebrow{color:#d8b56d}
+
+.archive h2{
+  font-size:clamp(3rem,5vw,5rem);
+  margin:18px 0 24px;
+  color:#f7efe3;
+}
+
+.archive p{
+  color:#d1c5b7;
+  margin-bottom:30px;
+  font-size:1.06rem;
+}
+
+.link-light{
+  display:inline-block;
+  padding-bottom:7px;
+  border-bottom:1px solid var(--gold);
+  color:#f4d89d;
+  font-weight:700;
+}
+
+.link-light:hover{color:#fff}
+
+/* SEZIONE OPERE */
+
+.collection{
+  padding:105px 0 30px;
+}
+
+.collection-head{
+  text-align:center;
+  margin-bottom:80px;
+}
+
+.collection-head h2{
+  font-size:clamp(3rem,6vw,5rem);
+  margin:15px 0 20px;
+}
+
+.collection-head p{
+  max-width:650px;
+  margin:auto;
+  color:var(--muted);
 }
 
 .book{
-overflow:hidden;
-transition:.25s;
+  display:grid;
+  grid-template-columns:minmax(240px,390px) minmax(0,1fr);
+  align-items:center;
+  gap:clamp(45px,8vw,120px);
+  padding:70px 0;
+  border-top:1px solid var(--line);
 }
 
-.book:hover{
-transform:translateY(-5px);
-box-shadow:0 20px 45px rgba(0,0,0,.10);
+.book.reverse{
+  grid-template-columns:minmax(0,1fr) minmax(240px,390px);
 }
 
-.book img{
-width:100%;
-aspect-ratio:2/3;
-object-fit:cover;
-background:#eee6dc;
+.book.reverse .book-cover{order:2}
+.book.reverse .book-copy{order:1}
+
+.book-cover{
+  width:100%;
+  max-width:390px;
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.book-content{
-padding:26px;
+.book-cover img{
+  width:auto;
+  max-width:100%;
+  max-height:510px;
+  object-fit:contain;
+  box-shadow:14px 22px 35px rgba(43,29,20,.20);
+  transition:transform .35s ease,box-shadow .35s ease;
 }
 
-.button{
-display:inline-block;
-background:#8b1e24;
-color:#fffaf3;
-padding:13px 24px;
-border-radius:999px;
-font-weight:bold;
-margin-top:8px;
+.book-cover a:hover img{
+  transform:translateY(-7px);
+  box-shadow:18px 28px 45px rgba(43,29,20,.25);
 }
 
-.button:hover{background:#6f171c}
+.book-number{
+  display:block;
+  color:var(--red);
+  font-size:.82rem;
+  letter-spacing:2px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.book-copy h3{
+  font-size:clamp(3rem,5vw,4.7rem);
+  margin-bottom:24px;
+}
+
+.book-copy p{
+  max-width:510px;
+  font-size:1.16rem;
+  color:var(--muted);
+  margin-bottom:32px;
+}
+
+.book-link{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding-bottom:9px;
+  border-bottom:1px solid var(--red);
+  color:var(--red);
+  font-weight:800;
+  transition:.25s;
+}
+
+.book-link:hover{
+  color:var(--red-dark);
+  gap:20px;
+}
+
+/* PROSSIMA USCITA */
+
+.coming{
+  margin:90px 0 110px;
+  padding:85px 45px;
+  background:
+    radial-gradient(circle at 85% 20%,rgba(197,154,74,.12),transparent 35%),
+    linear-gradient(135deg,#221918,#391e20);
+  color:#f7efe3;
+  text-align:center;
+  border-radius:22px;
+  position:relative;
+  overflow:hidden;
+}
+
+.coming::after{
+  content:"";
+  position:absolute;
+  width:350px;
+  height:350px;
+  border:1px solid rgba(197,154,74,.18);
+  border-radius:50%;
+  right:-140px;
+  top:-160px;
+  pointer-events:none;
+}
+
+.coming .eyebrow{color:#d8b56d}
+
+.coming h2{
+  color:#f7efe3;
+  font-size:clamp(3rem,6vw,5.2rem);
+  margin:18px 0 24px;
+}
+
+.coming p{
+  max-width:600px;
+  margin:auto;
+  color:#d1c5b7;
+  font-size:1.12rem;
+}
+
+/* CHIUSURA */
+
+.closing{
+  text-align:center;
+  padding:0 20px 105px;
+}
+
+.closing p{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(2rem,4vw,3rem);
+  line-height:1.4;
+  max-width:760px;
+  margin:auto;
+  font-style:italic;
+}
+
+.closing a{
+  display:inline-block;
+  margin-top:30px;
+  color:var(--red);
+  font-weight:700;
+  border-bottom:1px solid var(--red);
+}
 
 footer{
-text-align:center;
-background:#eee6dc;
-color:#555;
-padding:30px;
+  text-align:center;
+  padding:30px 20px;
+  border-top:1px solid var(--line);
+  color:#776c61;
+  font-size:.9rem;
 }
 
-@media(max-width:900px){
-.archive-section{
-grid-template-columns:1fr;
-padding:30px 24px;
-text-align:center;
+/* TABLET */
+
+@media(max-width:850px){
+  .archive-inner{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .archive-image{max-width:650px;margin:auto}
+
+  .archive-copy{text-align:center}
+
+  .book,.book.reverse{
+    grid-template-columns:minmax(180px,280px) 1fr;
+    gap:35px;
+  }
+
+  .book.reverse .book-cover{order:0}
+  .book.reverse .book-copy{order:0}
+
+  .book-copy h3{font-size:clamp(2.5rem,5vw,3.6rem)}
 }
-.archive-button{margin:auto}
-.books{grid-template-columns:1fr}
-.hero{padding:38px 24px}
+
+/* MOBILE */
+
+@media(max-width:600px){
+  .container{width:min(100% - 34px,1160px)}
+  .intro{padding:75px 15px 85px}
+  .intro h1{font-size:clamp(3.3rem,13vw,5rem)}
+  .intro p{font-size:1.08rem}
+
+  .archive{padding:55px 0}
+  .archive h2{font-size:3.2rem}
+
+  .collection{padding-top:75px}
+  .collection-head{margin-bottom:40px}
+
+  .book,.book.reverse{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    padding:60px 0;
+    text-align:center;
+  }
+
+  .book.reverse .book-cover{order:0}
+  .book.reverse .book-copy{order:1}
+
+  .book-cover{max-width:270px}
+
+  .book-cover img{max-height:390px}
+
+  .book-copy h3{
+    font-size:clamp(2.8rem,10vw,3.8rem);
+  }
+
+  .book-copy p{font-size:1.06rem}
+
+  .book-link{justify-content:center}
+
+  .coming{
+    margin:60px 0 80px;
+    padding:65px 25px;
+  }
+
+  .closing{padding-bottom:75px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .book-cover img,.book-link{transition:none}
+  .book-cover a:hover img{transform:none}
 }
 </style>
 </head>
 
 <body>
 
-<div class="page">
+<div class="container">
+  <a class="back" href="index.html">← Torna al sito</a>
+</div>
 
-<a class="back" href="index.html">← Torna al sito</a>
+<main>
 
-<section class="hero">
-  <div class="label">Libri</div>
-  <h1>I libri di Giuseppe Lo Iacono</h1>
-  <p>
-    Una raccolta di opere che attraversano coscienza, libertà, desiderio,
-    tecnologia, trasformazione interiore e società.
-  </p>
-</section>
-
-<section class="archive-section">
-  <div>
-    <img
-      src="immagine collezione delle osservazioni..png"
-      alt="Archivio delle Osservazioni di Giuseppe Lo Iacono">
-  </div>
-
-  <div class="archive-content">
-    <div class="archive-label">Collana editoriale</div>
-
-    <h2>Archivio delle Osservazioni</h2>
-
+  <header class="intro">
+    <span class="eyebrow">La biblioteca dell'autore</span>
+    <h1>I libri di<br>Giuseppe Lo Iacono</h1>
     <p>
-      Libri brevi. Domande profonde. Prospettive che restano aperte.
-      Una collana dedicata al comportamento umano, alla percezione
-      e ai meccanismi invisibili che guidano il nostro modo
-      di interpretare la realtà.
+      Una raccolta di opere che attraversano coscienza,
+      libertà, desiderio, tecnologia, trasformazione
+      interiore e società.
     </p>
+    <div class="rule"></div>
+  </header>
 
-    <a class="archive-button" href="archivio-osservazioni.html">
-      Entra nell’Archivio
-    </a>
-  </div>
-</section>
+  <section class="archive" aria-labelledby="archive-title">
+    <div class="container archive-inner">
 
-<div class="books">
+      <div class="archive-image">
+        <a href="archivio-osservazioni.html">
+          <img
+            src="immagine collezione delle osservazioni..png"
+            alt="Archivio delle Osservazioni di Giuseppe Lo Iacono"
+            loading="lazy">
+        </a>
+      </div>
 
-  <article class="book">
-    <img src="copertina il tuttologo narrante ufficiale .png" alt="Il Tuttologo Narrante">
-    <div class="book-content">
-      <h3>Il Tuttologo Narrante</h3>
-      <p>Un viaggio oltre il sistema, tra potere, coscienza e libertà di pensiero.</p>
-      <a class="button" href="tuttologo-narrante.html">Scopri il libro</a>
+      <div class="archive-copy">
+        <span class="eyebrow">Collana editoriale</span>
+        <h2 id="archive-title">Archivio delle Osservazioni</h2>
+        <p>
+          Libri brevi. Domande profonde. Prospettive che restano
+          aperte. Una collana dedicata al comportamento umano,
+          alla percezione e ai meccanismi invisibili che guidano
+          il nostro modo di interpretare la realtà.
+        </p>
+        <a class="link-light" href="archivio-osservazioni.html">
+          Entra nell’Archivio →
+        </a>
+      </div>
+
     </div>
-  </article>
+  </section>
 
-  <article class="book">
-    <img src="copertina ufficiale la liberazione dell'anima .png"
-         alt="Copertina del libro La Liberazione dell'Anima">
-    <div class="book-content">
-      <h3>La Liberazione dell’Anima</h3>
-      <p>Un percorso interiore tra risveglio, consapevolezza e trasformazione personale.</p>
-      <a class="button" href="liberazione-anima.html">Scopri il libro</a>
+  <section class="collection" aria-labelledby="collection-title">
+    <div class="container">
+
+      <div class="collection-head">
+        <span class="eyebrow">Le opere</span>
+        <h2 id="collection-title">Storie, idee, prospettive.</h2>
+        <p>
+          Ogni libro apre una strada diversa.
+          Ogni lettura lascia una domanda da portare con sé.
+        </p>
+      </div>
+
+      <!-- IL TUTTOLOGO NARRANTE -->
+
+      <article class="book">
+        <div class="book-cover">
+          <a href="tuttologo-narrante.html">
+            <img
+              src="copertina il tuttologo narrante ufficiale .png"
+              alt="Copertina ufficiale di Il Tuttologo Narrante"
+              loading="lazy">
+          </a>
+        </div>
+
+        <div class="book-copy">
+          <span class="book-number">01 / LE OPERE</span>
+          <h3>Il Tuttologo Narrante</h3>
+          <p>
+            Un viaggio oltre il sistema, tra potere,
+            coscienza e libertà di pensiero.
+          </p>
+          <a class="book-link" href="tuttologo-narrante.html">
+            Scopri il libro <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- LA LIBERAZIONE DELL'ANIMA -->
+
+      <article class="book reverse">
+        <div class="book-cover">
+          <a href="liberazione-anima.html">
+            <img
+              src="copertina ufficiale la liberazione dell'anima .png"
+              alt="Copertina ufficiale di La Liberazione dell'Anima"
+              loading="lazy">
+          </a>
+        </div>
+
+        <div class="book-copy">
+          <span class="book-number">02 / LE OPERE</span>
+          <h3>La Liberazione dell’Anima</h3>
+          <p>
+            Un percorso interiore tra risveglio,
+            consapevolezza e trasformazione personale.
+          </p>
+          <a class="book-link" href="liberazione-anima.html">
+            Scopri il libro <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SEI TU LA CURA -->
+
+      <article class="book">
+        <div class="book-cover">
+          <a href="sei-tu-la-cura.html">
+            <img
+              src="Sei tu la cura tra le valli al tramonto JPG.jpg"
+              alt="Copertina ufficiale di Sei Tu la Cura"
+              loading="lazy">
+          </a>
+        </div>
+
+        <div class="book-copy">
+          <span class="book-number">03 / LE OPERE</span>
+          <h3>Sei Tu la Cura</h3>
+          <p>
+            Un invito a ritrovare dentro di sé la forza
+            per guarire, cambiare e rinascere.
+          </p>
+          <a class="book-link" href="sei-tu-la-cura.html">
+            Scopri il libro <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- IL REGNO DELL'OSCURITA VIRTUALE -->
+
+      <article class="book reverse">
+        <div class="book-cover">
+          <a href="oscurita-virtuale.html">
+            <img
+              src="copertina ufficiale la realtà virtuale.png"
+              alt="Copertina di Il Regno dell'Oscurità Virtuale"
+              loading="lazy">
+          </a>
+        </div>
+
+        <div class="book-copy">
+          <span class="book-number">04 / LE OPERE</span>
+          <h3>Il Regno dell’Oscurità Virtuale</h3>
+          <p>
+            Una storia distopica sul controllo digitale,
+            la libertà mentale e l’identità.
+          </p>
+          <a class="book-link" href="oscurita-virtuale.html">
+            Scopri il libro <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- L'AVVENTURA DELLE PARTICELLE -->
+
+      <article class="book">
+        <div class="book-cover">
+          <a href="avventura-particelle.html">
+            <img
+              src="copertina ufficiale l'avventura delle particelle.png"
+              alt="Copertina di L'Avventura delle Particelle"
+              loading="lazy">
+          </a>
+        </div>
+
+        <div class="book-copy">
+          <span class="book-number">05 / LE OPERE</span>
+          <h3>L’Avventura delle Particelle</h3>
+          <p>
+            Un racconto divulgativo per avvicinarsi
+            alla fisica e al mistero della realtà.
+          </p>
+          <a class="book-link" href="avventura-particelle.html">
+            Scopri il libro <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- LA TEORIA DEL DESIDERIO -->
+
+      <article class="book reverse">
+        <div class="book-cover">
+          <a href="teoria-del-desiderio.html">
+            <img
+              src="copertina ufficiale libro.jpg"
+              alt="Copertina di La Teoria del Desiderio"
+              loading="lazy">
+          </a>
+        </div>
+
+        <div class="book-copy">
+          <span class="book-number">06 / LE OPERE</span>
+          <h3>La Teoria del Desiderio</h3>
+          <p>
+            Una storia intensa tra desiderio, scelte,
+            emozioni e verità nascoste.
+          </p>
+          <a class="book-link" href="teoria-del-desiderio.html">
+            Scopri il libro <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- PROSSIMA USCITA -->
+
+      <section class="coming" aria-labelledby="coming-title">
+        <span class="eyebrow">Il percorso continua</span>
+        <h2 id="coming-title">Una nuova opera<br>è in arrivo.</h2>
+        <p>
+          Una nuova pubblicazione entrerà presto
+          a far parte di questa biblioteca.
+          Titolo e dettagli saranno annunciati prossimamente.
+        </p>
+      </section>
+
     </div>
-  </article>
+  </section>
 
-  <article class="book">
-    <img
-      src="Sei tu la cura tra le valli al tramonto JPG.jpg"
-      alt="Copertina ufficiale del libro Sei Tu la Cura di Giuseppe Lo Iacono">
-    <div class="book-content">
-      <h3>Sei Tu la Cura</h3>
-      <p>Un invito a ritrovare dentro di sé la forza per guarire, cambiare e rinascere.</p>
-      <a class="button" href="sei-tu-la-cura.html">Scopri il libro</a>
-    </div>
-  </article>
+  <section class="closing">
+    <p>
+      “Ogni libro nasce da una domanda.
+      E alcune domande continuano anche dopo l’ultima pagina.”
+    </p>
+    <a href="chi-sono.html">Conosci l’autore →</a>
+  </section>
 
-  <article class="book">
-    <img src="copertina ufficiale la realtà virtuale.png" alt="Il Regno dell'Oscurità Virtuale">
-    <div class="book-content">
-      <h3>Il Regno dell’Oscurità Virtuale</h3>
-      <p>Una storia distopica sul controllo digitale, la libertà mentale e l’identità.</p>
-      <a class="button" href="oscurita-virtuale.html">Scopri il libro</a>
-    </div>
-  </article>
-
-  <article class="book">
-    <img src="copertina ufficiale l'avventura delle particelle.png"
-         alt="Copertina del libro L'Avventura delle Particelle">
-    <div class="book-content">
-      <h3>L’Avventura delle Particelle</h3>
-      <p>Un racconto divulgativo per avvicinarsi alla fisica e al mistero della realtà.</p>
-      <a class="button" href="avventura-particelle.html">Scopri il libro</a>
-    </div>
-  </article>
-
-  <article class="book">
-    <img src="copertina ufficiale libro.jpg" alt="La Teoria del Desiderio">
-    <div class="book-content">
-      <h3>La Teoria del Desiderio</h3>
-      <p>Una storia intensa tra desiderio, scelte, emozioni e verità nascoste.</p>
-      <a class="button" href="teoria-del-desiderio.html">Scopri il libro</a>
-    </div>
-  </article>
-
-</div>
-
-</div>
+</main>
 
 <footer>
-© 2026 Giuseppe Lo Iacono
+  © 2026 Giuseppe Lo Iacono · Tutti i diritti riservati
 </footer>
 
 </body>
